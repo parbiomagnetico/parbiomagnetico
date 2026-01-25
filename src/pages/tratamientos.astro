@@ -1,0 +1,963 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Nav from "../components/Nav.astro";
+---
+
+<BaseLayout title="Tratamientos | Par Biomagnético">
+    <main class="tratamientos-page">
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <img
+                src="/images/composition/bokeh_bg.png"
+                alt=""
+                class="bokeh-bg"
+            />
+            <div class="hero-overlay"></div>
+
+            <!-- Sparkles/Destellos flotantes -->
+            <div class="sparkles">
+                <span class="sparkle"></span>
+                <span class="sparkle"></span>
+                <span class="sparkle"></span>
+                <span class="sparkle"></span>
+                <span class="sparkle"></span>
+                <span class="sparkle"></span>
+            </div>
+
+            <!-- Navegación -->
+            <Nav currentPage="tratamientos" />
+
+            <!-- Título -->
+            <div class="hero-content">
+                <span class="hero-badge">Terapia Complementaria</span>
+                <h1 class="page-title">
+                    Tratamientos de<br />
+                    Par Biomagnético
+                </h1>
+                <p class="hero-subtitle">
+                    Equilibramos el pH del cuerpo para que virus, bacterias,
+                    hongos y parásitos nocivos no puedan vivir. Una terapia
+                    complementaria con cualquier tratamiento que estés
+                    utilizando.
+                </p>
+                <div class="hero-modes">
+                    <span class="mode-badge">
+                        <svg
+                            class="mode-icon"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+                            ></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                        </svg>
+                        Presencial
+                    </span>
+                    <span class="mode-badge">
+                        <svg
+                            class="mode-icon"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                            ></path>
+                        </svg>
+                        A Distancia
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tratamientos Grid -->
+        <section class="content-section">
+            <div class="content-container">
+                <h2 class="section-heading">Tipos de Tratamiento</h2>
+
+                <div class="treatments-grid">
+                    <!-- Par Biomagnético Físico -->
+                    <article class="treatment-card">
+                        <div class="card-icon">
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                            >
+                                <path
+                                    d="M4.5 12a7.5 7.5 0 0015 0m-15 0a7.5 7.5 0 1115 0m-15 0H3m16.5 0H21m-1.5 0H12m-8.457 3.077l1.41-.513m14.095-5.13l1.41-.513M5.106 17.785l1.15-.964m11.49-9.642l1.149-.964M7.501 19.795l.75-1.3m7.5-12.99l.75-1.3m-6.063 16.658l.26-1.477m2.605-14.772l.26-1.477m0 17.726l-.26-1.477M10.698 4.614l-.26-1.477M16.5 19.794l-.75-1.299M7.5 5.205l-.75-1.3m11.395 16.88l-1.15-.964M6.256 6.822l-1.15-.964m15.352 8.864l-1.41-.513M4.954 9.435l-1.41-.514"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Par Biomagnético Físico</h3>
+                        <p class="card-text">
+                            Terapia natural complementaria descubierta por el
+                            Dr. Isaac Goiz en 1988. Detectamos mediante test
+                            kinesiológico los desequilibrios de pH del organismo
+                            y los tratamos con pares de imanes de intensidad
+                            media.
+                        </p>
+                        <div class="card-glow"></div>
+                    </article>
+
+                    <!-- Par Biomagnético Psicoemocional -->
+                    <article class="treatment-card">
+                        <div class="card-icon">
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                            >
+                                <path
+                                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">
+                            Par Biomagnético Psicoemocional
+                        </h3>
+                        <p class="card-text">
+                            Detectamos mediante test kinesiológico distintos
+                            estados emocionales y mentales que nos perturban. Se
+                            desactivan con la aplicación de imanes en
+                            determinadas zonas del cuerpo.
+                        </p>
+                        <div class="card-glow"></div>
+                    </article>
+
+                    <!-- Tratamiento de Animales -->
+                    <article class="treatment-card">
+                        <div class="card-icon">
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                            >
+                                <path
+                                    d="M6.115 5.19l.319 1.913A6 6 0 008.11 10.36L9.75 12l-.387.775c-.217.433-.132.956.21 1.298l1.348 1.348c.21.21.329.497.329.795v1.089c0 .426.24.815.622 1.006l.153.076c.433.217.956.132 1.298-.21l.723-.723a8.7 8.7 0 002.288-4.042 1.087 1.087 0 00-.358-1.099l-1.33-1.108c-.251-.21-.582-.299-.905-.245l-1.17.195a1.125 1.125 0 01-.98-.314l-.295-.295a1.125 1.125 0 010-1.591l.13-.132a1.125 1.125 0 011.3-.21l.603.302a.809.809 0 001.086-1.086L14.25 7.5l1.256-.837a4.5 4.5 0 001.528-1.732l.146-.292M6.115 5.19A9 9 0 1017.18 4.64M6.115 5.19A8.965 8.965 0 0112 3c1.929 0 3.716.607 5.18 1.64"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Tratamiento de Animales</h3>
+                        <p class="card-text">
+                            Desactivamos microorganismos latentes, prevenimos la
+                            aparición de síntomas y calmamos el dolor. El
+                            procedimiento es el mismo que con personas, adaptado
+                            a su anatomía.
+                        </p>
+                        <div class="card-glow"></div>
+                    </article>
+
+                    <!-- Tratamiento de Emociones -->
+                    <article class="treatment-card treatment-card--featured">
+                        <div class="card-icon">
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                            >
+                                <path
+                                    d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Tratamiento de Emociones</h3>
+                        <p class="card-text">
+                            Las emociones nos afectan a todos los niveles. La
+                            combinación de tratamientos físicos y emocionales
+                            con par biomagnético genera excelentes resultados.
+                        </p>
+
+                        <!-- Sub-tratamientos -->
+                        <div class="sub-treatments">
+                            <div class="sub-treatment">
+                                <span class="sub-dot"></span>
+                                <div>
+                                    <strong>Emociones Atrapadas</strong>
+                                    <p>
+                                        Detectamos qué emoción atrapada tenemos
+                                        y en qué órgano se encuentra para
+                                        liberarla e instaurar la emoción
+                                        positiva correspondiente.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="sub-treatment">
+                                <span class="sub-dot"></span>
+                                <div>
+                                    <strong>Heridas de la Niñez</strong>
+                                    <p>
+                                        Identificamos y liberamos las 5 heridas
+                                        de la niñez que nos acompañan e influyen
+                                        a lo largo de nuestra vida.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-glow card-glow--featured"></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contraindicaciones -->
+        <section class="warning-section">
+            <div class="content-container">
+                <div class="warning-card">
+                    <div class="warning-header">
+                        <svg
+                            class="warning-icon"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+                            <path
+                                d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                        <h2 class="warning-title">
+                            ¿Cuándo NO ponemos imanes?
+                        </h2>
+                    </div>
+                    <ul class="warning-list">
+                        <li>En <strong>embarazadas</strong></li>
+                        <li>
+                            En zonas del cuerpo con <strong
+                                >objetos de hierro, pernos, varillas o tornillos</strong
+                            > implantados quirúrgicamente
+                        </li>
+                        <li>
+                            Sobre <strong>heridas abiertas o sangrantes</strong>
+                        </li>
+                        <li>
+                            Si llevas un <strong
+                                >marcapasos, desfibrilador, bomba de insulina</strong
+                            > o cualquier dispositivo con batería
+                        </li>
+                        <li>
+                            Cuando estás recibiendo <strong
+                                >quimio o radioterapia</strong
+                            >, hay que esperar hasta que finalice el tratamiento
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="content-container">
+                <h2 class="section-heading">Preguntas Frecuentes</h2>
+
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>¿En qué consiste un tratamiento?</span>
+                            <svg
+                                class="faq-chevron"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                            >
+                                <path
+                                    d="M19 9l-7 7-7-7"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                            </svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>
+                                Un tratamiento de par biomagnético es algo más
+                                que aplicar imanes. Proporciona un sistema
+                                integral de prevención de numerosos
+                                desequilibrios y su tratamiento específico. Se
+                                basa en la detección y corrección de
+                                alteraciones del pH en diferentes zonas del
+                                cuerpo.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>¿Cómo son las sesiones?</span>
+                            <svg
+                                class="faq-chevron"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                            >
+                                <path
+                                    d="M19 9l-7 7-7-7"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                            </svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>
+                                El terapeuta, mediante unas pruebas musculares
+                                (test kinesiológico), irá detectando los
+                                desequilibrios de pH existentes en diferentes
+                                zonas del cuerpo. A continuación, aplicará los
+                                imanes correspondientes para restablecer el
+                                equilibrio.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>¿Neutraliza patógenos?</span>
+                            <svg
+                                class="faq-chevron"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                            >
+                                <path
+                                    d="M19 9l-7 7-7-7"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                            </svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>
+                                Todos los tratamientos de par biomagnético
+                                equilibran las zonas del cuerpo en las que hay
+                                distorsiones de pH, creando un ambiente donde
+                                los microorganismos patógenos no pueden vivir ni
+                                reproducirse, favoreciendo así la recuperación
+                                natural del organismo.
+                            </p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-nr">NR</span>
+                    <span class="footer-studio">STUDIO</span>
+                </div>
+                <p class="footer-text">
+                    © 2025 Par Biomagnético - Equilibrio y Bienestar
+                </p>
+                <a href="/" class="footer-link">← Volver al Inicio</a>
+            </div>
+        </footer>
+    </main>
+</BaseLayout>
+
+<style>
+    .tratamientos-page {
+        min-height: 100vh;
+    }
+
+    /* === HERO CON BOKEH === */
+    .page-hero {
+        position: relative;
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 120px;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .bokeh-bg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+    }
+
+    .hero-overlay {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background: linear-gradient(
+            to bottom,
+            rgba(10, 10, 12, 0.3) 0%,
+            rgba(10, 10, 12, 0.5) 70%,
+            #2c2416 100%
+        );
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 10;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-badge {
+        display: inline-block;
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        color: #4ade80;
+        background: rgba(74, 222, 128, 0.1);
+        padding: 0.5rem 1.25rem;
+        border-radius: 2rem;
+        margin-bottom: 1.5rem;
+        border: 1px solid rgba(74, 222, 128, 0.2);
+    }
+
+    .page-title {
+        font-family: "Playfair Display", Georgia, serif;
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        font-weight: 400;
+        font-style: italic;
+        color: #d4a853;
+        line-height: 1.15;
+        margin-bottom: 1.5rem;
+        text-shadow:
+            0 0 20px rgba(212, 168, 83, 0.3),
+            0 0 40px rgba(212, 168, 83, 0.15);
+        animation: title-glow 4s ease-in-out infinite alternate;
+    }
+
+    .hero-subtitle {
+        font-size: 1.05rem;
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 2rem;
+        max-width: 600px;
+        line-height: 1.7;
+    }
+
+    .hero-modes {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .mode-badge {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.7);
+        background: rgba(255, 255, 255, 0.05);
+        padding: 0.6rem 1.25rem;
+        border-radius: 2rem;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .mode-icon {
+        width: 16px;
+        height: 16px;
+        stroke: #d4a853;
+    }
+
+    @keyframes title-glow {
+        from {
+            text-shadow:
+                0 0 20px rgba(212, 168, 83, 0.3),
+                0 0 40px rgba(212, 168, 83, 0.15);
+        }
+        to {
+            text-shadow:
+                0 0 25px rgba(212, 168, 83, 0.4),
+                0 0 50px rgba(212, 168, 83, 0.2),
+                0 0 70px rgba(212, 168, 83, 0.1);
+        }
+    }
+
+    /* === SPARKLES === */
+    .sparkles {
+        position: absolute;
+        inset: 0;
+        z-index: 2;
+        pointer-events: none;
+    }
+
+    .sparkle {
+        position: absolute;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 0 6px 1px rgba(255, 255, 255, 0.6);
+        animation: sparkle 3s ease-in-out infinite;
+    }
+
+    .sparkle:nth-child(1) {
+        left: 15%;
+        top: 25%;
+        animation-delay: 0s;
+        width: 3px;
+        height: 3px;
+    }
+    .sparkle:nth-child(2) {
+        left: 80%;
+        top: 35%;
+        animation-delay: 0.5s;
+        width: 2px;
+        height: 2px;
+    }
+    .sparkle:nth-child(3) {
+        left: 45%;
+        top: 55%;
+        animation-delay: 1s;
+        width: 4px;
+        height: 4px;
+    }
+    .sparkle:nth-child(4) {
+        left: 65%;
+        top: 70%;
+        animation-delay: 1.5s;
+        width: 3px;
+        height: 3px;
+    }
+    .sparkle:nth-child(5) {
+        left: 25%;
+        top: 75%;
+        animation-delay: 2s;
+        width: 2px;
+        height: 2px;
+    }
+    .sparkle:nth-child(6) {
+        left: 55%;
+        top: 20%;
+        animation-delay: 2.5s;
+        width: 3px;
+        height: 3px;
+    }
+
+    @keyframes sparkle {
+        0%,
+        100% {
+            opacity: 0.15;
+            transform: scale(0.6);
+        }
+        50% {
+            opacity: 0.9;
+            transform: scale(1.1);
+        }
+    }
+
+    /* === SECCIÓN DE CONTENIDO === */
+    .content-section {
+        position: relative;
+        background: linear-gradient(
+            to bottom,
+            #2c2416 0%,
+            #1e3a2f 30%,
+            #1a2e26 60%,
+            #0f1f1a 100%
+        );
+        padding: 1.5rem 0 3.5rem;
+    }
+
+    .content-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    .section-heading {
+        text-align: center;
+        font-family: "Playfair Display", Georgia, serif;
+        font-size: clamp(1.5rem, 3vw, 2rem);
+        font-weight: 400;
+        font-style: italic;
+        color: #d4a853;
+        margin-bottom: 3rem;
+    }
+
+    /* === GRID DE TRATAMIENTOS === */
+    .treatments-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .treatment-card {
+        position: relative;
+        background: linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.05) 0%,
+            rgba(255, 255, 255, 0.02) 100%
+        );
+        border: 1px solid rgba(212, 168, 83, 0.15);
+        border-radius: 1.25rem;
+        padding: 2.5rem;
+        backdrop-filter: blur(10px);
+        transition: all 0.4s ease;
+        overflow: hidden;
+    }
+
+    .treatment-card:hover {
+        transform: translateY(-5px);
+        border-color: rgba(212, 168, 83, 0.3);
+    }
+
+    .treatment-card--featured {
+        grid-column: span 2;
+    }
+
+    .card-icon {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 1.5rem;
+    }
+
+    .card-icon svg {
+        width: 100%;
+        height: 100%;
+        stroke: #d4a853;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #fff;
+        margin-bottom: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.95rem;
+        color: rgba(255, 255, 255, 0.7);
+        line-height: 1.7;
+    }
+
+    .card-glow {
+        position: absolute;
+        bottom: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(
+            circle,
+            rgba(212, 168, 83, 0.08) 0%,
+            transparent 50%
+        );
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+    }
+
+    .treatment-card:hover .card-glow {
+        opacity: 1;
+    }
+
+    .card-glow--featured {
+        background: radial-gradient(
+            circle,
+            rgba(74, 222, 128, 0.08) 0%,
+            transparent 50%
+        );
+    }
+
+    /* Sub-tratamientos */
+    .sub-treatments {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .sub-treatment {
+        display: flex;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .sub-dot {
+        flex-shrink: 0;
+        width: 8px;
+        height: 8px;
+        margin-top: 0.5rem;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #d4a853, #4ade80);
+        box-shadow: 0 0 10px rgba(212, 168, 83, 0.5);
+    }
+
+    .sub-treatment strong {
+        display: block;
+        color: #d4a853;
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .sub-treatment p {
+        font-size: 0.85rem;
+        color: rgba(255, 255, 255, 0.6);
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    /* === WARNING SECTION === */
+    .warning-section {
+        background: linear-gradient(to bottom, #0f1f1a 0%, #1a1510 100%);
+        padding: 2.5rem 0;
+    }
+
+    .warning-card {
+        background: rgba(239, 68, 68, 0.05);
+        border: 1px solid rgba(239, 68, 68, 0.2);
+        border-radius: 1rem;
+        padding: 2.5rem;
+    }
+
+    .warning-header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .warning-icon {
+        width: 28px;
+        height: 28px;
+        stroke: #ef4444;
+        flex-shrink: 0;
+    }
+
+    .warning-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #ef4444;
+        margin: 0;
+    }
+
+    .warning-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        gap: 0.75rem;
+    }
+
+    .warning-list li {
+        position: relative;
+        padding-left: 1.5rem;
+        font-size: 0.95rem;
+        color: rgba(255, 255, 255, 0.8);
+        line-height: 1.6;
+    }
+
+    .warning-list li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: #ef4444;
+        font-weight: bold;
+    }
+
+    .warning-list strong {
+        color: #fff;
+    }
+
+    /* === FAQ SECTION === */
+    .faq-section {
+        background: linear-gradient(to bottom, #1a1510 0%, #0a0c0b 100%);
+        padding: 2.5rem 0;
+    }
+
+    .faq-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .faq-item {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 0.75rem;
+        overflow: hidden;
+        transition: border-color 0.3s ease;
+    }
+
+    .faq-item:hover,
+    .faq-item[open] {
+        border-color: rgba(212, 168, 83, 0.3);
+    }
+
+    .faq-question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.25rem 1.5rem;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: 500;
+        color: #fff;
+        list-style: none;
+    }
+
+    .faq-question::-webkit-details-marker {
+        display: none;
+    }
+
+    .faq-chevron {
+        width: 20px;
+        height: 20px;
+        stroke: #d4a853;
+        transition: transform 0.3s ease;
+        flex-shrink: 0;
+    }
+
+    .faq-item[open] .faq-chevron {
+        transform: rotate(180deg);
+    }
+
+    .faq-answer {
+        padding: 0 1.5rem 1.5rem;
+    }
+
+    .faq-answer p {
+        font-size: 0.95rem;
+        color: rgba(255, 255, 255, 0.7);
+        line-height: 1.7;
+        margin: 0;
+    }
+
+    /* === FOOTER === */
+    .site-footer {
+        background: #0a0c0b;
+        border-top: 1px solid rgba(212, 168, 83, 0.1);
+        padding: 2.5rem 0;
+    }
+
+    .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .footer-brand {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 1;
+    }
+
+    .footer-nr {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #fff;
+        letter-spacing: -0.03em;
+    }
+
+    .footer-studio {
+        font-size: 0.55rem;
+        font-weight: 400;
+        color: #777;
+        letter-spacing: 0.25em;
+        margin-top: 2px;
+    }
+
+    .footer-text {
+        font-size: 0.8rem;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .footer-link {
+        font-size: 0.8rem;
+        color: #d4a853;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .footer-link:hover {
+        color: #e8c278;
+    }
+
+    /* === RESPONSIVE === */
+    @media (max-width: 1024px) {
+        .treatments-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .treatment-card--featured {
+            grid-column: span 1;
+        }
+
+        .sub-treatments {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .page-hero {
+            min-height: 280px;
+            padding-top: 90px;
+            padding-bottom: 0;
+        }
+
+        .hero-content {
+            padding: 0 1.5rem;
+        }
+
+        .content-section,
+        .warning-section,
+        .faq-section {
+            padding: 1rem 0 2.5rem !important;
+        }
+
+        .site-footer {
+            padding: 2rem 0 !important;
+        }
+
+        .hero-modes {
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-bottom: 0;
+        }
+
+        .section-heading {
+            margin-bottom: 1.5rem;
+        }
+
+        .treatment-card {
+            padding: 1.75rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .warning-card {
+            padding: 1.5rem;
+        }
+
+        .faq-question {
+            padding: 1rem 1.25rem;
+        }
+    }
+</style>

@@ -1,0 +1,416 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Nav from "../components/Nav.astro";
+import ReviewCard from "../components/ReviewCard.astro";
+import reviews from "../data/reviews.json";
+
+const googleReviewsUrl =
+  "https://search.google.com/local/writereview?placeid=PLACEHOLDER"; // TODO: Ask user for real link
+---
+
+<BaseLayout title="Opiniones | Par Biomagnético">
+  <main class="opiniones-page">
+    <!-- Sección Hero con Bokeh -->
+    <section class="page-hero">
+      <img src="/images/composition/bokeh_bg.png" alt="" class="bokeh-bg" />
+      <div class="hero-overlay"></div>
+
+      <!-- Sparkles/Destellos flotantes -->
+      <div class="sparkles">
+        <span class="sparkle"></span>
+        <span class="sparkle"></span>
+        <span class="sparkle"></span>
+        <span class="sparkle"></span>
+        <span class="sparkle"></span>
+        <span class="sparkle"></span>
+      </div>
+
+      <!-- Navegación -->
+      <Nav currentPage="opiniones" />
+
+      <!-- Título -->
+      <div class="hero-content">
+        <span class="hero-badge">Experiencias Reales</span>
+        <h1 class="page-title">
+          Lo que dicen nuestros<br />
+          Pacientes
+        </h1>
+        <p class="hero-subtitle">
+          Historias reales de recuperación y equilibrio.
+        </p>
+
+        <div class="cta-container">
+          <a
+            href={googleReviewsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="google-btn"
+          >
+            <span class="google-icon">G</span>
+            Escribir reseña en Google
+          </a>
+          <p class="cta-text">Tu opinión nos ayuda a seguir creciendo.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de reseñas con gradiente -->
+    <section class="content-section">
+      <div class="content-container">
+        <div class="reviews-grid">
+          {reviews.map((review) => <ReviewCard {...review} />)}
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="footer-nr">NR</span>
+          <span class="footer-studio">STUDIO</span>
+        </div>
+        <p class="footer-text">
+          © 2024 Par Biomagnético - Equilibrio y Bienestar
+        </p>
+        <a href="/" class="footer-link">← Volver al Inicio</a>
+      </div>
+    </footer>
+  </main>
+</BaseLayout>
+
+<style>
+  .opiniones-page {
+    min-height: 100vh;
+  }
+
+  /* === HERO CON BOKEH === */
+  .page-hero {
+    position: relative;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 120px;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .bokeh-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(
+      to bottom,
+      rgba(10, 10, 12, 0.3) 0%,
+      rgba(10, 10, 12, 0.5) 70%,
+      #2c2416 100%
+    );
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 10;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #4ade80;
+    background: rgba(74, 222, 128, 0.1);
+    padding: 0.5rem 1.25rem;
+    border-radius: 2rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(74, 222, 128, 0.2);
+  }
+
+  .page-title {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 400;
+    font-style: italic;
+    color: #d4a853;
+    line-height: 1.15;
+    margin-bottom: 1.5rem;
+    text-shadow:
+      0 0 20px rgba(212, 168, 83, 0.3),
+      0 0 40px rgba(212, 168, 83, 0.15),
+      0 0 60px rgba(212, 168, 83, 0.1);
+    animation: title-glow 4s ease-in-out infinite alternate;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 2.5rem;
+    max-width: 500px;
+  }
+
+  @keyframes title-glow {
+    from {
+      text-shadow:
+        0 0 20px rgba(212, 168, 83, 0.3),
+        0 0 40px rgba(212, 168, 83, 0.15);
+    }
+    to {
+      text-shadow:
+        0 0 25px rgba(212, 168, 83, 0.4),
+        0 0 50px rgba(212, 168, 83, 0.2),
+        0 0 70px rgba(212, 168, 83, 0.1);
+    }
+  }
+
+  /* === CTA GOOGLE === */
+  .cta-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .google-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 0.8rem 2.5rem;
+    border-radius: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .google-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(212, 168, 83, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(212, 168, 83, 0.1);
+  }
+
+  .google-icon {
+    font-weight: 900;
+    font-size: 1.2rem;
+    background: conic-gradient(
+        from -45deg,
+        #ea4335 110deg,
+        #4285f4 90deg 180deg,
+        #34a853 180deg 270deg,
+        #fbbc05 270deg
+      )
+      73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .cta-text {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  /* === SECCIÓN DE CONTENIDO === */
+  .content-section {
+    position: relative;
+    background: linear-gradient(
+      to bottom,
+      #2c2416 0%,
+      #1e3a2f 30%,
+      #1a2e26 60%,
+      #0f1f1a 100%
+    );
+    padding: 3rem 0 3.5rem;
+  }
+
+  .content-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .reviews-grid {
+    column-count: 3;
+    column-gap: 1.5rem;
+  }
+
+  @media (max-width: 1024px) {
+    .reviews-grid {
+      column-count: 2;
+    }
+    .page-hero {
+      min-height: 25vh;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .reviews-grid {
+      column-count: 1;
+    }
+    .page-hero {
+      min-height: 280px;
+      padding-top: 90px;
+      padding-bottom: 0;
+    }
+    .hero-content {
+      padding: 0 1.5rem;
+    }
+    .content-section {
+      padding: 2.5rem 0 2.5rem !important;
+    }
+    .site-footer {
+      padding: 2rem 0 !important;
+    }
+  }
+
+  /* === SPARKLES === */
+  .sparkles {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .sparkle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 6px 1px rgba(255, 255, 255, 0.6);
+    animation: sparkle 3s ease-in-out infinite;
+  }
+
+  .sparkle:nth-child(1) {
+    left: 15%;
+    top: 25%;
+    animation-delay: 0s;
+    width: 3px;
+    height: 3px;
+  }
+  .sparkle:nth-child(2) {
+    left: 80%;
+    top: 35%;
+    animation-delay: 0.5s;
+    width: 2px;
+    height: 2px;
+  }
+  .sparkle:nth-child(3) {
+    left: 45%;
+    top: 55%;
+    animation-delay: 1s;
+    width: 4px;
+    height: 4px;
+  }
+  .sparkle:nth-child(4) {
+    left: 65%;
+    top: 70%;
+    animation-delay: 1.5s;
+    width: 3px;
+    height: 3px;
+  }
+  .sparkle:nth-child(5) {
+    left: 25%;
+    top: 75%;
+    animation-delay: 2s;
+    width: 2px;
+    height: 2px;
+  }
+  .sparkle:nth-child(6) {
+    left: 55%;
+    top: 20%;
+    animation-delay: 2.5s;
+    width: 3px;
+    height: 3px;
+  }
+
+  @keyframes sparkle {
+    0%,
+    100% {
+      opacity: 0.15;
+      transform: scale(0.6);
+    }
+    50% {
+      opacity: 0.9;
+      transform: scale(1.1);
+    }
+  }
+
+  /* === FOOTER === */
+  .site-footer {
+    background: #0a0c0b;
+    border-top: 1px solid rgba(212, 168, 83, 0.1);
+    padding: 2.5rem 0;
+  }
+
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1;
+  }
+
+  .footer-nr {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -0.03em;
+  }
+
+  .footer-studio {
+    font-size: 0.55rem;
+    font-weight: 400;
+    color: #777;
+    letter-spacing: 0.25em;
+    margin-top: 2px;
+  }
+
+  .footer-text {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .footer-link {
+    font-size: 0.8rem;
+    color: #d4a853;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .footer-link:hover {
+    color: #e8c278;
+  }
+</style>

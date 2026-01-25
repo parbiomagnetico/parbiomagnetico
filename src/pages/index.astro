@@ -1,0 +1,360 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import EnergyComposition from "../components/EnergyComposition.astro";
+import Nav from "../components/Nav.astro";
+import content from "../data/content.json";
+---
+
+<BaseLayout title="Par Biomagnetico | Equilibrio Biomagnético">
+  <main>
+    <!-- Hero Section - Composición Visual Completa -->
+    <EnergyComposition />
+
+    <!-- Navegación -->
+    <Nav currentPage="inicio" />
+
+    <!-- Content Sections (Píldoras) - Diseño Orgánico -->
+    <div id="content-sections" class="content-sections">
+      {
+        content.sections.map((section, index) => (
+          <section
+            class={`story-section ${index % 2 === 0 ? "align-left" : "align-right"}`}
+          >
+            <div class="section-content">
+              <span class="concept-badge">{section.concept}</span>
+              <h2 class="section-title">{section.title}</h2>
+              {section.pill && <p class="section-text">{section.pill}</p>}
+              {section.detail && <p class="section-detail">{section.detail}</p>}
+
+              {section.items && (
+                <ul class="items-list">
+                  {section.items.map((item) => (
+                    <li class="item">
+                      <div class="item-header">
+                        <div class="item-dot" />
+                        <span class="item-label">{item.label}</span>
+                      </div>
+                      <p class="item-desc">{item.desc}</p>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+
+            <div class="section-visual">
+              <div class="visual-glow" />
+              <img src={section.image} alt={section.title} class="visual-img" />
+            </div>
+          </section>
+        ))
+      }
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="footer-nr">NR</span>
+          <span class="footer-studio">STUDIO</span>
+        </div>
+        <p class="footer-text">
+          © 2025 Par Biomagnético - Equilibrio y Bienestar
+        </p>
+      </div>
+    </footer>
+  </main>
+</BaseLayout>
+
+<style>
+  /* Secciones de contenido */
+  .content-sections {
+    position: relative;
+    z-index: 10;
+    background: linear-gradient(
+      to bottom,
+      #2c2416 0%,
+      #1e3a2f 30%,
+      #1a2e26 60%,
+      #0f1f1a 100%
+    );
+  }
+
+  .story-section {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    padding: 2.5rem 4rem;
+    position: relative;
+    gap: 4rem;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .story-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      ellipse at var(--gradient-pos, 30% 50%),
+      rgba(212, 168, 83, 0.08) 0%,
+      transparent 60%
+    );
+    pointer-events: none;
+  }
+
+  .story-section.align-left {
+    flex-direction: row;
+    --gradient-pos: 20% 50%;
+  }
+
+  .story-section.align-right {
+    flex-direction: row-reverse;
+    --gradient-pos: 80% 50%;
+  }
+
+  .section-content {
+    flex: 1;
+    max-width: 600px;
+    padding: 2.25rem;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.03) 0%,
+      rgba(255, 255, 255, 0.01) 100%
+    );
+    border: 1px solid rgba(212, 168, 83, 0.15);
+    border-radius: 1rem;
+    backdrop-filter: blur(10px);
+    position: relative;
+    z-index: 2;
+  }
+
+  .section-content::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2rem;
+    bottom: 2rem;
+    width: 3px;
+    background: linear-gradient(
+      to bottom,
+      transparent,
+      #d4a853,
+      #4ade80,
+      transparent
+    );
+    border-radius: 2px;
+  }
+
+  /* Visuales */
+  .section-visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .visual-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    /* Create a smooth fade into the background */
+    mask-image: radial-gradient(circle at center, black 40%, transparent 95%);
+    -webkit-mask-image: radial-gradient(
+      circle at center,
+      black 40%,
+      transparent 95%
+    );
+
+    /* Blend the dark parts with the background */
+    mix-blend-mode: screen;
+
+    /* Remove harsh borders */
+    transition:
+      transform 0.5s ease,
+      filter 0.5s ease;
+    filter: contrast(1.1) brightness(1.1);
+  }
+
+  /* Add a stronger glow behind to support the blended image */
+  .visual-glow {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      circle,
+      rgba(212, 168, 83, 0.15) 0%,
+      transparent 60%
+    );
+    z-index: -1;
+    filter: blur(40px);
+    opacity: 0.6;
+  }
+
+  .story-section:hover .visual-img {
+    transform: scale(1.05);
+    filter: contrast(1.2) brightness(1.2);
+  }
+
+  /* Badge del concepto */
+  .concept-badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #d4a853;
+    background: rgba(212, 168, 83, 0.1);
+    padding: 0.4rem 1rem;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(212, 168, 83, 0.2);
+  }
+
+  /* Título de sección */
+  .section-title {
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    background: linear-gradient(135deg, #ffffff 0%, #d4a853 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Texto principal */
+  .section-text {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Detalle técnico */
+  .section-detail {
+    font-size: 0.9rem;
+    color: rgba(74, 222, 128, 0.9);
+    font-style: italic;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    line-height: 1.6;
+  }
+
+  /* Lista de items */
+  .items-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .item {
+    padding-left: 1.5rem;
+    position: relative;
+  }
+
+  .item-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .item-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #d4a853, #4ade80);
+    box-shadow: 0 0 10px rgba(212, 168, 83, 0.5);
+  }
+
+  .item-label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #d4a853;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .item-desc {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.5;
+    padding-left: 1.6rem;
+  }
+
+  /* Footer */
+  .site-footer {
+    background: #0a0c0b;
+    border-top: 1px solid rgba(212, 168, 83, 0.1);
+    padding: 2.5rem 0;
+  }
+
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1;
+  }
+
+  .footer-nr {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -0.03em;
+  }
+
+  .footer-studio {
+    font-size: 0.55rem;
+    font-weight: 400;
+    color: #777;
+    letter-spacing: 0.25em;
+    margin-top: 2px;
+  }
+
+  .footer-text {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  /* Responsivo */
+  @media (max-width: 900px) {
+    .story-section,
+    .story-section.align-left,
+    .story-section.align-right {
+      flex-direction: column;
+      padding: 3rem 1.5rem !important;
+      gap: 2rem;
+    }
+
+    .section-content {
+      max-width: 100%;
+    }
+
+    .section-visual {
+      order: -1;
+    }
+
+    .section-title {
+      font-size: 1.6rem;
+    }
+
+    .site-footer {
+      padding: 2rem 0 !important;
+    }
+  }
+</style>

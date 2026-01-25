@@ -1,0 +1,45 @@
+{
+    "hero": {
+        "headline": "RECALIBRANDO EL CAMPO BIOENERGÉTICO",
+        "subtext": "Sincronización cuántica de la homeostasis celular mediante interferencia magnética dirigida.",
+        "cta": "INICIAR SIMULACIÓN"
+    },
+    "sections": [
+        {
+            "id": "genetic_structure",
+            "title": "LA ESTRUCTURA GENÉTICA",
+            "concept": "ORIGEN",
+            "pill": "Protocolo de 1988. Decodificación de más de 250 algoritmos de resonancia para identificar vectores de polarización ácida y alcalina. Una cartografía completa de la disfunción orgánica.",
+            "detail": "Dr. Isaac Goiz: Pionero en la biofísica de la resonancia magnética.",
+            "image": "/images/cards/genetic-structure.png"
+        },
+        {
+            "id": "simulation_interactive",
+            "title": "SIMULACIÓN DE IMPACTO",
+            "concept": "MECÁNICA",
+            "pill": "Desplazamiento iónico vectorizado. La inducción de campos bipolares acelera la migración de protones (H+) y radicales libres, forzando un retorno inmediato al pH Neutro (7.0).",
+            "detail": "Entropía Inversa: Los agentes de disonancia biológica (patógenos) colapsan ante el equilibrio electroquímico.",
+            "image": "/images/cards/simulation-impact.png"
+        },
+        {
+            "id": "res_nodes",
+            "title": "NODOS DE RESONANCIA",
+            "concept": "TIPOLOGÍA",
+            "items": [
+                {
+                    "label": "NODOS REGULARES",
+                    "desc": "Detección de firmas biológicas patógenas activas."
+                },
+                {
+                    "label": "NODOS DISFUNCIONALES",
+                    "desc": "Corrección de anomalías en la secreción glandular bio-reguladora."
+                },
+                {
+                    "label": "NODOS RESERVORIO",
+                    "desc": "Identificación de latencia patógena en tejidos inactivos."
+                }
+            ],
+            "image": "/images/cards/resonance-nodes.png"
+        }
+    ]
+}

@@ -1,0 +1,74 @@
+---
+import '../styles/global.scss';
+import '@fontsource/merriweather';
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Ciencia Biomagnética" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title} | NR Studio</title>
+	</head>
+	<body class="reading-mode bg-white text-gray-900 overflow-x-hidden antialiased">
+		<nav class="fixed top-0 left-0 w-full z-50 p-6 flex justify-between items-center bg-white/90 backdrop-blur-sm border-b border-gray-100 transition-all duration-300">
+			<a href="/blog" class="font-bold text-xl tracking-tighter text-gray-900 flex items-center group">
+				<svg class="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+				</svg>
+				VOLVER
+			</a>
+			<div class="text-xs font-bold tracking-widest uppercase text-gray-500">
+				Lectura Bioenergética
+			</div>
+		</nav>
+		
+		<slot />
+
+		<footer class="py-12 text-center text-gray-400 text-sm border-t border-gray-100 mt-24">
+			<p>&copy; 2026 NR Studio. Ciencia y Consciencia.</p>
+		</footer>
+	</body>
+</html>
+
+<style is:global>
+	/* Overlay global dark mode defaults */
+	.reading-mode {
+		background: #ffffff !important; 
+		color: #111827 !important;
+	}
+	
+	.reading-mode p {
+		font-family: 'Merriweather', serif;
+		line-height: 1.8;
+		font-size: 1.125rem;
+		margin-bottom: 2rem;
+		color: #374151;
+	}
+
+	.reading-mode h2 {
+		font-family: 'Outfit', sans-serif;
+		font-weight: 700;
+		font-size: 2rem;
+		margin-top: 3rem;
+		margin-bottom: 1.5rem;
+		letter-spacing: -0.02em;
+	}
+	
+	.reading-mode blockquote {
+		border-left: 4px solid #10b981;
+		padding-left: 1.5rem;
+		font-style: italic;
+		color: #059669;
+		margin: 2rem 0;
+	}
+</style>

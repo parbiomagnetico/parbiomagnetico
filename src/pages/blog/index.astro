@@ -1,0 +1,590 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Nav from "../../components/Nav.astro";
+import posts from "../../data/posts.json";
+---
+
+<BaseLayout title="Blog | Par Biomagnetico">
+  <main class="blog-page">
+    <!-- Sección Hero con Bokeh (solo título) -->
+    <section class="blog-hero">
+      <img src="/images/composition/bokeh_bg.png" alt="" class="bokeh-bg" />
+      <div class="hero-overlay"></div>
+
+      <!-- Sparkles/Destellos flotantes -->
+      <div class="sparkles">
+        <span class="sparkle"></span>
+        <span class="sparkle"></span>
+        <span class="sparkle"></span>
+        <span class="sparkle"></span>
+        <span class="sparkle"></span>
+        <span class="sparkle"></span>
+      </div>
+
+      <!-- Navegación -->
+      <Nav currentPage="blog" />
+
+      <!-- Título -->
+      <div class="hero-content">
+        <span class="hero-badge">Conocimiento Biomagnético</span>
+        <h1 class="page-title">
+          Explorando la Ciencia del<br />
+          Biomagnetismo
+        </h1>
+        <p class="hero-subtitle">
+          Artículos, investigaciones y guías para comprender el equilibrio
+          bioenergético y su impacto en tu bienestar.
+        </p>
+      </div>
+    </section>
+
+    <!-- Sección de artículos con gradiente -->
+    <section class="articles-section">
+      <div class="articles-container">
+        <div class="articles-grid" id="articles-grid">
+          {
+            posts.map((post, index) => (
+              <article
+                class={`article-card ${index >= 6 ? "hidden" : ""}`}
+                data-index={index}
+              >
+                <a href={`/blog/${post.slug}`} class="card-link">
+                  <div class="card-image">
+                    <img src={post.thumbnail} alt={post.title} loading="lazy" />
+                  </div>
+                  <div class="card-content">
+                    <h2 class="card-title">{post.title}</h2>
+                    <p class="card-excerpt">{post.excerpt.slice(0, 120)}...</p>
+                    <span class="card-cta">Leer Más</span>
+                  </div>
+                </a>
+              </article>
+            ))
+          }
+        </div>
+
+        {
+          posts.length > 6 && (
+            <div class="load-more-container">
+              <button id="load-more-btn" class="load-more-btn">
+                Mostrar Más Artículos
+              </button>
+            </div>
+          )
+        }
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="footer-nr">NR</span>
+          <span class="footer-studio">STUDIO</span>
+        </div>
+        <p class="footer-text">
+          © 2024 Par Biomagnético - Equilibrio y Bienestar
+        </p>
+        <a href="/" class="footer-link">← Volver al Inicio</a>
+      </div>
+    </footer>
+  </main>
+</BaseLayout>
+
+<style>
+  .blog-page {
+    min-height: 100vh;
+  }
+
+  /* === HERO CON BOKEH === */
+  .blog-hero {
+    position: relative;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 120px;
+    overflow: hidden;
+  }
+
+  .bokeh-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(
+      to bottom,
+      rgba(10, 10, 12, 0.3) 0%,
+      rgba(10, 10, 12, 0.5) 70%,
+      #2c2416 100%
+    );
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 10;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #4ade80;
+    background: rgba(74, 222, 128, 0.1);
+    padding: 0.5rem 1.25rem;
+    border-radius: 2rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(74, 222, 128, 0.2);
+  }
+
+  .page-title {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 400;
+    font-style: italic;
+    color: #d4a853;
+    line-height: 1.15;
+    margin-bottom: 1.5rem;
+    text-shadow:
+      0 0 20px rgba(212, 168, 83, 0.3),
+      0 0 40px rgba(212, 168, 83, 0.15);
+    animation: title-glow 4s ease-in-out infinite alternate;
+  }
+
+  .hero-subtitle {
+    font-size: 1.05rem;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 600px;
+    line-height: 1.7;
+    margin: 0 auto;
+  }
+
+  /* === SECCIÓN DE ARTÍCULOS CON GRADIENTE === */
+  .articles-section {
+    position: relative;
+    background: linear-gradient(
+      to bottom,
+      #2c2416 0%,
+      #1e3a2f 30%,
+      #1a2e26 60%,
+      #0f1f1a 100%
+    );
+    padding: 2.5rem 0 3.5rem;
+  }
+
+  .articles-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 3rem;
+  }
+
+  .articles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  @media (max-width: 1024px) {
+    .articles-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 640px) {
+    .articles-grid {
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+    }
+
+    .blog-hero {
+      min-height: 280px;
+      padding-top: 90px;
+      padding-bottom: 0;
+    }
+
+    .hero-content {
+      padding: 0 1.5rem;
+    }
+
+    .hero-subtitle {
+      font-size: 0.95rem;
+    }
+
+    .articles-section {
+      padding: 2.5rem 0 3.5rem !important;
+    }
+
+    .articles-container {
+      padding: 0 1.5rem;
+    }
+
+    .site-footer {
+      padding: 2rem 0 !important;
+    }
+
+    .load-more-container {
+      margin-top: 2rem;
+    }
+  }
+
+  /* === TARJETAS === */
+  .article-card {
+    position: relative;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.04) 0%,
+      rgba(255, 255, 255, 0.01) 100%
+    );
+    border: 1px solid rgba(212, 168, 83, 0.15);
+    border-radius: 1rem;
+    overflow: hidden;
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease,
+      border-color 0.3s ease;
+    backdrop-filter: blur(12px);
+  }
+
+  .article-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 1.5rem;
+    bottom: 1.5rem;
+    width: 3px;
+    background: linear-gradient(
+      to bottom,
+      transparent,
+      #d4a853,
+      #4ade80,
+      transparent
+    );
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .article-card:hover {
+    transform: translateY(-6px);
+    box-shadow:
+      0 25px 50px rgba(0, 0, 0, 0.35),
+      0 0 30px rgba(212, 168, 83, 0.08);
+    border-color: rgba(212, 168, 83, 0.3);
+  }
+
+  .article-card:hover::before {
+    opacity: 1;
+  }
+
+  .card-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .card-image {
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    margin: 12px;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+
+  .article-card:hover .card-image img {
+    transform: scale(1.05);
+  }
+
+  .card-content {
+    padding: 0.5rem 1.25rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .card-title {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.35;
+    margin-bottom: 0.6rem;
+    background: linear-gradient(135deg, #ffffff 0%, #d4a853 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .card-excerpt {
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.55;
+    margin-bottom: 1rem;
+    flex: 1;
+  }
+
+  .card-cta {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #4ade80;
+    transition: color 0.3s ease;
+  }
+
+  .article-card:hover .card-cta {
+    color: #6ee7a0;
+  }
+
+  /* === SPARKLES/DESTELLOS (estilo suave como inicio) === */
+  .sparkles {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+    overflow: hidden;
+  }
+
+  .sparkle {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow:
+      0 0 6px 1px rgba(255, 255, 255, 0.6),
+      0 0 12px 2px rgba(255, 255, 200, 0.4);
+    animation: sparkle 3s ease-in-out infinite;
+  }
+
+  .sparkle:nth-child(1) {
+    left: 15%;
+    top: 25%;
+    animation-delay: 0s;
+    width: 3px;
+    height: 3px;
+  }
+  .sparkle:nth-child(2) {
+    left: 80%;
+    top: 35%;
+    animation-delay: 0.5s;
+    width: 2px;
+    height: 2px;
+  }
+  .sparkle:nth-child(3) {
+    left: 45%;
+    top: 55%;
+    animation-delay: 1s;
+    width: 4px;
+    height: 4px;
+  }
+  .sparkle:nth-child(4) {
+    left: 65%;
+    top: 70%;
+    animation-delay: 1.5s;
+    width: 3px;
+    height: 3px;
+  }
+  .sparkle:nth-child(5) {
+    left: 25%;
+    top: 75%;
+    animation-delay: 2s;
+    width: 2px;
+    height: 2px;
+  }
+  .sparkle:nth-child(6) {
+    left: 55%;
+    top: 20%;
+    animation-delay: 2.5s;
+    width: 3px;
+    height: 3px;
+  }
+
+  @keyframes sparkle {
+    0%,
+    100% {
+      opacity: 0.15;
+      transform: scale(0.6);
+    }
+    50% {
+      opacity: 0.9;
+      transform: scale(1.1);
+    }
+  }
+
+  /* === GLOW EN TÍTULO === */
+  .blog-title {
+    text-shadow:
+      0 0 20px rgba(212, 168, 83, 0.3),
+      0 0 40px rgba(212, 168, 83, 0.15),
+      0 0 60px rgba(212, 168, 83, 0.1);
+    animation: title-glow 4s ease-in-out infinite alternate;
+  }
+
+  @keyframes title-glow {
+    from {
+      text-shadow:
+        0 0 20px rgba(212, 168, 83, 0.3),
+        0 0 40px rgba(212, 168, 83, 0.15);
+    }
+    to {
+      text-shadow:
+        0 0 25px rgba(212, 168, 83, 0.4),
+        0 0 50px rgba(212, 168, 83, 0.2),
+        0 0 70px rgba(212, 168, 83, 0.1);
+    }
+  }
+
+  /* === FOOTER === */
+  .site-footer {
+    background: #0a0c0b;
+    border-top: 1px solid rgba(212, 168, 83, 0.1);
+    padding: 2.5rem 0;
+  }
+
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1;
+  }
+
+  .footer-nr {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -0.03em;
+  }
+
+  .footer-studio {
+    font-size: 0.55rem;
+    font-weight: 400;
+    color: #777;
+    letter-spacing: 0.25em;
+    margin-top: 2px;
+  }
+
+  .footer-text {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .footer-link {
+    font-size: 0.8rem;
+    color: #d4a853;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .footer-link:hover {
+    color: #e8c278;
+  }
+
+  /* === LOAD MORE === */
+  .article-card.hidden {
+    display: none;
+  }
+
+  .load-more-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+
+  .load-more-btn {
+    padding: 1rem 2.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #fff;
+    background: linear-gradient(
+      135deg,
+      rgba(212, 168, 83, 0.2) 0%,
+      rgba(74, 222, 128, 0.15) 100%
+    );
+    border: 1px solid rgba(212, 168, 83, 0.4);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .load-more-btn:hover {
+    background: linear-gradient(
+      135deg,
+      rgba(212, 168, 83, 0.35) 0%,
+      rgba(74, 222, 128, 0.25) 100%
+    );
+    border-color: rgba(212, 168, 83, 0.6);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  .load-more-btn.hidden {
+    display: none;
+  }
+</style>
+
+<script>
+  const loadMoreBtn = document.getElementById("load-more-btn");
+  const articles = document.querySelectorAll(".article-card");
+  let visibleCount = 6;
+  const increment = 6;
+
+  if (loadMoreBtn) {
+    loadMoreBtn.addEventListener("click", () => {
+      const hiddenArticles = document.querySelectorAll(".article-card.hidden");
+
+      hiddenArticles.forEach((article, index) => {
+        if (index < increment) {
+          article.classList.remove("hidden");
+          (article as HTMLElement).style.animation =
+            "fadeIn 0.5s ease forwards";
+        }
+      });
+
+      visibleCount += increment;
+
+      // Hide button if all articles are visible
+      if (visibleCount >= articles.length) {
+        loadMoreBtn.classList.add("hidden");
+      }
+    });
+  }
+</script>
