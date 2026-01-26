@@ -1,0 +1,230 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<BaseLayout
+    title="Política de Privacidad | Par Biomagnético"
+    description="Política de Privacidad y protección de datos personales."
+>
+    <Nav currentPage="politica-privacidad" />
+
+    <main class="legal-page">
+        <div class="container">
+            <h1>Política de Privacidad</h1>
+            <p class="last-updated">
+                Última actualización: {new Date().toLocaleDateString("es-ES")}
+            </p>
+
+            <section>
+                <h2>1. Información Básica sobre Protección de Datos</h2>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <td><strong>Responsable</strong></td>
+                            <td>Cristina Murciano</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Finalidad</strong></td>
+                            <td
+                                >Prestar los servicios solicitados y atender sus
+                                consultas.</td
+                            >
+                        </tr>
+                        <tr>
+                            <td><strong>Legitimación</strong></td>
+                            <td
+                                >Ejecución de un contrato o consentimiento del
+                                interesado.</td
+                            >
+                        </tr>
+                        <tr>
+                            <td><strong>Destinatarios</strong></td>
+                            <td
+                                >No se cederán datos a terceros, salvo
+                                obligación legal.</td
+                            >
+                        </tr>
+                        <tr>
+                            <td><strong>Derechos</strong></td>
+                            <td
+                                >Acceder, rectificar y suprimir los datos, así
+                                como otros derechos, como se explica en la
+                                información adicional.</td
+                            >
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <p>
+                Identidad: Cristina Murciano - [TU_DNI]<br />
+                Dirección Postal: Monzón (Huesca)<br />
+                Correo Electrónico: info@parbiomagnetico.es
+            </p>
+
+            <section>
+                <h2>3. Finalidad del Tratamiento</h2>
+                <p>
+                    En cumplimiento de lo dispuesto en el Reglamento Europeo
+                    2016/679 General de Protección de Datos (RGPD), le
+                    informamos de que trataremos los datos que nos facilita
+                    para:
+                </p>
+                <ul>
+                    <li>
+                        Gestionar cualquier tipo de solicitud, sugerencia o
+                        petición sobre nuestros servicios profesionales que nos
+                        formule.
+                    </li>
+                    <li>
+                        Gestionar citas y prestación de servicios de Par
+                        Biomagnético.
+                    </li>
+                    <li>
+                        Comunicaciones informativas sobre nuestros servicios,
+                        siempre que haya dado su consentimiento.
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>4. Legitimación</h2>
+                <p>
+                    La base legal para el tratamiento de sus datos es el
+                    consentimiento del interesado (al rellenar formularios o
+                    contactar) y/o la ejecución de la relación de servicios
+                    contratada.
+                </p>
+            </section>
+
+            <section>
+                <h2>5. Conservación de Datos</h2>
+                <p>
+                    Los datos personales proporcionados se conservarán mientras
+                    se mantenga la relación profesional o comercial, y no se
+                    solicite su supresión por el interesado. Posteriormente, se
+                    mantendrán durante los plazos legalmente exigibles.
+                </p>
+            </section>
+
+            <section>
+                <h2>6. Destinatarios</h2>
+                <p>
+                    No se comunicarán los datos a terceros, salvo obligación
+                    legal o cuando sea necesario para la correcta prestación del
+                    servicio (ej. gestión administrativa/fiscal).
+                </p>
+            </section>
+
+            <section>
+                <h2>7. Derechos</h2>
+                <p>
+                    Cualquier persona tiene derecho a obtener confirmación sobre
+                    si estamos tratando datos personales que les conciernan o
+                    no. Las personas interesadas tienen derecho a:
+                </p>
+                <ul>
+                    <li>
+                        Solicitar el acceso a los datos personales relativos al
+                        interesado.
+                    </li>
+                    <li>Solicitar su rectificación o supresión.</li>
+                    <li>Solicitar la limitación de su tratamiento.</li>
+                    <li>Oponerse al tratamiento.</li>
+                    <li>Solicitar la portabilidad de los datos.</li>
+                </ul>
+                <p>
+                    Puede ejercer sus derechos enviando un correo electrónico a
+                    info@parbiomagnetico.es adjuntando copia de su DNI.
+                </p>
+            </section>
+        </div>
+    </main>
+    <Footer />
+</BaseLayout>
+
+<style>
+    .legal-page {
+        padding-top: 120px;
+        padding-bottom: 60px;
+        min-height: 100vh;
+        background-color: #0a0f0d;
+        color: #e0e0e0;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 2.5rem;
+        color: #d4a853;
+        margin-bottom: 0.5rem;
+    }
+
+    .last-updated {
+        font-size: 0.9rem;
+        color: #888;
+        margin-bottom: 3rem;
+        font-style: italic;
+    }
+
+    section {
+        margin-bottom: 2.5rem;
+    }
+
+    h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 1.5rem;
+        color: #4ade80;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid rgba(74, 222, 128, 0.2);
+        padding-bottom: 0.5rem;
+    }
+
+    p,
+    li,
+    td {
+        font-family: "Outfit", sans-serif;
+        line-height: 1.7;
+        margin-bottom: 1rem;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    ul {
+        list-style-type: disc;
+        padding-left: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    strong {
+        color: #fff;
+    }
+
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 1.5rem;
+        background: rgba(255, 255, 255, 0.03);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    td {
+        padding: 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    tr:last-child td {
+        border-bottom: none;
+    }
+</style>

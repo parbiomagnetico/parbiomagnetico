@@ -3,16 +3,30 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Nav from "../components/Nav.astro";
 import ReviewCard from "../components/ReviewCard.astro";
 import reviews from "../data/reviews.json";
+import Footer from "../components/Footer.astro";
+import TestimonialsSchema from "../components/TestimonialsSchema.astro";
+import { Picture } from "astro:assets";
+import bokehBg from "../assets/images/composition/bokeh_bg.png";
 
 const googleReviewsUrl =
   "https://search.google.com/local/writereview?placeid=PLACEHOLDER"; // TODO: Ask user for real link
 ---
 
 <BaseLayout title="Opiniones | Par Biomagnético">
+  <TestimonialsSchema reviews={reviews} />
   <main class="opiniones-page">
     <!-- Sección Hero con Bokeh -->
     <section class="page-hero">
-      <img src="/images/composition/bokeh_bg.png" alt="" class="bokeh-bg" />
+      <Picture
+        src={bokehBg}
+        formats={["avif", "webp"]}
+        widths={[720, 1280, 1920]}
+        sizes="100vw"
+        alt="Fondo de energía y bienestar"
+        class="bokeh-bg"
+        loading="eager"
+        fetchpriority="high"
+      />
       <div class="hero-overlay"></div>
 
       <!-- Sparkles/Destellos flotantes -->
@@ -57,25 +71,30 @@ const googleReviewsUrl =
     <!-- Sección de reseñas con gradiente -->
     <section class="content-section">
       <div class="content-container">
-        <div class="reviews-grid">
-          {reviews.map((review) => <ReviewCard {...review} />)}
+        <div class="reviews-grid" id="reviews-grid">
+          {
+            reviews.map((review, index) => (
+              <div class={`review-wrapper ${index >= 9 ? "hidden" : ""}`}>
+                <ReviewCard {...review} />
+              </div>
+            ))
+          }
         </div>
+
+        {
+          reviews.length > 9 && (
+            <div class="load-more-container">
+              <button id="load-more-reviews-btn" class="load-more-btn">
+                Mostrar Más Opiniones
+              </button>
+            </div>
+          )
+        }
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="site-footer">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <span class="footer-nr">NR</span>
-          <span class="footer-studio">STUDIO</span>
-        </div>
-        <p class="footer-text">
-          © 2024 Par Biomagnético - Equilibrio y Bienestar
-        </p>
-        <a href="/" class="footer-link">← Volver al Inicio</a>
-      </div>
-    </footer>
+    <Footer />
   </main>
 </BaseLayout>
 
@@ -358,59 +377,77 @@ const googleReviewsUrl =
     }
   }
 
-  /* === FOOTER === */
-  .site-footer {
-    background: #0a0c0b;
-    border-top: 1px solid rgba(212, 168, 83, 0.1);
-    padding: 2.5rem 0;
+  /* === LOAD MORE === */
+  .review-wrapper.hidden {
+    display: none;
   }
 
-  .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 3rem;
+  .load-more-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    text-align: center;
+    justify-content: center;
+    margin-top: 4rem;
+    width: 100%;
   }
 
-  .footer-brand {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: 1;
-  }
-
-  .footer-nr {
-    font-size: 1.8rem;
-    font-weight: 700;
+  .load-more-btn {
+    padding: 1rem 3rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
     color: #fff;
-    letter-spacing: -0.03em;
+    background: linear-gradient(
+      135deg,
+      rgba(212, 168, 83, 0.2) 0%,
+      rgba(74, 222, 128, 0.15) 100%
+    );
+    border: 1px solid rgba(212, 168, 83, 0.4);
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
   }
 
-  .footer-studio {
-    font-size: 0.55rem;
-    font-weight: 400;
-    color: #777;
-    letter-spacing: 0.25em;
-    margin-top: 2px;
+  .load-more-btn:hover {
+    background: linear-gradient(
+      135deg,
+      rgba(212, 168, 83, 0.35) 0%,
+      rgba(74, 222, 128, 0.25) 100%
+    );
+    border-color: rgba(212, 168, 83, 0.6);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   }
 
-  .footer-text {
-    font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.5);
-  }
-
-  .footer-link {
-    font-size: 0.8rem;
-    color: #d4a853;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-
-  .footer-link:hover {
-    color: #e8c278;
+  .load-more-btn.hidden {
+    display: none;
   }
 </style>
+
+<script>
+  const loadMoreBtn = document.getElementById("load-more-reviews-btn");
+  const reviews = document.querySelectorAll(".review-wrapper");
+  let visibleCount = 9;
+  const increment = 9;
+
+  if (loadMoreBtn) {
+    loadMoreBtn.addEventListener("click", () => {
+      const hiddenReviews = document.querySelectorAll(".review-wrapper.hidden");
+
+      let count = 0;
+      hiddenReviews.forEach((review) => {
+        if (count < increment) {
+          review.classList.remove("hidden");
+          (review as HTMLElement).style.animation = "fadeIn 0.5s ease forwards";
+          count++;
+        }
+      });
+
+      visibleCount += count;
+
+      if (visibleCount >= reviews.length) {
+        loadMoreBtn.classList.add("hidden");
+      }
+    });
+  }
+</script>

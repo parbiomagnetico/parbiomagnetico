@@ -1,0 +1,17 @@
+RewriteEngine On
+
+# 1. Redirigir WWW a Non-WWW
+RewriteCond %{HTTP_HOST} ^www\.parbiomagnetico\.es [NC]
+RewriteRule ^(.*)$ https://parbiomagnetico.es/$1 [L,R=301]
+
+# 2. Redirigir HTTP a HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://parbiomagnetico.es/$1 [L,R=301]
+
+# Seguridad básica (opcional pero recomendada)
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>

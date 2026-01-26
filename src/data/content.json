@@ -1,45 +1,45 @@
 {
     "hero": {
-        "headline": "RECALIBRANDO EL CAMPO BIOENERGÉTICO",
-        "subtext": "Sincronización cuántica de la homeostasis celular mediante interferencia magnética dirigida.",
-        "cta": "INICIAR SIMULACIÓN"
+        "headline": "RECUPERA TU EQUILIBRIO VITAL",
+        "subtext": "Sana tu cuerpo y mente a través del Par Biomagnético. Restauramos tu pH natural para activar tu capacidad innata de autocuración.",
+        "cta": "RESERVAR MI SESIÓN"
     },
     "sections": [
         {
-            "id": "genetic_structure",
-            "title": "LA ESTRUCTURA GENÉTICA",
-            "concept": "ORIGEN",
-            "pill": "Protocolo de 1988. Decodificación de más de 250 algoritmos de resonancia para identificar vectores de polarización ácida y alcalina. Una cartografía completa de la disfunción orgánica.",
-            "detail": "Dr. Isaac Goiz: Pionero en la biofísica de la resonancia magnética.",
+            "id": "remote_therapy",
+            "title": "CONEXIÓN CUÁNTICA SIN FRONTERAS",
+            "concept": "TERAPIA A DISTANCIA",
+            "pill": "La sanación no conoce de distancias geográficas. Mediante el entrelazamiento cuántico, realizamos sesiones online con la misma precisión que en consulta presencial.",
+            "detail": "Accede a los beneficios del Biomagnetismo desde la comodidad de tu hogar, sin importar donde estés.",
             "image": "/images/cards/genetic-structure.png"
         },
         {
-            "id": "simulation_interactive",
-            "title": "SIMULACIÓN DE IMPACTO",
-            "concept": "MECÁNICA",
-            "pill": "Desplazamiento iónico vectorizado. La inducción de campos bipolares acelera la migración de protones (H+) y radicales libres, forzando un retorno inmediato al pH Neutro (7.0).",
-            "detail": "Entropía Inversa: Los agentes de disonancia biológica (patógenos) colapsan ante el equilibrio electroquímico.",
-            "image": "/images/cards/simulation-impact.png"
+            "id": "presencial_monzon",
+            "title": "TU ESPACIO DE SALUD EN MONZÓN",
+            "concept": "CONSULTA PRESENCIAL",
+            "pill": "En el corazón del Cinca Medio, te ofrecemos un espacio de paz y profesionalidad dedicado íntegramente a tu recuperación física y emocional.",
+            "detail": "Tratamientos personalizados en Monzón (Huesca) para pacientes de Barbastro, Binéfar y toda la provincia.",
+            "image": "/images/cards/resonance-nodes.png"
         },
         {
-            "id": "res_nodes",
-            "title": "NODOS DE RESONANCIA",
-            "concept": "TIPOLOGÍA",
+            "id": "health_benefits",
+            "title": "SALUD INTEGRAL Y NATURAL",
+            "concept": "POR QUÉ ELEGIRNOS",
             "items": [
                 {
-                    "label": "NODOS REGULARES",
-                    "desc": "Detección de firmas biológicas patógenas activas."
+                    "label": "EQUILIBRIO DEL TERRENO",
+                    "desc": "Neutralizamos el pH permitiendo que tus defensas eliminen virus, bacterias y hongos de raíz."
                 },
                 {
-                    "label": "NODOS DISFUNCIONALES",
-                    "desc": "Corrección de anomalías en la secreción glandular bio-reguladora."
+                    "label": "TERAPIA RESPETUOSA",
+                    "desc": "Un tratamiento no invasivo, sin fármacos y totalmente compatible con la medicina convencional."
                 },
                 {
-                    "label": "NODOS RESERVORIO",
-                    "desc": "Identificación de latencia patógena en tejidos inactivos."
+                    "label": "BIENESTAR PSICOEMOCIONAL",
+                    "desc": "Liberamos bloqueos energéticos y traumas almacenados para recuperar tu paz interior."
                 }
             ],
-            "image": "/images/cards/resonance-nodes.png"
+            "image": "/images/cards/simulation-impact.png"
         }
     ]
 }

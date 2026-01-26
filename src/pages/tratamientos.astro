@@ -1,16 +1,24 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Nav from "../components/Nav.astro";
+import { Picture } from "astro:assets";
+import bokehBg from "../assets/images/composition/bokeh_bg.png";
+import Footer from "../components/Footer.astro";
 ---
 
 <BaseLayout title="Tratamientos | Par Biomagnético">
     <main class="tratamientos-page">
         <!-- Hero Section -->
         <section class="page-hero">
-            <img
-                src="/images/composition/bokeh_bg.png"
-                alt=""
+            <Picture
+                src={bokehBg}
+                formats={["avif", "webp"]}
+                widths={[720, 1280, 1920]}
+                sizes="100vw"
+                alt="Fondo de energía y bienestar - Par Biomagnético"
                 class="bokeh-bg"
+                loading="eager"
+                fetchpriority="high"
             />
             <div class="hero-overlay"></div>
 
@@ -43,6 +51,7 @@ import Nav from "../components/Nav.astro";
                 <div class="hero-modes">
                     <span class="mode-badge">
                         <svg
+                            aria-hidden="true"
                             class="mode-icon"
                             viewBox="0 0 24 24"
                             fill="none"
@@ -57,6 +66,7 @@ import Nav from "../components/Nav.astro";
                     </span>
                     <span class="mode-badge">
                         <svg
+                            aria-hidden="true"
                             class="mode-icon"
                             viewBox="0 0 24 24"
                             fill="none"
@@ -85,6 +95,7 @@ import Nav from "../components/Nav.astro";
                     <article class="treatment-card">
                         <div class="card-icon">
                             <svg
+                                aria-hidden="true"
                                 viewBox="0 0 24 24"
                                 fill="none"
                                 stroke="currentColor"
@@ -111,6 +122,7 @@ import Nav from "../components/Nav.astro";
                     <article class="treatment-card">
                         <div class="card-icon">
                             <svg
+                                aria-hidden="true"
                                 viewBox="0 0 24 24"
                                 fill="none"
                                 stroke="currentColor"
@@ -138,6 +150,7 @@ import Nav from "../components/Nav.astro";
                     <article class="treatment-card">
                         <div class="card-icon">
                             <svg
+                                aria-hidden="true"
                                 viewBox="0 0 24 24"
                                 fill="none"
                                 stroke="currentColor"
@@ -163,6 +176,7 @@ import Nav from "../components/Nav.astro";
                     <article class="treatment-card treatment-card--featured">
                         <div class="card-icon">
                             <svg
+                                aria-hidden="true"
                                 viewBox="0 0 24 24"
                                 fill="none"
                                 stroke="currentColor"
@@ -219,6 +233,7 @@ import Nav from "../components/Nav.astro";
                 <div class="warning-card">
                     <div class="warning-header">
                         <svg
+                            aria-hidden="true"
                             class="warning-icon"
                             viewBox="0 0 24 24"
                             fill="none"
@@ -262,13 +277,16 @@ import Nav from "../components/Nav.astro";
         <!-- FAQ Section -->
         <section class="faq-section">
             <div class="content-container">
-                <h2 class="section-heading">Preguntas Frecuentes</h2>
+                <a href="/faq" class="section-heading-link">
+                    <h2 class="section-heading">Preguntas Frecuentes</h2>
+                </a>
 
                 <div class="faq-list">
                     <details class="faq-item">
                         <summary class="faq-question">
                             <span>¿En qué consiste un tratamiento?</span>
                             <svg
+                                aria-hidden="true"
                                 class="faq-chevron"
                                 viewBox="0 0 24 24"
                                 fill="none"
@@ -298,6 +316,7 @@ import Nav from "../components/Nav.astro";
                         <summary class="faq-question">
                             <span>¿Cómo son las sesiones?</span>
                             <svg
+                                aria-hidden="true"
                                 class="faq-chevron"
                                 viewBox="0 0 24 24"
                                 fill="none"
@@ -326,6 +345,7 @@ import Nav from "../components/Nav.astro";
                         <summary class="faq-question">
                             <span>¿Neutraliza patógenos?</span>
                             <svg
+                                aria-hidden="true"
                                 class="faq-chevron"
                                 viewBox="0 0 24 24"
                                 fill="none"
@@ -354,22 +374,24 @@ import Nav from "../components/Nav.astro";
         </section>
 
         <!-- Footer -->
-        <footer class="site-footer">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <span class="footer-nr">NR</span>
-                    <span class="footer-studio">STUDIO</span>
-                </div>
-                <p class="footer-text">
-                    © 2025 Par Biomagnético - Equilibrio y Bienestar
-                </p>
-                <a href="/" class="footer-link">← Volver al Inicio</a>
-            </div>
-        </footer>
+        <Footer />
     </main>
 </BaseLayout>
 
 <style>
+    .section-heading-link {
+        text-decoration: none;
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .section-heading-link:hover .section-heading {
+        color: #e8c278;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
     .tratamientos-page {
         min-height: 100vh;
     }

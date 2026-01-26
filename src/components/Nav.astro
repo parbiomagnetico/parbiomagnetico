@@ -1,5 +1,8 @@
 ---
 // Nav.astro - Componente de navegación con nuevo logo
+import { Picture } from "astro:assets";
+import logoImg from "../assets/images/logo.png";
+
 interface Props {
   currentPage?: string;
 }
@@ -9,7 +12,16 @@ const { currentPage = "" } = Astro.props;
 
 <nav class="site-nav">
   <a href="/" class="logo">
-    <img src="/images/logo.png" alt="Par Biomagnético" class="logo-img" />
+    <Picture
+      src={logoImg}
+      formats={["avif", "webp"]}
+      widths={[90, 180]}
+      sizes="90px"
+      alt="Logotipo Par Biomagnético - NR Studio"
+      class="logo-img"
+      loading="eager"
+      fetchpriority="high"
+    />
   </a>
 
   <!-- Hamburger button for mobile -->

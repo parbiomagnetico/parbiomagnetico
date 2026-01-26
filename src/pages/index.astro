@@ -1,11 +1,32 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import EnergyComposition from "../components/EnergyComposition.astro";
+import GlobalService from "../components/GlobalService.astro";
 import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+import Certifications from "../components/Certifications.astro";
 import content from "../data/content.json";
+import { Picture } from "astro:assets";
+import type { ImageMetadata } from "astro";
+
+import geneticStructureImg from "../assets/images/cards/genetic-structure.png";
+import simulationImpactImg from "../assets/images/cards/simulation-impact.png";
+import resonanceNodesImg from "../assets/images/cards/resonance-nodes.png";
+
+// Mapeo de imágenes para resolver las rutas del JSON
+const imageMap: Record<string, ImageMetadata> = {
+  "/images/cards/genetic-structure.png": geneticStructureImg,
+  "/images/cards/simulation-impact.png": simulationImpactImg,
+  "/images/cards/resonance-nodes.png": resonanceNodesImg,
+};
+
+const PAGE_TITLE =
+  "Par Biomagnético a Distancia y Presencial en Monzón | Salud Integral";
+const PAGE_DESCRIPTION =
+  "Especialista en Par Biomagnético Médico. Tratamientos a distancia para España y Latinoamérica, y consultas presenciales en Monzón (Huesca). Recupera tu equilibrio y bienestar integral.";
 ---
 
-<BaseLayout title="Par Biomagnetico | Equilibrio Biomagnético">
+<BaseLayout title={PAGE_TITLE} description={PAGE_DESCRIPTION}>
   <main>
     <!-- Hero Section - Composición Visual Completa -->
     <EnergyComposition />
@@ -43,25 +64,53 @@ import content from "../data/content.json";
 
             <div class="section-visual">
               <div class="visual-glow" />
-              <img src={section.image} alt={section.title} class="visual-img" />
+              <Picture
+                src={imageMap[section.image]}
+                formats={["avif", "webp"]}
+                widths={[400, 600, 800]}
+                sizes="(max-width: 900px) 100vw, 50vw"
+                alt={`${section.title} - Terapia de Par Biomagnético`}
+                class="visual-img"
+                loading="lazy"
+              />
             </div>
           </section>
         ))
       }
     </div>
+    <!-- Servicio Global -->
+    <GlobalService />
+
+    <!-- Autoridad y Divulgación -->
+    <section class="authority-section">
+      <div class="authority-content">
+        <span class="authority-badge">Liderazgo y Conocimiento</span>
+        <h2 class="authority-title">El Mayor Portal de Par Biomagnético</h2>
+        <p class="authority-text">
+          Con el catálogo más extenso de artículos especializados, estudios de
+          caso y guías de salud bioenergética, nos consolidamos como el
+          referente número uno en divulgación de Biomagnetismo Médico en habla
+          hispana.
+        </p>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <span class="stat-value">+50</span>
+            <span class="stat-label">Artículos Expertos</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">100%</span>
+            <span class="stat-label">Información Verificada</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">Global</span>
+            <span class="stat-label">Referente en Divulgación</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="site-footer">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <span class="footer-nr">NR</span>
-          <span class="footer-studio">STUDIO</span>
-        </div>
-        <p class="footer-text">
-          © 2025 Par Biomagnético - Equilibrio y Bienestar
-        </p>
-      </div>
-    </footer>
+    <Footer />
   </main>
 </BaseLayout>
 
@@ -286,49 +335,78 @@ import content from "../data/content.json";
     padding-left: 1.6rem;
   }
 
-  /* Footer */
-  .site-footer {
-    background: #0a0c0b;
-    border-top: 1px solid rgba(212, 168, 83, 0.1);
-    padding: 2.5rem 0;
-  }
-
-  .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 3rem;
+  /* Sección de Autoridad */
+  .authority-section {
+    padding: 6rem 1.5rem;
+    background: #0f1f1a;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+    justify-content: center;
     text-align: center;
+    position: relative;
+    border-top: 1px solid rgba(212, 168, 83, 0.1);
   }
 
-  .footer-brand {
+  .authority-content {
+    max-width: 800px;
+    z-index: 2;
+  }
+
+  .authority-badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #4ade80;
+    margin-bottom: 1.5rem;
+  }
+
+  .authority-title {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    color: #d4a853;
+    margin-bottom: 2rem;
+    line-height: 1.1;
+  }
+
+  .authority-text {
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.7;
+    margin-bottom: 4rem;
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+
+  .stat-item {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    line-height: 1;
+    gap: 0.5rem;
   }
 
-  .footer-nr {
-    font-size: 1.8rem;
+  .stat-value {
+    font-size: 2.5rem;
     font-weight: 700;
-    color: #fff;
-    letter-spacing: -0.03em;
+    color: #ffffff;
+    font-family: "Outfit", sans-serif;
   }
 
-  .footer-studio {
-    font-size: 0.55rem;
-    font-weight: 400;
-    color: #777;
-    letter-spacing: 0.25em;
-    margin-top: 2px;
-  }
-
-  .footer-text {
-    font-size: 0.8rem;
+  .stat-label {
+    font-size: 0.85rem;
     color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  @media (max-width: 768px) {
+    .stats-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
   }
 
   /* Responsivo */

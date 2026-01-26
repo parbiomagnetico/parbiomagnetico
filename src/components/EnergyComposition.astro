@@ -1,20 +1,40 @@
 ---
+import { Picture } from "astro:assets";
+import bokehBg from "../assets/images/composition/bokeh_bg.png";
+import humanImg from "../assets/images/composition/image_13.png";
+import ringBase from "../assets/images/composition/ring_base.png";
+import ringChaos from "../assets/images/composition/ring_chaos.jpg";
+import handsImg from "../assets/images/composition/hands_transparent.png";
+
 // Energy Composition Component - Diseño Final Corregido
 // Todas las imágenes aplican blend mode directamente contra el fondo bokeh
 ---
 
 <section class="hero-composition">
   <!-- Fondo bokeh orgánico -->
-  <img src="/images/composition/bokeh_bg.png" alt="" class="bokeh-bg" />
+  <Picture
+    src={bokehBg}
+    formats={["avif", "webp"]}
+    widths={[720, 1280, 1920]}
+    sizes="100vw"
+    alt="Fondo de energía biomagnética"
+    class="bokeh-bg"
+    loading="eager"
+    fetchpriority="high"
+  />
 
   <!-- Overlay para legibilidad del texto -->
   <div class="text-overlay"></div>
 
   <!-- Humano de partículas - blend directamente contra bokeh -->
-  <img
-    src="/images/composition/image_13.png"
-    alt="Cuerpo humano de partículas"
+  <Picture
+    src={humanImg}
+    formats={["avif", "webp"]}
+    widths={[480, 800, 1200]}
+    sizes="(max-width: 768px) 100vw, 50vw"
+    alt="Silueta humana recibiendo terapia de par biomagnético"
     class="layer-human"
+    loading="eager"
   />
 
   <!-- Destellos sobre el humano -->
@@ -31,35 +51,48 @@
 
   <!-- Anillo de energía - Técnica de interferencia Moíré -->
   <!-- Capa Base: Rotación horaria lenta -->
-  <img
-    src="/images/composition/ring_base.png"
-    alt="Anillo de energía base"
+  <Picture
+    src={ringBase}
+    formats={["avif", "webp"]}
+    widths={[200, 400]}
+    sizes="(max-width: 768px) 80vw, 25vw"
+    alt="Anillo de resonancia magnética base"
     class="ring-layer ring-base"
+    loading="eager"
   />
   <!-- Capa de Caos: Rotación antihoraria + respiración -->
-  <img
-    src="/images/composition/ring_chaos.jpg"
-    alt="Anillo de energía caos"
+  <Picture
+    src={ringChaos}
+    formats={["avif", "webp"]}
+    widths={[200, 400]}
+    sizes="(max-width: 768px) 80vw, 25vw"
+    alt="Campo de energía en movimiento"
     class="ring-layer ring-chaos"
+    loading="eager"
   />
 
   <!-- Manos con orbes (imagen transparente, por encima de todo) -->
-  <img
-    src="/images/composition/hands_transparent.png"
-    alt="Manos con orbes"
+  <Picture
+    src={handsImg}
+    formats={["avif", "webp"]}
+    widths={[400, 800]}
+    sizes="(max-width: 768px) 100vw, 45vw"
+    alt="Manos de terapeuta de par biomagnético realizando rastreo"
     class="layer-hands"
+    loading="eager"
   />
 
   <!-- Contenido de texto -->
   <div class="text-content">
-    <span class="hero-badge">Par Biomagnético</span>
+    <span class="hero-badge">Bioquerencia y Equilibrio</span>
     <h1 class="main-title">
-      Recalibrando el campo<br />
-      bioenergético humano
+      Sana tu cuerpo,<br />
+      recupera tu centro
     </h1>
     <p class="subtitle">
-      Conexión de polos para neutralizar<br />
-      puntos de acidez y alcalinidad.
+      Especialista en Par Biomagnético Médico. Acompañamos tu proceso de
+      sanación integral, ya sea desde nuestra consulta en Monzón o mediante
+      sesiones cuánticas a distancia.
     </p>
   </div>
 </section>

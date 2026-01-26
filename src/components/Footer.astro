@@ -1,0 +1,110 @@
+---
+
+---
+
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-brand">
+            <span class="footer-nr">NR</span>
+            <span class="footer-studio">STUDIO</span>
+        </div>
+        <p class="footer-text">
+            © {new Date().getFullYear()} Par Biomagnético - Equilibrio y Bienestar.
+            <br />
+            <a href="/aviso-legal" class="footer-link-legal">Aviso Legal</a> | <a
+                href="/politica-privacidad"
+                class="footer-link-legal">Política de Privacidad</a
+            >
+        </p>
+
+        <div class="footer-nav">
+            <a href="/" class="footer-link">Inicio</a>
+            <span class="separator">•</span>
+            <a href="/faq" class="footer-link">Preguntas Frecuentes</a>
+            <span class="separator">•</span>
+            <a href="/tratamientos" class="footer-link">Tratamientos</a>
+        </div>
+    </div>
+</footer>
+
+<style>
+    .site-footer {
+        background: #0a0c0b;
+        border-top: 1px solid rgba(212, 168, 83, 0.1);
+        padding: 3rem 0;
+    }
+
+    .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .footer-brand {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 1;
+    }
+
+    .footer-nr {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #fff;
+        letter-spacing: -0.03em;
+    }
+
+    .footer-studio {
+        font-size: 0.55rem;
+        font-weight: 400;
+        color: #777;
+        letter-spacing: 0.25em;
+        margin-top: 2px;
+    }
+
+    .footer-text {
+        font-size: 0.8rem;
+        color: rgba(255, 255, 255, 0.5);
+        line-height: 1.6;
+    }
+
+    .footer-nav {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        margin-top: 0.5rem;
+    }
+
+    .footer-link {
+        font-size: 0.8rem;
+        color: #d4a853;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .footer-link:hover {
+        color: #e8c278;
+        text-decoration: underline;
+    }
+
+    .footer-link-legal {
+        color: rgba(255, 255, 255, 0.3);
+        text-decoration: none;
+        font-size: 0.75rem;
+        transition: color 0.3s ease;
+    }
+
+    .footer-link-legal:hover {
+        color: #d4a853;
+    }
+
+    .separator {
+        color: rgba(255, 255, 255, 0.2);
+        font-size: 0.7rem;
+    }
+</style>

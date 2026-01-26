@@ -1,0 +1,245 @@
+---
+
+---
+
+<section class="global-service-section">
+    <div class="content-container">
+        <div class="header-block">
+            <span class="section-badge">Salud sin Límites</span>
+            <h2 class="section-title">
+                Acompañamiento Global en<br />Biomagnetismo
+            </h2>
+            <p class="section-subtitle">
+                Brindamos salud y bienestar a pacientes en España, Latinoamérica
+                y cualquier rincón del mundo donde se busque el equilibrio.
+            </p>
+        </div>
+
+        <div class="explanation-grid">
+            <div class="service-card">
+                <div class="card-icon">
+                    <svg
+                        aria-hidden="true"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        class="icon-svg"
+                    >
+                        <path
+                            d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+                <h3 class="card-title">Precisión a Distancia</h3>
+                <p class="card-text">
+                    La energía no entiende de fronteras. Realizamos el rastreo
+                    con una efectividad total, conectando con tu bienestar sin
+                    importar donde te encuentres en este momento.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="card-icon">
+                    <svg
+                        aria-hidden="true"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        class="icon-svg"
+                    >
+                        <circle
+                            cx="12"
+                            cy="12"
+                            r="10"
+                            stroke="currentColor"
+                            stroke-width="1.5"></circle>
+                        <path
+                            d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"
+                            stroke="currentColor"
+                            stroke-width="1.5"></path>
+                        <path
+                            d="M2 12h20"
+                            stroke="currentColor"
+                            stroke-width="1.5"></path>
+                    </svg>
+                </div>
+                <h3 class="card-title">Escucha Natural</h3>
+                <p class="card-text">
+                    Cada sesión es un diálogo con tu organismo. Identificamos
+                    los puntos que necesitan equilibrio para que tu cuerpo
+                    recupere su capacidad natural de sanar.
+                </p>
+            </div>
+
+            <!-- Tarjeta 3: El Resultado -->
+            <div class="service-card">
+                <div class="card-icon">
+                    <svg
+                        aria-hidden="true"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        class="icon-svg"
+                    >
+                        <path
+                            d="M22 11.08V12a10 10 0 1 1-5.93-9.14"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                        <path
+                            d="M22 4L12 14.01l-3-3"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+                <h3 class="card-title">Resultados Tangibles</h3>
+                <p class="card-text">
+                    La neutralización del terreno biológico surte efecto en tu
+                    salud física. Notarás la mejoría en tu energía, digestión y
+                    bienestar general de manera tan real como si estuviéramos
+                    juntos.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="map-overlay"></div>
+</section>
+
+<style>
+    .global-service-section {
+        position: relative;
+        padding: 6rem 1rem;
+        background: linear-gradient(to bottom, #0f1f1a 0%, #1a1510 100%);
+        overflow: hidden;
+    }
+
+    .content-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .header-block {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .section-badge {
+        display: inline-block;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #4ade80;
+        margin-bottom: 1rem;
+        padding: 0.4rem 1rem;
+        background: rgba(74, 222, 128, 0.1);
+        border-radius: 2rem;
+        border: 1px solid rgba(74, 222, 128, 0.2);
+    }
+
+    .section-title {
+        font-family: "Playfair Display", Georgia, serif;
+        font-size: clamp(2rem, 5vw, 3rem);
+        color: #d4a853;
+        margin-bottom: 1.5rem;
+        line-height: 1.2;
+    }
+
+    .section-subtitle {
+        font-size: 1.1rem;
+        color: rgba(255, 255, 255, 0.8);
+        line-height: 1.6;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .explanation-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .service-card {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        padding: 2.5rem 2rem;
+        border-radius: 1rem;
+        backdrop-filter: blur(10px);
+        transition:
+            transform 0.3s ease,
+            border-color 0.3s ease;
+    }
+
+    .service-card:hover {
+        transform: translateY(-5px);
+        border-color: rgba(212, 168, 83, 0.3);
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+    .card-icon {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 1.5rem;
+        color: #d4a853;
+    }
+
+    .icon-svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+        color: #fff;
+        margin-bottom: 1rem;
+        font-family: "Outfit", sans-serif;
+    }
+
+    .card-text {
+        font-size: 0.95rem;
+        color: rgba(255, 255, 255, 0.6);
+        line-height: 1.7;
+    }
+
+    .map-overlay {
+        position: absolute;
+        inset: 0;
+        background-image: radial-gradient(
+            circle at 50% 50%,
+            rgba(212, 168, 83, 0.05) 1px,
+            transparent 1px
+        );
+        background-size: 40px 40px;
+        z-index: 1;
+        mask-image: linear-gradient(
+            to bottom,
+            transparent,
+            black 40%,
+            black 60%,
+            transparent
+        );
+        opacity: 0.5;
+        pointer-events: none;
+    }
+
+    @media (max-width: 900px) {
+        .explanation-grid {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        .global-service-section {
+            padding: 4rem 1rem;
+        }
+    }
+</style>

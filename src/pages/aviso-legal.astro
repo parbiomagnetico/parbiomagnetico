@@ -1,0 +1,206 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<BaseLayout
+    title="Aviso Legal | Par Biomagnético"
+    description="Aviso Legal y Condiciones de Uso del sitio web de Par Biomagnético."
+>
+    <Nav currentPage="aviso-legal" />
+
+    <main class="legal-page">
+        <div class="container">
+            <h1>Aviso Legal</h1>
+            <p class="last-updated">
+                Última actualización: {new Date().toLocaleDateString("es-ES")}
+            </p>
+
+            <section>
+                <h2>1. Datos Identificativos</h2>
+                <p>
+                    En cumplimiento con el deber de información recogido en el
+                    artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios
+                    de la Sociedad de la Información y del Comercio Electrónico
+                    (LSSI), se reflejan los siguientes datos:
+                </p>
+                <ul>
+                    <li><strong>Titular:</strong> Cristina Murciano</li>
+                    <li><strong>DNI/NIF:</strong> [TU_DNI]</li>
+                    <li><strong>Domicilio:</strong> Monzón (Huesca)</li>
+                    <li>
+                        <strong>Email de contacto:</strong> info@parbiomagnetico.es
+                    </li>
+                    <li>
+                        <strong>Actividad:</strong> Terapias naturales y bienestar
+                        (Par Biomagnético).
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>2. Usuarios</h2>
+                <p>
+                    El acceso y/o uso de este portal atribuye la condición de
+                    USUARIO, que acepta, desde dicho acceso y/o uso, las
+                    Condiciones Generales de Uso aquí reflejadas. Las citadas
+                    Condiciones serán de aplicación independientemente de las
+                    Condiciones Generales de Contratación que en su caso
+                    resulten de obligado cumplimiento.
+                </p>
+            </section>
+
+            <section>
+                <h2>3. Uso del Portal</h2>
+                <p>
+                    Este sitio web proporciona el acceso a multitud de
+                    informaciones, servicios, o datos (en adelante, "los
+                    contenidos") en Internet pertenecientes al TITULAR o a sus
+                    licenciantes a los que el USUARIO pueda tener acceso. El
+                    USUARIO asume la responsabilidad del uso del portal. Dicha
+                    responsabilidad se extiende al registro que fuese necesario
+                    para acceder a determinados servicios o contenidos.
+                </p>
+                <p>
+                    El USUARIO se compromete a hacer un uso adecuado de los
+                    contenidos y servicios que se ofrecen a través de su portal
+                    y con carácter enunciativo pero no limitativo, a no
+                    emplearlos para:
+                </p>
+                <ul>
+                    <li>
+                        Incurrir en actividades ilícitas, ilegales o contrarias
+                        a la buena fe y al orden público.
+                    </li>
+                    <li>
+                        Difundir contenidos o propaganda de carácter racista,
+                        xenófobo, pornográfico-ilegal, de apología del
+                        terrorismo o atentatorio contra los derechos humanos.
+                    </li>
+                    <li>
+                        Provocar daños en los sistemas físicos y lógicos del
+                        TITULAR, de sus proveedores o de terceras personas.
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>4. Propiedad Intelectual e Industrial</h2>
+                <p>
+                    El TITULAR por sí o como cesionaria, es titular de todos los
+                    derechos de propiedad intelectual e industrial de su página
+                    web, así como de los elementos contenidos en la misma (a
+                    título enunciativo, imágenes, sonido, audio, vídeo, software
+                    o textos; marcas o logotipos, combinaciones de colores,
+                    estructura y diseño, selección de materiales usados, etc.).
+                    Todos los derechos reservados.
+                </p>
+            </section>
+
+            <section>
+                <h2>5. Exclusión de Garantías y Responsabilidad</h2>
+                <p>
+                    El TITULAR no se hace responsable, en ningún caso, de los
+                    daños y perjuicios de cualquier naturaleza que pudieran
+                    ocasionar, a título enunciativo: errores u omisiones en los
+                    contenidos, falta de disponibilidad del portal o la
+                    transmisión de virus o programas maliciosos o lesivos en los
+                    contenidos, a pesar de haber adoptado todas las medidas
+                    tecnológicas necesarias para evitarlo.
+                </p>
+                <p>
+                    <strong>Importante:</strong> Los contenidos de esta web tienen
+                    carácter meramente informativo y divulgativo. En ningún caso pueden
+                    considerarse como sustitutivos de un diagnóstico o tratamiento
+                    médico profesional. Consulte siempre a su médico ante cualquier
+                    problema de salud.
+                </p>
+            </section>
+
+            <section>
+                <h2>6. Modificaciones</h2>
+                <p>
+                    El TITULAR se reserva el derecho de efectuar sin previo
+                    aviso las modificaciones que considere oportunas en su
+                    portal, pudiendo cambiar, suprimir o añadir tanto los
+                    contenidos y servicios que se presten a través de la misma
+                    como la forma en la que éstos aparezcan presentados o
+                    localizados en su portal.
+                </p>
+            </section>
+
+            <section>
+                <h2>7. Legislación Aplicable y Jurisdicción</h2>
+                <p>
+                    La relación entre el TITULAR y el USUARIO se regirá por la
+                    normativa española vigente y cualquier controversia se
+                    someterá a los Juzgados y tribunales de la ciudad de
+                    [TU_CIUDAD].
+                </p>
+            </section>
+        </div>
+    </main>
+    <Footer />
+</BaseLayout>
+
+<style>
+    .legal-page {
+        padding-top: 120px;
+        padding-bottom: 60px;
+        min-height: 100vh;
+        background-color: #0a0f0d;
+        color: #e0e0e0;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 2.5rem;
+        color: #d4a853;
+        margin-bottom: 0.5rem;
+    }
+
+    .last-updated {
+        font-size: 0.9rem;
+        color: #888;
+        margin-bottom: 3rem;
+        font-style: italic;
+    }
+
+    section {
+        margin-bottom: 2.5rem;
+    }
+
+    h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 1.5rem;
+        color: #4ade80;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid rgba(74, 222, 128, 0.2);
+        padding-bottom: 0.5rem;
+    }
+
+    p,
+    li {
+        font-family: "Outfit", sans-serif;
+        line-height: 1.7;
+        margin-bottom: 1rem;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    ul {
+        list-style-type: disc;
+        padding-left: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    strong {
+        color: #fff;
+    }
+</style>

@@ -1,0 +1,58 @@
+---
+interface Review {
+    author: string;
+    date: string;
+    content: string;
+    rating: number;
+}
+
+interface Props {
+    reviews: Review[];
+}
+
+const { reviews } = Astro.props;
+
+// Calculate aggregate rating
+const totalReviews = reviews.length;
+const averageRating =
+    reviews.reduce((acc, review) => acc + review.rating, 0) / totalReviews;
+const ratingValue = averageRating.toFixed(1);
+
+const schema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: "Par Biomagnético - Cristina Murciano",
+    image: "https://parbiomagnetico.es/images/composition/bokeh_bg.png",
+    "@id": "https://parbiomagnetico.es",
+    url: "https://parbiomagnetico.es",
+    telephone: "+34600000000", // Placeholder, should be updated with real info if available
+    address: {
+        "@type": "PostalAddress",
+        addressCountry: "ES",
+    },
+    aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: ratingValue,
+        reviewCount: totalReviews,
+        bestRating: "5",
+        worstRating: "1",
+    },
+    review: reviews.map((review) => ({
+        "@type": "Review",
+        author: {
+            "@type": "Person",
+            name: review.author,
+        },
+        datePublished: new Date(review.date).toISOString().split("T")[0],
+        reviewBody: review.content,
+        reviewRating: {
+            "@type": "Rating",
+            ratingValue: review.rating,
+            bestRating: "5",
+            worstRating: "1",
+        },
+    })),
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

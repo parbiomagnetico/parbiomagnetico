@@ -1,10 +1,15 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import Nav from '../../components/Nav.astro';
-import posts from '../../data/posts.json';
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Nav from "../../components/Nav.astro";
+import posts from "../../data/posts.json";
+import { Picture } from "astro:assets";
+import type { ImageMetadata } from "astro";
+import bokehBg from "../../assets/images/composition/bokeh_bg.png";
+import Footer from "../../components/Footer.astro";
 
 export async function getStaticPaths() {
-  return posts.map(post => ({
+  const activePosts = posts.filter((post) => post.active);
+  return activePosts.map((post) => ({
     params: { slug: post.slug },
     props: { post },
   }));
@@ -12,29 +17,118 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 
-// Obtener artículos relacionados
+// Cargar todas las imágenes de posts
+const postImages = import.meta.glob<{ default: ImageMetadata }>(
+  "../../assets/images/posts/*.{jpeg,jpg,png,webp}",
+);
+
+// Helper para resolver la imagen
+function resolveImage(url: string) {
+  const filename = url.split("/").pop();
+  const path = `../../assets/images/posts/${filename}`;
+  const imageLoader = postImages[path];
+
+  if (!imageLoader) {
+    return null;
+  }
+
+  return imageLoader();
+}
+
+// Obtener artículos relacionados activos
 const relatedPosts = posts
-  .filter(p => p.slug !== post.slug)
+  .filter((p) => p.active && p.slug !== post.slug)
   .slice(0, 3);
 
 // Procesar contenido HTML
 function cleanContent(content: string): string {
   return content
-    .replace(/<!-- wp:.*?-->/g, '')
-    .replace(/<!-- \/wp:.*?-->/g, '')
-    .replace(/\r\n/g, '\n');
+    .replace(/<!-- wp:.*?-->/g, "")
+    .replace(/<!-- \/wp:.*?-->/g, "")
+    .replace(/\r\n/g, "\n");
 }
 
 const cleanedContent = cleanContent(post.content);
+const heroImagePromise = resolveImage(post.thumbnail);
+const heroImageRes = heroImagePromise ? await heroImagePromise : null;
+const heroImageUrl = heroImageRes?.default?.src;
+
+// Formatear fecha para Schema.org (ISO 8601 simple si es posible, o dejar string)
+// Conversión básica de fecha española a ISO
+const months: Record<string, string> = {
+  enero: "01",
+  febrero: "02",
+  marzo: "03",
+  abril: "04",
+  mayo: "05",
+  junio: "06",
+  julio: "07",
+  agosto: "08",
+  septiembre: "09",
+  octubre: "10",
+  noviembre: "11",
+  diciembre: "12",
+};
+const dateParts = post.date.match(/(\d+) de ([a-z]+) de (\d+)/i);
+let isoDate = post.date;
+if (dateParts) {
+  const day = dateParts[1].padStart(2, "0");
+  const month = months[dateParts[2].toLowerCase()];
+  const year = dateParts[3];
+  if (month) isoDate = `${year}-${month}-${day}`;
+}
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline: post.title,
+  description: post.excerpt,
+  image: heroImageUrl
+    ? [
+        new URL(
+          heroImageUrl,
+          Astro.site || "https://biomagnetico.es",
+        ).toString(),
+      ]
+    : [],
+  datePublished: isoDate,
+  author: {
+    "@type": "Person",
+    name: post.author,
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "Par Biomagnético",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://biomagnetico.es/favicon.png",
+    },
+  },
+};
 ---
 
-<BaseLayout title={`${post.title} | Par Biomagnetico`}>
+<BaseLayout
+  title={`${post.title} | Par Biomagnético`}
+  description={post.excerpt}
+  image={heroImageUrl}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+
   <main class="article-page">
     <!-- Hero con Bokeh (título del artículo) -->
     <section class="article-hero">
-      <img src="/images/composition/bokeh_bg.png" alt="" class="bokeh-bg" />
+      <Picture
+        src={bokehBg}
+        formats={["avif", "webp"]}
+        widths={[720, 1280, 1920]}
+        sizes="100vw"
+        alt="Fondo de energía y bienestar"
+        class="bokeh-bg"
+        loading="eager"
+        fetchpriority="high"
+      />
       <div class="hero-overlay"></div>
-      
+
       <!-- Sparkles/Destellos flotantes -->
       <div class="sparkles">
         <span class="sparkle"></span>
@@ -44,9 +138,9 @@ const cleanedContent = cleanContent(post.content);
         <span class="sparkle"></span>
         <span class="sparkle"></span>
       </div>
-      
+
       <Nav currentPage="blog" />
-      
+
       <div class="hero-content">
         <h1 class="article-title">{post.title}</h1>
         <div class="article-meta">
@@ -64,13 +158,26 @@ const cleanedContent = cleanContent(post.content);
           <!-- Contenido principal -->
           <article class="article-content">
             <div class="prose" set:html={cleanedContent} />
-            
+
             <blockquote class="featured-quote">
-              "La salud no es la ausencia de enfermedad, sino la resonancia armónica de nuestros campos magnéticos celulares."
+              "La salud no es la ausencia de enfermedad, sino la resonancia
+              armónica de nuestros campos magnéticos celulares."
             </blockquote>
 
             <figure class="article-image">
-              <img src={post.thumbnail} alt={post.title} />
+              {
+                heroImagePromise && (
+                  <Picture
+                    src={heroImagePromise}
+                    formats={["avif", "webp"]}
+                    widths={[600, 1000]}
+                    sizes="(max-width: 900px) 100vw, 800px"
+                    alt={`Ilustración: ${post.title}`}
+                    class="article-img-element"
+                    loading="eager"
+                  />
+                )
+              }
             </figure>
           </article>
 
@@ -79,11 +186,26 @@ const cleanedContent = cleanContent(post.content);
             <div class="sidebar-section">
               <h3 class="sidebar-title">Artículos<br />Relacionados</h3>
               <div class="related-posts">
-                {relatedPosts.map(related => (
-                  <a href={`/blog/${related.slug}`} class="related-post">
-                    <img src={related.thumbnail} alt={related.title} />
-                  </a>
-                ))}
+                {
+                  relatedPosts.map((related) => {
+                    const relatedImg = resolveImage(related.thumbnail);
+                    return (
+                      <a href={`/blog/${related.slug}`} class="related-post">
+                        {relatedImg && (
+                          <Picture
+                            src={relatedImg}
+                            formats={["avif", "webp"]}
+                            widths={[240, 480]}
+                            sizes="240px"
+                            alt={`Relacionado: ${related.title}`}
+                            class="related-img-element"
+                            loading="lazy"
+                          />
+                        )}
+                      </a>
+                    );
+                  })
+                }
               </div>
             </div>
           </aside>
@@ -96,16 +218,7 @@ const cleanedContent = cleanContent(post.content);
     </section>
 
     <!-- Footer -->
-    <footer class="site-footer">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <span class="footer-nr">NR</span>
-          <span class="footer-studio">STUDIO</span>
-        </div>
-        <p class="footer-text">© 2024 Par Biomagnético - Equilibrio y Bienestar</p>
-        <a href="/" class="footer-link">← Volver al Inicio</a>
-      </div>
-    </footer>
+    <Footer />
   </main>
 </BaseLayout>
 
@@ -154,7 +267,7 @@ const cleanedContent = cleanContent(post.content);
   }
 
   .article-title {
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family: "Playfair Display", Georgia, serif;
     font-size: clamp(1.6rem, 3.5vw, 2.4rem);
     font-weight: 400;
     color: #d4a853;
@@ -227,7 +340,7 @@ const cleanedContent = cleanContent(post.content);
   }
 
   .article-content::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 2rem;
@@ -254,7 +367,7 @@ const cleanedContent = cleanContent(post.content);
   }
 
   .prose :global(h2) {
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family: "Playfair Display", Georgia, serif;
     font-size: 1.35rem;
     color: #d4a853;
     margin-top: 2rem;
@@ -293,7 +406,7 @@ const cleanedContent = cleanContent(post.content);
     padding: 1.25rem 1.75rem;
     background: rgba(212, 168, 83, 0.08);
     border-left: 3px solid #d4a853;
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family: "Playfair Display", Georgia, serif;
     font-size: 1rem;
     font-style: italic;
     color: rgba(255, 255, 255, 0.85);
@@ -335,7 +448,7 @@ const cleanedContent = cleanContent(post.content);
   }
 
   .sidebar-title {
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family: "Playfair Display", Georgia, serif;
     font-size: 1rem;
     font-weight: 400;
     color: #fff;
@@ -353,7 +466,9 @@ const cleanedContent = cleanContent(post.content);
     display: block;
     border-radius: 0.5rem;
     overflow: hidden;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition:
+      transform 0.3s ease,
+      opacity 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.05);
   }
 
@@ -401,21 +516,58 @@ const cleanedContent = cleanContent(post.content);
     height: 3px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.9);
-    box-shadow: 
+    box-shadow:
       0 0 6px 1px rgba(255, 255, 255, 0.6),
       0 0 12px 2px rgba(255, 255, 200, 0.4);
     animation: sparkle 3s ease-in-out infinite;
   }
 
-  .sparkle:nth-child(1) { left: 15%; top: 25%; animation-delay: 0s; width: 3px; height: 3px; }
-  .sparkle:nth-child(2) { left: 80%; top: 35%; animation-delay: 0.5s; width: 2px; height: 2px; }
-  .sparkle:nth-child(3) { left: 45%; top: 55%; animation-delay: 1s; width: 4px; height: 4px; }
-  .sparkle:nth-child(4) { left: 65%; top: 70%; animation-delay: 1.5s; width: 3px; height: 3px; }
-  .sparkle:nth-child(5) { left: 25%; top: 75%; animation-delay: 2s; width: 2px; height: 2px; }
-  .sparkle:nth-child(6) { left: 55%; top: 20%; animation-delay: 2.5s; width: 3px; height: 3px; }
+  .sparkle:nth-child(1) {
+    left: 15%;
+    top: 25%;
+    animation-delay: 0s;
+    width: 3px;
+    height: 3px;
+  }
+  .sparkle:nth-child(2) {
+    left: 80%;
+    top: 35%;
+    animation-delay: 0.5s;
+    width: 2px;
+    height: 2px;
+  }
+  .sparkle:nth-child(3) {
+    left: 45%;
+    top: 55%;
+    animation-delay: 1s;
+    width: 4px;
+    height: 4px;
+  }
+  .sparkle:nth-child(4) {
+    left: 65%;
+    top: 70%;
+    animation-delay: 1.5s;
+    width: 3px;
+    height: 3px;
+  }
+  .sparkle:nth-child(5) {
+    left: 25%;
+    top: 75%;
+    animation-delay: 2s;
+    width: 2px;
+    height: 2px;
+  }
+  .sparkle:nth-child(6) {
+    left: 55%;
+    top: 20%;
+    animation-delay: 2.5s;
+    width: 3px;
+    height: 3px;
+  }
 
   @keyframes sparkle {
-    0%, 100% {
+    0%,
+    100% {
       opacity: 0.15;
       transform: scale(0.6);
     }
@@ -427,7 +579,7 @@ const cleanedContent = cleanContent(post.content);
 
   /* === GLOW EN TÍTULO === */
   .article-title {
-    text-shadow: 
+    text-shadow:
       0 0 20px rgba(212, 168, 83, 0.3),
       0 0 40px rgba(212, 168, 83, 0.15),
       0 0 60px rgba(212, 168, 83, 0.1);
@@ -436,71 +588,15 @@ const cleanedContent = cleanContent(post.content);
 
   @keyframes title-glow {
     from {
-      text-shadow: 
+      text-shadow:
         0 0 20px rgba(212, 168, 83, 0.3),
         0 0 40px rgba(212, 168, 83, 0.15);
     }
     to {
-      text-shadow: 
+      text-shadow:
         0 0 25px rgba(212, 168, 83, 0.4),
         0 0 50px rgba(212, 168, 83, 0.2),
         0 0 70px rgba(212, 168, 83, 0.1);
     }
-  }
-
-  /* === FOOTER === */
-  .site-footer {
-    background: #0a0c0b;
-    border-top: 1px solid rgba(212, 168, 83, 0.1);
-    padding: 3rem 0;
-  }
-
-  .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    text-align: center;
-  }
-
-  .footer-brand {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: 1;
-  }
-
-  .footer-nr {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #fff;
-    letter-spacing: -0.03em;
-  }
-
-  .footer-studio {
-    font-size: 0.55rem;
-    font-weight: 400;
-    color: #777;
-    letter-spacing: 0.25em;
-    margin-top: 2px;
-  }
-
-  .footer-text {
-    font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.5);
-  }
-
-  .footer-link {
-    font-size: 0.8rem;
-    color: #d4a853;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-
-  .footer-link:hover {
-    color: #e8c278;
   }
 </style>

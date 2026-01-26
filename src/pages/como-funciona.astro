@@ -1,16 +1,24 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Nav from "../components/Nav.astro";
+import { Picture } from "astro:assets";
+import bokehBg from "../assets/images/composition/bokeh_bg.png";
+import Footer from "../components/Footer.astro";
 ---
 
 <BaseLayout title="¿Cómo Funciona? | Par Biomagnético">
     <main class="como-funciona-page">
         <!-- Hero Section -->
         <section class="page-hero">
-            <img
-                src="/images/composition/bokeh_bg.png"
-                alt=""
+            <Picture
+                src={bokehBg}
+                formats={["avif", "webp"]}
+                widths={[720, 1280, 1920]}
+                sizes="100vw"
+                alt="Fondo de energía y bienestar"
                 class="bokeh-bg"
+                loading="eager"
+                fetchpriority="high"
             />
             <div class="hero-overlay"></div>
 
@@ -49,6 +57,7 @@ import Nav from "../components/Nav.astro";
                 <div class="intro-card">
                     <div class="intro-icon">
                         <svg
+                            aria-hidden="true"
                             viewBox="0 0 24 24"
                             fill="none"
                             stroke="currentColor"
@@ -127,6 +136,7 @@ import Nav from "../components/Nav.astro";
                         <div class="concept-icon-row">
                             <div class="mini-icon">
                                 <svg
+                                    aria-hidden="true"
                                     viewBox="0 0 24 24"
                                     fill="none"
                                     stroke="currentColor"
@@ -155,6 +165,7 @@ import Nav from "../components/Nav.astro";
                     <div class="magnet-card">
                         <div class="magnet-icon">
                             <svg
+                                aria-hidden="true"
                                 viewBox="0 0 24 24"
                                 fill="none"
                                 stroke="currentColor"
@@ -179,6 +190,7 @@ import Nav from "../components/Nav.astro";
                     <div class="magnet-card">
                         <div class="magnet-icon">
                             <svg
+                                aria-hidden="true"
                                 viewBox="0 0 24 24"
                                 fill="none"
                                 stroke="currentColor"
@@ -203,6 +215,7 @@ import Nav from "../components/Nav.astro";
                     <div class="magnet-card">
                         <div class="magnet-icon">
                             <svg
+                                aria-hidden="true"
                                 viewBox="0 0 24 24"
                                 fill="none"
                                 stroke="currentColor"
@@ -248,6 +261,7 @@ import Nav from "../components/Nav.astro";
                         <ul class="pole-effects">
                             <li>
                                 <svg
+                                    aria-hidden="true"
                                     viewBox="0 0 24 24"
                                     fill="none"
                                     stroke="currentColor"
@@ -262,6 +276,7 @@ import Nav from "../components/Nav.astro";
                             </li>
                             <li>
                                 <svg
+                                    aria-hidden="true"
                                     viewBox="0 0 24 24"
                                     fill="none"
                                     stroke="currentColor"
@@ -276,6 +291,7 @@ import Nav from "../components/Nav.astro";
                             </li>
                             <li>
                                 <svg
+                                    aria-hidden="true"
                                     viewBox="0 0 24 24"
                                     fill="none"
                                     stroke="currentColor"
@@ -290,6 +306,7 @@ import Nav from "../components/Nav.astro";
                             </li>
                             <li>
                                 <svg
+                                    aria-hidden="true"
                                     viewBox="0 0 24 24"
                                     fill="none"
                                     stroke="currentColor"
@@ -317,6 +334,7 @@ import Nav from "../components/Nav.astro";
                         <ul class="pole-effects">
                             <li>
                                 <svg
+                                    aria-hidden="true"
                                     viewBox="0 0 24 24"
                                     fill="none"
                                     stroke="currentColor"
@@ -331,6 +349,7 @@ import Nav from "../components/Nav.astro";
                             </li>
                             <li>
                                 <svg
+                                    aria-hidden="true"
                                     viewBox="0 0 24 24"
                                     fill="none"
                                     stroke="currentColor"
@@ -345,6 +364,7 @@ import Nav from "../components/Nav.astro";
                             </li>
                             <li>
                                 <svg
+                                    aria-hidden="true"
                                     viewBox="0 0 24 24"
                                     fill="none"
                                     stroke="currentColor"
@@ -359,6 +379,7 @@ import Nav from "../components/Nav.astro";
                             </li>
                             <li>
                                 <svg
+                                    aria-hidden="true"
                                     viewBox="0 0 24 24"
                                     fill="none"
                                     stroke="currentColor"
@@ -449,6 +470,7 @@ import Nav from "../components/Nav.astro";
                     <a href="/tratamientos" class="cta-button">
                         Ver Tratamientos
                         <svg
+                            aria-hidden="true"
                             viewBox="0 0 24 24"
                             fill="none"
                             stroke="currentColor"
@@ -465,18 +487,7 @@ import Nav from "../components/Nav.astro";
         </section>
 
         <!-- Footer -->
-        <footer class="site-footer">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <span class="footer-nr">NR</span>
-                    <span class="footer-studio">STUDIO</span>
-                </div>
-                <p class="footer-text">
-                    © 2025 Par Biomagnético - Equilibrio y Bienestar
-                </p>
-                <a href="/" class="footer-link">← Volver al Inicio</a>
-            </div>
-        </footer>
+        <Footer />
     </main>
 </BaseLayout>
 

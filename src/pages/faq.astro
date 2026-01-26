@@ -1,0 +1,388 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Nav from "../components/Nav.astro";
+import { Picture } from "astro:assets";
+import bokehBg from "../assets/images/composition/bokeh_bg.png";
+import Footer from "../components/Footer.astro";
+
+const PAGE_TITLE = "Preguntas Frecuentes | Par Biomagnético";
+const PAGE_DESCRIPTION =
+    "Resolvemos tus dudas sobre el Par Biomagnético: sesiones presenciales en Monzón, tratamientos a distancia, efectos, contraindicaciones y más.";
+
+const faqs = [
+    {
+        question:
+            "¿Qué diferencia hay entre una sesión presencial en Monzón y una a distancia (Online)?",
+        answer: "La eficacia es la misma. En la sesión presencial (Monzón), el paciente se tumba en la camilla y se colocan los imanes sobre su ropa. En la sesión a distancia, utilizo una técnica de bioenergética cuántica (telebioenergética) usando un sustituto o 'antena' para realizar el rastreo y la corrección. El principio físico es el entrelazamiento cuántico: la energía y la intención no conocen distancia.",
+    },
+    {
+        question: "¿Cuántas sesiones necesito?",
+        answer: "Depende de la cronicidad y complejidad de la dolencia. Generalmente, se recomienda un ciclo inicial de 3 sesiones espaciadas una semana para ver resultados sólidos. Muchos pacientes notan mejoría significativa desde la primera sesión. En casos crónicos (fibromialgia, fatiga crónica), el tratamiento puede requerir un seguimiento más prolongado.",
+    },
+    {
+        question: "¿El Biomagnetismo tiene efectos secundarios?",
+        answer: "No tiene efectos secundarios negativos. Sin embargo, algunos pacientes experimentan una 'crisis curativa' en las 24-48 horas siguientes: aumento de orina, ligero cansancio o sudoración. Esto es una señal positiva de que el cuerpo está desintoxicándose y expulsando los patógenos eliminados.",
+    },
+    {
+        question: "¿Es compatible con medicamentos o tratamientos médicos?",
+        answer: "Sí, totalmente. El Par Biomagnético es una terapia complementaria que no sustituye el tratamiento médico. Puedes continuar con tu medicación habitual. La única excepción es la quimioterapia/radioterapia: debemos esperar a que finalice el ciclo de quimio para aplicar imanes.",
+    },
+    {
+        question: "¿Hay alguna contraindicación?",
+        answer: "Sí, evitamos aplicar imanes en: mujeres embarazadas, personas con marcapasos (u otros dispositivos con batería), y personas con heridas abiertas o quimioterapia activa. Si tienes dudas sobre tu caso particular, contáctame antes de reservar.",
+    },
+    {
+        question: "¿Qué puedo tratar con Biomagnetismo?",
+        answer: "Es efectivo para equilibrar el pH y ayudar en multitud de patologías: problemas digestivos (gastritis, colon irritable), respiratorios, sistema inmune debilitado, fatiga crónica, dolores musculares/articulares, migrañas y desequilibrios emocionales (estrés, ansiedad).",
+    },
+];
+
+const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.answer,
+        },
+    })),
+};
+---
+
+<BaseLayout title={PAGE_TITLE} description={PAGE_DESCRIPTION}>
+    <!-- Inject JSON-LD -->
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+    <main class="faq-page">
+        <!-- Hero -->
+        <section class="page-hero">
+            <Picture
+                src={bokehBg}
+                formats={["avif", "webp"]}
+                widths={[720, 1280, 1920]}
+                sizes="100vw"
+                alt="Fondo de energía y bienestar"
+                class="bokeh-bg"
+                loading="eager"
+                fetchpriority="high"
+            />
+            <div class="hero-overlay"></div>
+
+            <div class="sparkles">
+                <span class="sparkle"></span>
+                <span class="sparkle"></span>
+                <span class="sparkle"></span>
+                <span class="sparkle"></span>
+                <span class="sparkle"></span>
+            </div>
+
+            <Nav currentPage="faq" />
+
+            <div class="hero-content">
+                <span class="hero-badge">Centro de Ayuda</span>
+                <h1 class="page-title">Preguntas Frecuentes</h1>
+                <p class="hero-subtitle">
+                    Todo lo que necesitas saber sobre nuestras terapias
+                    presenciales y online.
+                </p>
+            </div>
+        </section>
+
+        <!-- FAQ Content -->
+        <section class="content-section">
+            <div class="content-container">
+                <div class="faq-grid">
+                    {
+                        faqs.map((faq, index) => (
+                            <details class="faq-card" open={index === 0}>
+                                <summary class="faq-summary">
+                                    <span class="faq-question">
+                                        {faq.question}
+                                    </span>
+                                    <span class="faq-icon">
+                                        <svg
+                                            aria-hidden="true"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <polyline points="6 9 12 15 18 9" />
+                                        </svg>
+                                    </span>
+                                </summary>
+                                <div class="faq-text">
+                                    <p>{faq.answer}</p>
+                                </div>
+                            </details>
+                        ))
+                    }
+                </div>
+
+                <!-- Contact CTA -->
+                <div class="contact-cta">
+                    <h3>¿Tienes más dudas?</h3>
+                    <p>Estoy aquí para resolverlas. Escríbeme y hablamos.</p>
+                    <a
+                        href="https://wa.me/34696049698?text=Hola,%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20una%20sesi%C3%B3n%20de%20par%20biomagn%C3%A9tico"
+                        class="cta-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Contactar Cristina Murciano
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <Footer />
+    </main>
+</BaseLayout>
+
+<style>
+    .faq-page {
+        min-height: 100vh;
+        background: #0a0c0b;
+    }
+
+    /* Hero Reuse */
+    .page-hero {
+        position: relative;
+        min-height: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 120px;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .bokeh-bg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+    }
+
+    .hero-overlay {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background: linear-gradient(
+            to bottom,
+            rgba(10, 10, 12, 0.4) 0%,
+            #0a0c0b 100%
+        );
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 10;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-badge {
+        display: inline-block;
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        color: #d4a853;
+        margin-bottom: 1rem;
+        padding: 0.4rem 1rem;
+        border: 1px solid rgba(212, 168, 83, 0.3);
+        border-radius: 2rem;
+    }
+
+    .page-title {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(2rem, 4vw, 3rem);
+        color: #fff;
+        margin-bottom: 1rem;
+    }
+
+    .hero-subtitle {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 1.1rem;
+    }
+
+    /* Content */
+    .content-section {
+        position: relative;
+        z-index: 10;
+        padding: 2rem 0 5rem;
+    }
+
+    .content-container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    .faq-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-bottom: 4rem;
+    }
+
+    .faq-card {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .faq-card:hover {
+        border-color: rgba(212, 168, 83, 0.3);
+    }
+
+    .faq-card[open] {
+        background: rgba(255, 255, 255, 0.05);
+        border-color: rgba(212, 168, 83, 0.4);
+    }
+
+    .faq-summary {
+        list-style: none; /* Hide default triangle */
+        padding: 1.5rem;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .faq-summary::-webkit-details-marker {
+        display: none;
+    }
+
+    .faq-question {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .faq-icon {
+        color: #d4a853;
+        transition: transform 0.3s ease;
+    }
+
+    .faq-card[open] .faq-icon {
+        transform: rotate(180deg);
+    }
+
+    .faq-text {
+        padding: 0 1.5rem 1.5rem;
+        color: rgba(255, 255, 255, 0.8);
+        line-height: 1.6;
+        animation: slideDown 0.3s ease;
+    }
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Contact CTA */
+    .contact-cta {
+        text-align: center;
+        padding: 3rem;
+        background: linear-gradient(
+            135deg,
+            rgba(212, 168, 83, 0.1),
+            rgba(74, 222, 128, 0.05)
+        );
+        border-radius: 1.5rem;
+        border: 1px solid rgba(212, 168, 83, 0.2);
+    }
+
+    .contact-cta h3 {
+        font-family: "Playfair Display", serif;
+        font-size: 1.5rem;
+        color: #d4a853;
+        margin-bottom: 0.5rem;
+    }
+
+    .contact-cta p {
+        color: rgba(255, 255, 255, 0.7);
+        margin-bottom: 1.5rem;
+    }
+
+    .cta-link {
+        display: inline-block;
+        padding: 0.8rem 2rem;
+        background: #d4a853;
+        color: #000;
+        font-weight: 600;
+        border-radius: 2rem;
+        text-decoration: none;
+        transition: transform 0.2s ease;
+    }
+
+    .cta-link:hover {
+        transform: scale(1.05);
+    }
+
+    /* Sparkles */
+    .sparkles {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+    }
+    .sparkle {
+        position: absolute;
+        width: 3px;
+        height: 3px;
+        background: #fff;
+        border-radius: 50%;
+        opacity: 0.5;
+        animation: float 4s infinite;
+    }
+    .sparkle:nth-child(1) {
+        top: 20%;
+        left: 20%;
+    }
+    .sparkle:nth-child(2) {
+        top: 60%;
+        left: 80%;
+        animation-delay: 1s;
+    }
+    .sparkle:nth-child(3) {
+        top: 40%;
+        left: 50%;
+        animation-delay: 2s;
+    }
+
+    @keyframes float {
+        0%,
+        100% {
+            transform: translateY(0);
+            opacity: 0.3;
+        }
+        50% {
+            transform: translateY(-20px);
+            opacity: 1;
+        }
+    }
+</style>

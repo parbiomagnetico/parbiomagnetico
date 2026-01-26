@@ -1,14 +1,51 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Nav from "../../components/Nav.astro";
-import posts from "../../data/posts.json";
+import allPosts from "../../data/posts.json";
+import { Picture } from "astro:assets";
+import Footer from "../../components/Footer.astro";
+import type { ImageMetadata } from "astro";
+import bokehBg from "../../assets/images/composition/bokeh_bg.png"; // Fixed path: up 2 levels relative to src/pages/blog -> src/assets
+
+// Filtrar posts activos para el lanzamiento (Top 6)
+const posts = allPosts.filter((post) => post.active);
+
+// Cargar todas las imágenes de posts
+const postImages = import.meta.glob<{ default: ImageMetadata }>(
+  "../../assets/images/posts/*.{jpeg,jpg,png,webp}",
+);
+
+// Helper para resolver la imagen desde la ruta del JSON
+function resolveImage(url: string) {
+  // Convertir ruta pública (/images/posts/...) a ruta relativa de assets (../../assets/images/posts/...)
+  const filename = url.split("/").pop();
+  const path = `../../assets/images/posts/${filename}`;
+
+  const imageLoader = postImages[path];
+
+  if (!imageLoader) {
+    console.warn(`Image not found: ${path}`);
+    return null;
+  }
+
+  return imageLoader();
+}
 ---
 
-<BaseLayout title="Blog | Par Biomagnetico">
+<BaseLayout title="Blog | Par Biomagnético">
   <main class="blog-page">
     <!-- Sección Hero con Bokeh (solo título) -->
     <section class="blog-hero">
-      <img src="/images/composition/bokeh_bg.png" alt="" class="bokeh-bg" />
+      <Picture
+        src={bokehBg}
+        formats={["avif", "webp"]}
+        widths={[720, 1280, 1920]}
+        sizes="100vw"
+        alt="Fondo de energía y bienestar"
+        class="bokeh-bg"
+        loading="eager"
+        fetchpriority="high"
+      />
       <div class="hero-overlay"></div>
 
       <!-- Sparkles/Destellos flotantes -->
@@ -50,7 +87,22 @@ import posts from "../../data/posts.json";
               >
                 <a href={`/blog/${post.slug}`} class="card-link">
                   <div class="card-image">
-                    <img src={post.thumbnail} alt={post.title} loading="lazy" />
+                    {(() => {
+                      const imageSrc = resolveImage(post.thumbnail);
+                      return (
+                        imageSrc && (
+                          <Picture
+                            src={imageSrc}
+                            formats={["avif", "webp"]}
+                            widths={[400, 600]}
+                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                            alt={`Artículo Par Biomagnético: ${post.title}`}
+                            class="card-img-element"
+                            loading="lazy"
+                          />
+                        )
+                      );
+                    })()}
                   </div>
                   <div class="card-content">
                     <h2 class="card-title">{post.title}</h2>
@@ -76,18 +128,7 @@ import posts from "../../data/posts.json";
     </section>
 
     <!-- Footer -->
-    <footer class="site-footer">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <span class="footer-nr">NR</span>
-          <span class="footer-studio">STUDIO</span>
-        </div>
-        <p class="footer-text">
-          © 2024 Par Biomagnético - Equilibrio y Bienestar
-        </p>
-        <a href="/" class="footer-link">← Volver al Inicio</a>
-      </div>
-    </footer>
+    <Footer />
   </main>
 </BaseLayout>
 
@@ -458,62 +499,6 @@ import posts from "../../data/posts.json";
         0 0 50px rgba(212, 168, 83, 0.2),
         0 0 70px rgba(212, 168, 83, 0.1);
     }
-  }
-
-  /* === FOOTER === */
-  .site-footer {
-    background: #0a0c0b;
-    border-top: 1px solid rgba(212, 168, 83, 0.1);
-    padding: 2.5rem 0;
-  }
-
-  .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    text-align: center;
-  }
-
-  .footer-brand {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: 1;
-  }
-
-  .footer-nr {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #fff;
-    letter-spacing: -0.03em;
-  }
-
-  .footer-studio {
-    font-size: 0.55rem;
-    font-weight: 400;
-    color: #777;
-    letter-spacing: 0.25em;
-    margin-top: 2px;
-  }
-
-  .footer-text {
-    font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.5);
-  }
-
-  .footer-link {
-    font-size: 0.8rem;
-    color: #d4a853;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-
-  .footer-link:hover {
-    color: #e8c278;
   }
 
   /* === LOAD MORE === */

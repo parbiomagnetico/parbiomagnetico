@@ -1,0 +1,287 @@
+---
+import { Picture } from "astro:assets";
+import schoolSeal from "../assets/images/certs/school_seal.png";
+import associationSeal from "../assets/images/certs/association_seal.png";
+import excellenceSeal from "../assets/images/certs/excellence_seal.png";
+
+// Placeholder data for certifications
+const certs = [
+    {
+        name: "Escuela Superior de Biomagnetismo Médico",
+        label: "Certificación Oficial",
+        image: schoolSeal,
+    },
+    {
+        name: "Asociación de Terapeutas",
+        label: "Miembro Activo y Federado",
+        image: associationSeal,
+    },
+    {
+        name: "Excelencia Profesional",
+        label: "Garantía de Calidad",
+        image: excellenceSeal,
+    },
+];
+---
+
+<section class="certifications-section">
+    <div class="container">
+        <div class="header-content">
+            <span class="badge">Excelencia y Confianza</span>
+            <h2 class="title">Avales y Compromiso Ético</h2>
+            <p class="subtitle">
+                Tu salud está en manos de un profesional certificado y
+                comprometido con los más altos estándares éticos.
+            </p>
+        </div>
+
+        <!-- Grid de Certificaciones -->
+        <div class="certs-grid">
+            {
+                certs.map((cert) => (
+                    <div class="cert-card">
+                        <div class="cert-icon-wrapper">
+                            <Picture
+                                src={cert.image}
+                                formats={["avif", "webp"]}
+                                widths={[120, 240]}
+                                sizes="120px"
+                                alt={`Sello de ${cert.name}`}
+                                class="cert-img"
+                                loading="lazy"
+                            />
+                        </div>
+                        <h3 class="cert-name">{cert.name}</h3>
+                        <span class="cert-label">{cert.label}</span>
+                    </div>
+                ))
+            }
+        </div>
+
+        <!-- Bloque de Garantía -->
+        <div class="guarantee-block">
+            <div class="guarantee-icon">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    width="48"
+                    height="48"
+                >
+                    <path
+                        fill="currentColor"
+                        d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256 256-114.6 256-256S397.4 0 256 0zm0 464c-114.7 0-208-93.3-208-208S141.3 48 256 48s208 93.3 208 208-93.3 208-208 208zm112-272c0 8.8-7.2 16-16 16H256v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16h112c8.8 0 16 7.2 16 16z"
+                    ></path>
+                    <path
+                        fill="currentColor"
+                        d="M368 256c0 8.8-7.2 16-16 16h-96c-8.8 0-16-7.2-16-16s7.2-16 16-16h96c8.8 0 16 7.2 16 16z"
+                        style="display:none;"></path>
+                    <!-- Checkmark alternative shape conceptually -->
+                    <path
+                        fill="currentColor"
+                        d="M173.9 439.4l-166.4-166.4c-10-10-10-26.2 0-36.2l36.2-36.2c10-10 26.2-10 36.2 0L192 312.7 432.1 72.6c10-10 26.2-10 36.2 0l36.2 36.2c10 10 10 26.2 0 36.2l-294.4 294.4c-10 10-26.2 10-36.2 0z"
+                        transform="scale(0.5) translate(256, 256)"
+                        style="display:none"></path>
+                    <!-- Using a simple shield/check path for guarantee -->
+                    <path
+                        fill="currentColor"
+                        d="M512 256c0 141.4-114.6 256-256 256S0 397.4 0 256 114.6 0 256 0s256 114.6 256 256zM371.8 211.8l-128 128c-4.7 4.7-12.3 4.7-17 0l-64-64c-4.7-4.7-4.7-12.3 0-17l17-17c4.7-4.7 12.3-4.7 17 0L235.3 280.3l102.5-102.5c4.7-4.7 12.3-4.7 17 0l17 17c4.7 4.7 4.7 12.3 0 17z"
+                    ></path>
+                </svg>
+            </div>
+            <div class="guarantee-content">
+                <h3>Garantía de Satisfacción y Ética</h3>
+                <p>
+                    Entiendo que probar una nueva terapia puede generar dudas.
+                    Mi compromiso es ofrecerte un servicio honesto, transparente
+                    y profesional. Si durante la primera sesión a distancia
+                    sientes que esta terapia no resuena contigo, te ofrezco una
+                    garantía de devolución. La prioridad es tu bienestar y tu
+                    confianza.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .certifications-section {
+        padding: 5rem 2rem;
+        background: linear-gradient(to bottom, #0f1f1a 0%, #0a0f0d 100%);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .certifications-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: linear-gradient(
+            90deg,
+            transparent 0%,
+            rgba(212, 168, 83, 0.3) 50%,
+            transparent 100%
+        );
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .header-content {
+        text-align: center;
+        max-width: 700px;
+    }
+
+    .badge {
+        display: inline-block;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #4ade80;
+        margin-bottom: 1rem;
+    }
+
+    .title {
+        font-family: "Playfair Display", serif;
+        font-size: 2.5rem;
+        color: #d4a853;
+        margin-bottom: 1rem;
+    }
+
+    .subtitle {
+        font-family: "Outfit", sans-serif;
+        color: rgba(255, 255, 255, 0.7);
+        line-height: 1.6;
+        font-size: 1.1rem;
+    }
+
+    /* Grid */
+    .certs-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .cert-card {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        padding: 2rem;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .cert-card:hover {
+        transform: translateY(-5px);
+        border-color: rgba(212, 168, 83, 0.3);
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+    .cert-icon-wrapper {
+        width: 120px;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+        filter: drop-shadow(0 0 15px rgba(212, 168, 83, 0.2));
+        transition: transform 0.3s ease;
+    }
+
+    .cert-card:hover .cert-icon-wrapper {
+        transform: scale(1.1);
+        filter: drop-shadow(0 0 20px rgba(212, 168, 83, 0.4));
+    }
+
+    .cert-img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .cert-name {
+        font-size: 1rem;
+        color: #fff;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+    }
+
+    .cert-label {
+        font-size: 0.8rem;
+        color: rgba(255, 255, 255, 0.5);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+
+    /* Guarantee Block */
+    .guarantee-block {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        background: linear-gradient(
+            135deg,
+            rgba(212, 168, 83, 0.1) 0%,
+            rgba(212, 168, 83, 0.02) 100%
+        );
+        border: 1px solid rgba(212, 168, 83, 0.2);
+        padding: 2.5rem;
+        border-radius: 1.5rem;
+        max-width: 900px;
+        margin-top: 1rem;
+        backdrop-filter: blur(10px);
+    }
+
+    .guarantee-icon {
+        flex-shrink: 0;
+        width: 80px;
+        height: 80px;
+        color: #d4a853;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        filter: drop-shadow(0 0 15px rgba(212, 168, 83, 0.3));
+    }
+
+    .guarantee-icon svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .guarantee-content h3 {
+        font-family: "Playfair Display", serif;
+        font-size: 1.5rem;
+        color: #fff;
+        margin-bottom: 0.75rem;
+    }
+
+    .guarantee-content p {
+        color: rgba(255, 255, 255, 0.8);
+        line-height: 1.7;
+        font-size: 1rem;
+    }
+
+    @media (max-width: 768px) {
+        .guarantee-block {
+            flex-direction: column;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .title {
+            font-size: 2rem;
+        }
+    }
+</style>
