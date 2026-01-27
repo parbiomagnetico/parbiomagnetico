@@ -11,18 +11,31 @@
         <p class="footer-text">
             © {new Date().getFullYear()} Par Biomagnético - Equilibrio y Bienestar.
             <br />
-            <a href="/aviso-legal" class="footer-link-legal">Aviso Legal</a> | <a
+            <a
+                href="/aviso-legal"
+                class="footer-link-legal"
+                title="Leer el Aviso Legal">Aviso Legal</a
+            > | <a
                 href="/politica-privacidad"
-                class="footer-link-legal">Política de Privacidad</a
+                class="footer-link-legal"
+                title="Leer la Política de Privacidad">Política de Privacidad</a
             >
         </p>
 
         <div class="footer-nav">
-            <a href="/" class="footer-link">Inicio</a>
+            <a href="/" class="footer-link" title="Ir a la página de Inicio"
+                >Inicio</a
+            >
             <span class="separator">•</span>
-            <a href="/faq" class="footer-link">Preguntas Frecuentes</a>
+            <a href="/faq" class="footer-link" title="Ver Preguntas Frecuentes"
+                >Preguntas Frecuentes</a
+            >
             <span class="separator">•</span>
-            <a href="/tratamientos" class="footer-link">Tratamientos</a>
+            <a
+                href="/tratamientos"
+                class="footer-link"
+                title="Consultar Tratamientos">Tratamientos</a
+            >
         </div>
     </div>
 </footer>
@@ -62,14 +75,14 @@
     .footer-studio {
         font-size: 0.55rem;
         font-weight: 400;
-        color: #777;
+        color: #e5e5e5; /* Improved contrast from #777 */
         letter-spacing: 0.25em;
         margin-top: 2px;
     }
 
     .footer-text {
         font-size: 0.8rem;
-        color: rgba(255, 255, 255, 0.5);
+        color: rgba(255, 255, 255, 0.7); /* Improved contrast from 0.5 */
         line-height: 1.6;
     }
 
@@ -93,7 +106,7 @@
     }
 
     .footer-link-legal {
-        color: rgba(255, 255, 255, 0.3);
+        color: rgba(255, 255, 255, 0.8); /* Improved contrast from 0.3 */
         text-decoration: none;
         font-size: 0.75rem;
         transition: color 0.3s ease;
