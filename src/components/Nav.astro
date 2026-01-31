@@ -39,6 +39,16 @@ const { currentPage = "" } = Astro.props;
       >Tratamientos</a
     >
     <a
+      href="/guia-pares"
+      class:list={["nav-link", { active: currentPage === "guia" }]}
+      >Guía de Pares</a
+    >
+    <a
+      href="/opiniones"
+      class:list={["nav-link", { active: currentPage === "opiniones" }]}
+      >Opiniones</a
+    >
+    <a
       href="/como-funciona"
       class:list={["nav-link", { active: currentPage === "como-funciona" }]}
       >¿Cómo Funciona?</a
@@ -51,16 +61,6 @@ const { currentPage = "" } = Astro.props;
     <a
       href="/blog"
       class:list={["nav-link", { active: currentPage === "blog" }]}>Blog</a
-    >
-    <a
-      href="/guia-pares"
-      class:list={["nav-link", { active: currentPage === "guia" }]}
-      >Guía de Pares</a
-    >
-    <a
-      href="/opiniones"
-      class:list={["nav-link", { active: currentPage === "opiniones" }]}
-      >Opiniones</a
     >
   </div>
 </nav>
