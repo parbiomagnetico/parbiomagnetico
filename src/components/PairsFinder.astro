@@ -37,10 +37,13 @@ const types = [...new Set(pairs.map((p) => p.type))].sort();
 
         <!-- Filters -->
         <div class="filters-container">
-            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="all">Todos</button>
             {
-                types.map((type) => (
-                    <button class="filter-btn" data-filter={type}>
+                types.map((type, index) => (
+                    <button
+                        class={index === 0 ? "filter-btn active" : "filter-btn"}
+                        data-filter={type}
+                    >
                         {type}
                     </button>
                 ))
@@ -53,7 +56,7 @@ const types = [...new Set(pairs.map((p) => p.type))].sort();
         {
             pairs.map((pair) => (
                 <article
-                    class="pair-card"
+                    class={`pair-card ${pair.type === types[0] ? "" : "hidden"}`}
                     data-type={pair.type}
                     data-search={`${pair.point_a} ${pair.point_b} ${pair.pathology} ${pair.type} ${pair.description}`.toLowerCase()}
                 >
@@ -335,7 +338,11 @@ const types = [...new Set(pairs.map((p) => p.type))].sort();
         const cards = document.querySelectorAll(".pair-card");
         const noResults = document.getElementById("no-results");
 
-        let currentFilter = "all";
+        // Get initial active filter
+        const activeBtn = document.querySelector(".filter-btn.active");
+        let currentFilter = activeBtn
+            ? activeBtn.getAttribute("data-filter")
+            : "all";
         let currentSearch = "";
 
         function filterCards() {
@@ -373,6 +380,26 @@ const types = [...new Set(pairs.map((p) => p.type))].sort();
         searchInput?.addEventListener("input", (e) => {
             const target = e.target as HTMLInputElement;
             currentSearch = target.value.toLowerCase().trim();
+
+            // If searching, switch to ALL to search globally
+            if (currentSearch.length > 0) {
+                currentFilter = "all";
+                // Update buttons UI
+                filterBtns.forEach((b) => {
+                    b.classList.remove("active");
+                    if (b.getAttribute("data-filter") === "all") {
+                        b.classList.add("active");
+                    }
+                });
+            } else {
+                // If cleared, maybe revert? Or keep all. Let's keep current state or logic intact.
+                // It's better to just filter with current state if empty.
+                const activeBtn = document.querySelector(".filter-btn.active");
+                currentFilter = activeBtn
+                    ? activeBtn.getAttribute("data-filter") || "all"
+                    : "all";
+            }
+
             filterCards();
         });
 

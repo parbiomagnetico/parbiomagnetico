@@ -1,0 +1,260 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
+import bodyFront from "../assets/images/body_front_new.webp";
+import bodyBack from "../assets/images/body_back_new.webp";
+import coordinates from "../data/points_coordinates.json";
+---
+
+<BaseLayout title="Calibración de Puntos">
+    <div class="calibration-page">
+        <h1>Mapa de Puntos - Calibración</h1>
+        <p>Haz clic en la imagen para obtener coordenadas exactas</p>
+
+        <div class="coord-display" id="coord-display">
+            Haz clic en una imagen → <span id="coords">X: --, Y: --</span>
+        </div>
+
+        <div class="views-container">
+            <div class="view-section">
+                <h2>FRONTAL</h2>
+                <div class="body-container" id="front-container">
+                    <Image
+                        src={bodyFront}
+                        alt="Vista Frontal"
+                        class="body-img"
+                        id="front-img"
+                    />
+                    {
+                        Object.entries(coordinates.Frontal).map(
+                            ([name, coord]) => (
+                                <div
+                                    class="point-marker"
+                                    style={`left: ${coord.x}%; top: ${coord.y}%;`}
+                                    data-name={name}
+                                    data-x={coord.x}
+                                    data-y={coord.y}
+                                >
+                                    <span class="point-label">{name}</span>
+                                </div>
+                            ),
+                        )
+                    }
+                </div>
+            </div>
+
+            <div class="view-section">
+                <h2>DORSAL</h2>
+                <div class="body-container" id="back-container">
+                    <Image
+                        src={bodyBack}
+                        alt="Vista Dorsal"
+                        class="body-img"
+                        id="back-img"
+                    />
+                    {
+                        Object.entries(coordinates.Dorsal).map(
+                            ([name, coord]) => (
+                                <div
+                                    class="point-marker"
+                                    style={`left: ${coord.x}%; top: ${coord.y}%;`}
+                                    data-name={name}
+                                    data-x={coord.x}
+                                    data-y={coord.y}
+                                >
+                                    <span class="point-label">{name}</span>
+                                </div>
+                            ),
+                        )
+                    }
+                </div>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <h3>Instrucciones:</h3>
+            <ol>
+                <li>
+                    Haz clic en cualquier parte de la imagen para ver las
+                    coordenadas X,Y
+                </li>
+                <li>Pasa el ratón sobre un punto rojo para ver su nombre</li>
+                <li>
+                    Haz clic en un punto para copiar su info al portapapeles
+                </li>
+                <li>Dime: "Punto X debe estar en X:__, Y:__"</li>
+            </ol>
+        </div>
+    </div>
+</BaseLayout>
+
+<script>
+    function setupClickHandler(containerId: string, view: string) {
+        const container = document.getElementById(containerId);
+        if (!container) return;
+
+        container.addEventListener("click", (e) => {
+            const rect = container.getBoundingClientRect();
+            const x = (((e.clientX - rect.left) / rect.width) * 100).toFixed(0);
+            const y = (((e.clientY - rect.top) / rect.height) * 100).toFixed(0);
+
+            const coordsEl = document.getElementById("coords");
+            if (coordsEl) {
+                coordsEl.textContent = `${view} → X: ${x}, Y: ${y}`;
+                coordsEl.style.color = "#4ade80";
+            }
+        });
+    }
+
+    // Click on markers to copy info
+    document.querySelectorAll(".point-marker").forEach((marker) => {
+        marker.addEventListener("click", (e) => {
+            e.stopPropagation();
+            const name = (marker as HTMLElement).dataset.name;
+            const x = (marker as HTMLElement).dataset.x;
+            const y = (marker as HTMLElement).dataset.y;
+            const info = `${name}: X=${x}, Y=${y}`;
+
+            navigator.clipboard.writeText(info);
+
+            const coordsEl = document.getElementById("coords");
+            if (coordsEl) {
+                coordsEl.textContent = `Copiado: ${info}`;
+                coordsEl.style.color = "#fbbf24";
+            }
+        });
+    });
+
+    setupClickHandler("front-container", "FRONTAL");
+    setupClickHandler("back-container", "DORSAL");
+</script>
+
+<style>
+    .calibration-page {
+        padding: 2rem;
+        min-height: 100vh;
+    }
+
+    h1 {
+        text-align: center;
+        color: #d4a853;
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        text-align: center;
+        color: rgba(255, 255, 255, 0.7);
+        margin-bottom: 1rem;
+    }
+
+    .coord-display {
+        text-align: center;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 1rem;
+        border-radius: 8px;
+        margin-bottom: 2rem;
+        font-size: 1.2rem;
+        font-family: monospace;
+    }
+
+    #coords {
+        color: #4ade80;
+        font-weight: bold;
+    }
+
+    h2 {
+        text-align: center;
+        color: #4ade80;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .views-container {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        flex-wrap: wrap;
+    }
+
+    .view-section {
+        flex: 0 0 auto;
+    }
+
+    .body-container {
+        position: relative;
+        width: 350px;
+        background: #000;
+        border-radius: 8px;
+        overflow: hidden;
+        cursor: crosshair;
+    }
+
+    .body-img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .point-marker {
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        background: #ef4444;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        z-index: 10;
+        transition: all 0.2s;
+    }
+
+    .point-marker:hover {
+        width: 14px;
+        height: 14px;
+        background: #fbbf24;
+        z-index: 100;
+    }
+
+    .point-marker:hover .point-label {
+        display: block;
+    }
+
+    .point-label {
+        display: none;
+        position: absolute;
+        left: 18px;
+        top: -8px;
+        background: rgba(0, 0, 0, 0.95);
+        color: #fff;
+        padding: 4px 8px;
+        font-size: 11px;
+        white-space: nowrap;
+        border-radius: 4px;
+        border: 1px solid #4ade80;
+        pointer-events: none;
+    }
+
+    .instructions {
+        margin-top: 2rem;
+        background: rgba(0, 0, 0, 0.3);
+        padding: 1.5rem;
+        border-radius: 8px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .instructions h3 {
+        color: #d4a853;
+        margin-bottom: 1rem;
+    }
+
+    .instructions ol {
+        color: rgba(255, 255, 255, 0.8);
+        padding-left: 1.5rem;
+    }
+
+    .instructions li {
+        margin-bottom: 0.5rem;
+    }
+</style>

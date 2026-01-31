@@ -107,6 +107,7 @@ const { currentPage = "" } = Astro.props;
     padding: 1.5rem var(--nav-px, 2.5rem);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     --nav-px: 2.5rem;
+    pointer-events: none; /* Permite clicks a través del área vacía (ej. scrollbar) */
   }
 
   .site-nav.scrolled {
@@ -122,6 +123,7 @@ const { currentPage = "" } = Astro.props;
     align-items: center;
     gap: 0.75rem;
     text-decoration: none;
+    pointer-events: auto; /* Restaurar interacción */
   }
 
   .logo-img {
@@ -140,6 +142,7 @@ const { currentPage = "" } = Astro.props;
   .nav-links {
     display: flex;
     gap: 2rem;
+    pointer-events: auto; /* Restaurar interacción */
   }
 
   .nav-link {
@@ -173,6 +176,7 @@ const { currentPage = "" } = Astro.props;
     margin-right: -1rem; /* Compensa el padding para alinear visualmente */
     z-index: 1300;
     -webkit-tap-highlight-color: transparent;
+    pointer-events: auto; /* Restaurar interacción */
   }
 
   .hamburger {
