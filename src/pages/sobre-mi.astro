@@ -1,0 +1,332 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+import Certifications from "../components/Certifications.astro";
+import { Picture } from "astro:assets";
+import bokehBg from "../assets/images/composition/bokeh_bg.png";
+
+const title = "Sobre Mí | Cristina Murciano Sanchez | Par Biomagnético";
+const description =
+    "Conoce a Cristina Murciano Sanchez, experta en Par Biomagnético. Vocación, formación certificada y compromiso con tu bienestar integral.";
+---
+
+<BaseLayout {title} {description}>
+    <main class="sobre-mi-page">
+        <section class="page-hero">
+            <Picture
+                src={bokehBg}
+                formats={["avif", "webp"]}
+                widths={[720, 1280, 1920]}
+                sizes="100vw"
+                alt="Fondo de energía y bienestar"
+                class="bokeh-bg"
+                loading="eager"
+            />
+            <div class="hero-overlay"></div>
+
+            <Nav />
+
+            <div class="hero-content">
+                <span class="hero-badge">Vocación y Compromiso</span>
+                <h1 class="page-title">Cristina Murciano Sanchez</h1>
+                <p class="hero-subtitle">
+                    Especialista en Par Biomagnético y Salud Bioenergética.
+                </p>
+            </div>
+        </section>
+
+        <section class="biography-section">
+            <div class="container">
+                <div class="bio-grid">
+                    <div class="bio-text">
+                        <h2 class="section-title">
+                            Mi Misión: Restaurar tu Equilibrio
+                        </h2>
+                        <p>
+                            Mi camino en el mundo de la salud bioenergética
+                            comenzó con una convicción profunda: el cuerpo
+                            humano posee una inteligencia innata capaz de
+                            regenerarse si se le proporciona el entorno
+                            adecuado. Como terapeuta certificada en <strong
+                                >Par Biomagnético</strong
+                            >, mi labor es actuar como facilitadora de ese
+                            proceso de equilibrio.
+                        </p>
+                        <p>
+                            Entiendo la salud no como la simple ausencia de
+                            síntomas, sino como un estado de <strong
+                                >resonancia armónica</strong
+                            >. En mi consulta en Monzón y en mis sesiones a
+                            distancia, aplico el método desarrollado por el Dr.
+                            Isaac Goiz Durán con el máximo rigor, buscando
+                            siempre la raíz bionergética de cada desequilibrio.
+                        </p>
+                        <div class="highlight-box">
+                            <p>
+                                "Cada persona es un universo único; mi
+                                compromiso es escucharlo con respeto y
+                                profesionalidad."
+                            </p>
+                        </div>
+                        <p>
+                            Para mí, cada sesión es un diálogo entre mi
+                            formación técnica y la sabiduría biológica de las
+                            personas que lo necesiten. Mi objetivo no es solo
+                            aliviar, sino educar a mis clientes para que
+                            recuperen la soberanía sobre su propio bienestar y
+                            vitalidad.
+                        </p>
+                    </div>
+
+                    <div class="bio-values">
+                        <div class="value-card">
+                            <span class="value-number">01</span>
+                            <h3>Formación Rigurosa</h3>
+                            <p>
+                                Formada en la Escuela Superior de Biomagnetismo,
+                                sigo los protocolos originales que garantizan la
+                                eficacia de la técnica.
+                            </p>
+                        </div>
+                        <div class="value-card">
+                            <span class="value-number">02</span>
+                            <h3>Ética Profesional</h3>
+                            <p>
+                                Mantuve siempre un compromiso de honestidad. El
+                                biomagnetismo es una terapia complementaria que
+                                suma y potencia tu salud.
+                            </p>
+                        </div>
+                        <div class="value-card">
+                            <span class="value-number">03</span>
+                            <h3>Acompañamiento</h3>
+                            <p>
+                                La sanación es un proceso. Te acompaño antes,
+                                durante y después de cada sesión para resolver
+                                tus dudas y potenciar tus resultados.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <Certifications />
+
+        <section class="cta-bottom">
+            <div class="container">
+                <h2 class="cta-title">¿Empezamos tu camino al equilibrio?</h2>
+                <p class="cta-text">
+                    Reserva tu cita presencial en Monzón o tu sesión online
+                    desde cualquier parte del mundo.
+                </p>
+                <a href="/tratamientos" class="btn-primary"
+                    >Ver Tratamientos y Citas</a
+                >
+            </div>
+        </section>
+
+        <Footer />
+    </main>
+</BaseLayout>
+
+<style>
+    .sobre-mi-page {
+        min-height: 100vh;
+    }
+
+    /* Hero */
+    .page-hero {
+        position: relative;
+        min-height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-top: 100px;
+        overflow: hidden;
+    }
+
+    .bokeh-bg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+    }
+
+    .hero-overlay {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background: linear-gradient(
+            to bottom,
+            rgba(10, 10, 12, 0.4) 0%,
+            rgba(30, 58, 47, 0.6) 70%,
+            #2c2416 100%
+        );
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 10;
+        max-width: 900px;
+    }
+
+    .hero-badge {
+        display: inline-block;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #4ade80;
+        margin-bottom: 1.5rem;
+    }
+
+    .page-title {
+        font-family: "Playfair Display", Georgia, serif;
+        font-size: clamp(2.5rem, 6vw, 4.5rem);
+        color: #d4a853;
+        line-height: 1.1;
+        margin-bottom: 1.5rem;
+        font-weight: 400;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+        color: rgba(255, 255, 255, 0.8);
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    /* Bio Section */
+    .biography-section {
+        background: linear-gradient(to bottom, #2c2416 0%, #1e3a2f 100%);
+        padding: 6rem 0;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    .bio-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 5rem;
+        align-items: start;
+    }
+
+    .section-title {
+        font-family: "Playfair Display", serif;
+        font-size: 2.5rem;
+        color: #d4a853;
+        margin-bottom: 2rem;
+    }
+
+    .bio-text p {
+        font-size: 1.1rem;
+        color: rgba(255, 255, 255, 0.85);
+        line-height: 1.8;
+        margin-bottom: 1.5rem;
+    }
+
+    .highlight-box {
+        margin: 2.5rem 0;
+        padding: 2rem;
+        background: rgba(212, 168, 83, 0.05);
+        border-left: 4px solid #d4a853;
+        font-style: italic;
+        font-size: 1.2rem;
+        color: #fff;
+        border-radius: 0 1rem 1rem 0;
+    }
+
+    .bio-values {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .value-card {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        padding: 2rem;
+        border-radius: 1.5rem;
+        backdrop-filter: blur(10px);
+    }
+
+    .value-number {
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: #d4a853;
+        margin-bottom: 0.5rem;
+        display: block;
+        letter-spacing: 0.1em;
+    }
+
+    .value-card h3 {
+        font-family: "Playfair Display", serif;
+        font-size: 1.3rem;
+        color: #fff;
+        margin-bottom: 1rem;
+    }
+
+    .value-card p {
+        font-size: 0.95rem;
+        color: rgba(255, 255, 255, 0.6);
+        line-height: 1.6;
+    }
+
+    /* CTA Bottom */
+    .cta-bottom {
+        padding: 6rem 0;
+        background: #0f1f1a;
+        text-align: center;
+    }
+
+    .cta-title {
+        font-family: "Playfair Display", serif;
+        font-size: 2.5rem;
+        color: #d4a853;
+        margin-bottom: 1.5rem;
+    }
+
+    .cta-text {
+        font-size: 1.1rem;
+        color: rgba(255, 255, 255, 0.7);
+        margin-bottom: 3rem;
+        max-width: 600px;
+        margin: 0 auto 3rem;
+    }
+
+    .btn-primary {
+        display: inline-block;
+        background: #d4a853;
+        color: #000;
+        padding: 1rem 3rem;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        font-weight: 700;
+        transition: all 0.3s ease;
+    }
+
+    .btn-primary:hover {
+        background: #e8c278;
+        transform: translateY(-2px);
+        box-shadow: 0 10px 30px rgba(212, 168, 83, 0.2);
+    }
+
+    @media (max-width: 900px) {
+        .bio-grid {
+            grid-template-columns: 1fr;
+            gap: 3rem;
+        }
+        .page-title {
+            font-size: 3rem;
+        }
+    }
+</style>
