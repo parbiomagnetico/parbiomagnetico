@@ -44,33 +44,5 @@ const {
 	<body>
 		<WhatsAppButton />
 		<slot />
-
-		<script>
-			// Dynamic scrollbar color: Emerald → Gold based on scroll position
-			function updateScrollbarColor() {
-				const scrollTop = window.scrollY;
-				const docHeight =
-					document.documentElement.scrollHeight - window.innerHeight;
-				const scrollPercent = docHeight > 0 ? scrollTop / docHeight : 0;
-
-				// Interpolate between emerald (#10b981) and amber (#ffb347)
-				const r = Math.round(16 + (255 - 16) * scrollPercent);
-				const g = Math.round(185 + (179 - 185) * scrollPercent);
-				const b = Math.round(129 + (71 - 129) * scrollPercent);
-
-				document.documentElement.style.setProperty(
-					"--scrollbar-color",
-					`rgb(${r}, ${g}, ${b})`,
-				);
-			}
-
-			// Only apply on desktop
-			if (window.innerWidth >= 769) {
-				window.addEventListener("scroll", updateScrollbarColor, {
-					passive: true,
-				});
-				updateScrollbarColor(); // Initial
-			}
-		</script>
 	</body>
 </html>
