@@ -25,17 +25,25 @@ const coordinatesJSON = JSON.stringify(coordinates);
         <div class="visualizer-body">
             <!-- Front View -->
             <div class="body-view">
-                <Image src={bodyFront} alt="Vista Frontal" class="body-img" />
-                <div id="marker-front-a" class="marker hidden"></div>
-                <div id="marker-front-b" class="marker hidden"></div>
+                <div class="body-img-wrapper">
+                    <Image
+                        src={bodyFront}
+                        alt="Vista Frontal"
+                        class="body-img"
+                    />
+                    <div id="marker-front-a" class="marker hidden"></div>
+                    <div id="marker-front-b" class="marker hidden"></div>
+                </div>
                 <span class="view-label">FRONTAL</span>
             </div>
 
             <!-- Back View -->
             <div class="body-view">
-                <Image src={bodyBack} alt="Vista Dorsal" class="body-img" />
-                <div id="marker-back-a" class="marker hidden"></div>
-                <div id="marker-back-b" class="marker hidden"></div>
+                <div class="body-img-wrapper">
+                    <Image src={bodyBack} alt="Vista Dorsal" class="body-img" />
+                    <div id="marker-back-a" class="marker hidden"></div>
+                    <div id="marker-back-b" class="marker hidden"></div>
+                </div>
                 <span class="view-label">DORSAL</span>
             </div>
         </div>
@@ -265,27 +273,34 @@ const coordinatesJSON = JSON.stringify(coordinates);
     }
 
     .body-view {
-        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 250px;
-        /* Aspect ratio managed by image */
+    }
+
+    .body-img-wrapper {
+        position: relative;
+        width: 100%;
     }
 
     .body-img {
         width: 100%;
         height: auto;
         display: block;
-        border-radius: 8px; /* Optional */
+        border-radius: 8px;
     }
 
     .view-label {
-        position: absolute;
-        bottom: 1rem;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 0.7rem;
-        letter-spacing: 0.2em;
-        color: rgba(74, 222, 128, 0.6);
-        pointer-events: none;
+        display: block;
+        text-align: center;
+        margin-top: 0.75rem;
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: #d4a853;
+        text-shadow: 0 0 10px rgba(212, 168, 83, 0.5);
     }
 
     /* Markers */
