@@ -113,11 +113,20 @@ const coordinatesJSON = JSON.stringify(coordinates);
         let infoB = getPointCoords(pointB);
 
         // Handle BILATERAL pairs (same point on both sides)
-        // Mirror the X coordinate for point B
+        // Separate markers so both are visible
         const isBilateral = pointA === pointB && infoA;
         if (isBilateral && infoB) {
-            // Mirror X: if original is 35%, mirrored is 65% (100 - 35)
-            infoB = { ...infoB, x: 100 - infoB.x };
+            // For centered points (x near 50), offset both markers to opposite sides
+            // For lateral points, mirror the X coordinate
+            const originalX = infoA.x;
+            if (originalX >= 45 && originalX <= 55) {
+                // Centered point - offset both markers by 8%
+                infoA = { ...infoA, x: originalX - 8 };
+                infoB = { ...infoB, x: originalX + 8 };
+            } else {
+                // Already lateral - mirror X: if original is 35%, mirrored is 65%
+                infoB = { ...infoB, x: 100 - originalX };
+            }
         }
 
         // Reset all markers
