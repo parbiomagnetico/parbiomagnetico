@@ -1,14 +1,16 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Nav from "../../components/Nav.astro";
-import posts from "../../data/posts.json";
+import { getCollection } from "astro:content";
 import { Picture } from "astro:assets";
 import type { ImageMetadata } from "astro";
 import bokehBg from "../../assets/images/composition/bokeh_bg.png";
 import Footer from "../../components/Footer.astro";
 
 export async function getStaticPaths() {
-  const activePosts = posts.filter((post) => post.active);
+  const posts = await getCollection("blog");
+  const activePosts = posts.filter((post) => post.data.active);
+
   return activePosts.map((post) => ({
     params: { slug: post.slug },
     props: { post },
@@ -16,6 +18,7 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
+const { Content } = await post.render();
 
 // Cargar todas las imágenes de posts
 const postImages = import.meta.glob<{ default: ImageMetadata }>(
@@ -23,7 +26,8 @@ const postImages = import.meta.glob<{ default: ImageMetadata }>(
 );
 
 // Helper para resolver la imagen
-function resolveImage(url: string) {
+function resolveImage(url: string | undefined) {
+  if (!url) return null;
   const filename = url.split("/").pop();
   const path = `../../assets/images/posts/${filename}`;
   const imageLoader = postImages[path];
@@ -36,25 +40,16 @@ function resolveImage(url: string) {
 }
 
 // Obtener artículos relacionados activos
-const relatedPosts = posts
-  .filter((p) => p.active && p.slug !== post.slug)
+const allPosts = await getCollection("blog");
+const relatedPosts = allPosts
+  .filter((p) => p.data.active && p.slug !== post.slug)
   .slice(0, 3);
 
-// Procesar contenido HTML
-function cleanContent(content: string): string {
-  return content
-    .replace(/<!-- wp:.*?-->/g, "")
-    .replace(/<!-- \/wp:.*?-->/g, "")
-    .replace(/\r\n/g, "\n");
-}
-
-const cleanedContent = cleanContent(post.content);
-const heroImagePromise = resolveImage(post.thumbnail);
+const heroImagePromise = resolveImage(post.data.image);
 const heroImageRes = heroImagePromise ? await heroImagePromise : null;
 const heroImageUrl = heroImageRes?.default?.src;
 
-// Formatear fecha para Schema.org (ISO 8601 simple si es posible, o dejar string)
-// Conversión básica de fecha española a ISO
+// Formatear fecha para Schema.org
 const months: Record<string, string> = {
   enero: "01",
   febrero: "02",
@@ -69,8 +64,9 @@ const months: Record<string, string> = {
   noviembre: "11",
   diciembre: "12",
 };
-const dateParts = post.date.match(/(\d+) de ([a-z]+) de (\d+)/i);
-let isoDate = post.date;
+// Try to parse Spanish date if present, otherwise assume it might be ISO or leave it
+const dateParts = post.data.date?.match(/(\d+) de ([a-z]+) de (\d+)/i);
+let isoDate = post.data.date;
 if (dateParts) {
   const day = dateParts[1].padStart(2, "0");
   const month = months[dateParts[2].toLowerCase()];
@@ -81,8 +77,8 @@ if (dateParts) {
 const schema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: post.title,
-  description: post.excerpt,
+  headline: post.data.title,
+  description: post.data.excerpt,
   image: heroImageUrl
     ? [
         new URL(
@@ -94,7 +90,7 @@ const schema = {
   datePublished: isoDate,
   author: {
     "@type": "Person",
-    name: post.author,
+    name: post.data.author,
   },
   publisher: {
     "@type": "Organization",
@@ -108,8 +104,8 @@ const schema = {
 ---
 
 <BaseLayout
-  title={`${post.title} | Par Biomagnético`}
-  description={post.excerpt}
+  title={`${post.data.title} | Par Biomagnético`}
+  description={post.data.excerpt}
   image={heroImageUrl}
 >
   <script type="application/ld+json" set:html={JSON.stringify(schema)} />
@@ -142,11 +138,11 @@ const schema = {
       <Nav currentPage="blog" />
 
       <div class="hero-content">
-        <h1 class="article-title">{post.title}</h1>
+        <h1 class="article-title">{post.data.title}</h1>
         <div class="article-meta">
-          <span>Por {post.author}</span>
+          <span>Por {post.data.author}</span>
           <span class="separator">|</span>
-          <span>{post.date}</span>
+          <span>{post.data.date}</span>
         </div>
       </div>
     </section>
@@ -157,7 +153,9 @@ const schema = {
         <div class="article-layout">
           <!-- Contenido principal -->
           <article class="article-content">
-            <div class="prose" set:html={cleanedContent} />
+            <div class="prose">
+              <Content />
+            </div>
 
             <blockquote class="featured-quote">
               "La salud no es la ausencia de enfermedad, sino la resonancia
@@ -172,7 +170,7 @@ const schema = {
                     formats={["avif", "webp"]}
                     widths={[600, 1000]}
                     sizes="(max-width: 900px) 100vw, 800px"
-                    alt={`Ilustración: ${post.title}`}
+                    alt={`Ilustración: ${post.data.title}`}
                     class="article-img-element"
                     loading="eager"
                   />
@@ -188,7 +186,7 @@ const schema = {
               <div class="related-posts">
                 {
                   relatedPosts.map((related) => {
-                    const relatedImg = resolveImage(related.thumbnail);
+                    const relatedImg = resolveImage(related.data.image);
                     return (
                       <a href={`/blog/${related.slug}`} class="related-post">
                         {relatedImg && (
@@ -197,7 +195,7 @@ const schema = {
                             formats={["avif", "webp"]}
                             widths={[240, 480]}
                             sizes="240px"
-                            alt={`Relacionado: ${related.title}`}
+                            alt={`Relacionado: ${related.data.title}`}
                             class="related-img-element"
                             loading="lazy"
                           />

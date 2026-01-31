@@ -1,0 +1,36 @@
+<svg viewBox="0 0 500 1000" xmlns="http://www.w3.org/2000/svg">
+     <defs>
+    <linearGradient id="grid-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4ade80" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#4ade80" stop-opacity="0.0"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="100%" height="100%" fill="#0b1210"/>
+  
+  <!-- Tech Grid Background -->
+  <path d="M250 0 V1000 M0 200 H500 M0 400 H500 M0 600 H500 M0 800 H500" stroke="#4ade80" stroke-width="1" opacity="0.1"/>
+  <circle cx="250" cy="500" r="200" stroke="#d4a853" stroke-width="1" opacity="0.1" fill="none"/>
+
+  <!-- Simplified Silhouette (Back) -->
+  <g stroke="#4ade80" stroke-width="3" fill="none" opacity="0.8">
+    <!-- Head -->
+    <ellipse cx="250" cy="120" rx="60" ry="70"/>
+    <!-- Neck -->
+    <path d="M220 185 L220 210 L280 210 L280 185"/> 
+    <!-- Shoulders & Torso -->
+    <path d="M220 210 L140 240 L150 500 L210 600 L290 600 L350 500 L360 240 L280 210"/>
+    <!-- Spine Line -->
+    <path d="M250 190 V600" stroke-dasharray="5,5" opacity="0.5"/>
+    <!-- Arms -->
+    <path d="M140 240 L80 450 L60 600"/>
+    <path d="M360 240 L420 450 L440 600"/>
+    <!-- Legs -->
+    <path d="M210 600 L190 850 L170 980"/>
+    <path d="M290 600 L310 850 L330 980"/>
+  </g>
+
+  <!-- Labels -->
+  <text x="250" y="50" text-anchor="middle" fill="#d4a853" font-family="monospace" letter-spacing="4">DORSAL</text>
+  <text x="250" y="950" text-anchor="middle" fill="#4ade80" font-family="monospace" font-size="12" opacity="0.5">ESTRUCTURA BIOMAGNÉTICA</text>
+</svg>

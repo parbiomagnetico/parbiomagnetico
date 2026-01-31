@@ -7,7 +7,8 @@
     "build": "astro build",
     "postbuild": "node scripts/notify-indexnow.mjs",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "cms-proxy": "npx decap-server"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.15",

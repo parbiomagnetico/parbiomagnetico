@@ -1,0 +1,2650 @@
+[
+    {
+        "id": 1,
+        "point_a": "Aductor",
+        "point_b": "Aductor",
+        "type": "Virus",
+        "pathology": "VIH 2 / Distensión abdominal",
+        "description": "Trastornos digestivos, distensión."
+    },
+    {
+        "id": 2,
+        "point_a": "Apéndice",
+        "point_b": "Lengua",
+        "type": "Virus",
+        "pathology": "Viruela",
+        "description": "Piel, dermatitis severa."
+    },
+    {
+        "id": 3,
+        "point_a": "Parietal",
+        "point_b": "Parietal",
+        "type": "Virus",
+        "pathology": "Encefalitis Viral",
+        "description": "Dolor de cabeza, confusión."
+    },
+    {
+        "id": 4,
+        "point_a": "Timo",
+        "point_b": "Recto",
+        "type": "Virus",
+        "pathology": "VIH 1",
+        "description": "Inmunodeficiencia severa."
+    },
+    {
+        "id": 5,
+        "point_a": "Uretra",
+        "point_b": "Uretra",
+        "type": "Virus",
+        "pathology": "Corona Virus",
+        "description": "Cistitis, problemas urinarios."
+    },
+    {
+        "id": 6,
+        "point_a": "Poplíteo",
+        "point_b": "Poplíteo",
+        "type": "Bacteria",
+        "pathology": "Neumococo",
+        "description": "Neumonía, problemas respiratorios."
+    },
+    {
+        "id": 7,
+        "point_a": "Supraespinoso",
+        "point_b": "Supraespinoso",
+        "type": "Bacteria",
+        "pathology": "Mycobacterium Tuberculosis",
+        "description": "Tos crónica, pulmones."
+    },
+    {
+        "id": 8,
+        "point_a": "Escápula",
+        "point_b": "Escápula",
+        "type": "Bacteria",
+        "pathology": "Mycobacterium Leprae",
+        "description": "Piel, manchas."
+    },
+    {
+        "id": 9,
+        "point_a": "Prepineal",
+        "point_b": "Vejiga",
+        "type": "Hongo",
+        "pathology": "Cryptococcus Neoformans",
+        "description": "Infección micótica, SNC."
+    },
+    {
+        "id": 10,
+        "point_a": "Diafragma",
+        "point_b": "Diafragma",
+        "type": "Hongo",
+        "pathology": "Candida Albicans",
+        "description": "Candidiasis vaginal/digestiva."
+    },
+    {
+        "id": 11,
+        "point_a": "Glúteo",
+        "point_b": "Glúteo",
+        "type": "Parásito",
+        "pathology": "Parásitos intestinales",
+        "description": "Problemas digestivos generales."
+    },
+    {
+        "id": 12,
+        "point_a": "Hipófisis",
+        "point_b": "Corazón",
+        "type": "Emocional",
+        "pathology": "Abandono",
+        "description": "Sentimiento de soledad profunda."
+    },
+    {
+        "id": 13,
+        "point_a": "Cuerpo Calloso",
+        "point_b": "Cuerpo Calloso",
+        "type": "Emocional",
+        "pathology": "Adicciones",
+        "description": "Dependencias químicas y emocionales."
+    },
+    {
+        "id": 14,
+        "point_a": "Timo",
+        "point_b": "Hipófisis",
+        "type": "Emocional",
+        "pathology": "Avaricia / Egoísmo",
+        "description": "Apego material excesivo."
+    },
+    {
+        "id": 15,
+        "point_a": "Riñón Izquierdo",
+        "point_b": "Ojo Derecho",
+        "type": "Emocional",
+        "pathology": "Miedo",
+        "description": "Fobias, pánico."
+    },
+    {
+        "id": 16,
+        "point_a": "Píloro",
+        "point_b": "Estómago",
+        "type": "Emocional",
+        "pathology": "Autoestima",
+        "description": "Valoración personal baja."
+    },
+    {
+        "id": 17,
+        "point_a": "Occipital",
+        "point_b": "Parótida",
+        "type": "Emocional",
+        "pathology": "Claustrofobia",
+        "description": "Miedo al encierro."
+    },
+    {
+        "id": 18,
+        "point_a": "Esternocleidomastoideo",
+        "point_b": "Riñón",
+        "type": "Emocional",
+        "pathology": "Estrés",
+        "description": "Tensión física y mental."
+    },
+    {
+        "id": 19,
+        "point_a": "Pineal",
+        "point_b": "Tiroides",
+        "type": "Emocional",
+        "pathology": "Alcoholismo",
+        "description": "Recuperación de adicción al alcohol."
+    },
+    {
+        "id": 20,
+        "point_a": "Bazo",
+        "point_b": "Bazo",
+        "type": "Disfunción",
+        "pathology": "Disfunción del Bazo",
+        "description": "Inmuno-regulador, anemia."
+    },
+    {
+        "id": 21,
+        "point_a": "Hígado",
+        "point_b": "Hígado",
+        "type": "Disfunción",
+        "pathology": "Hepatitis Viral (General)",
+        "description": "Inflamación hepática."
+    },
+    {
+        "id": 22,
+        "point_a": "Hígado",
+        "point_b": "Riñón Derecho",
+        "type": "Disfunción",
+        "pathology": "Cirrosis Hepática",
+        "description": "Degeneración hepática."
+    },
+    {
+        "id": 23,
+        "point_a": "Bulbo Raquídeo",
+        "point_b": "Tiroides",
+        "type": "Virus",
+        "pathology": "Meningitis Viral",
+        "description": "Inflamación meninges."
+    },
+    {
+        "id": 24,
+        "point_a": "Mandíbula",
+        "point_b": "Mandíbula",
+        "type": "Bacteria",
+        "pathology": "Neisseria Gonorrhoeae",
+        "description": "Gingivitis, gonorrea."
+    },
+    {
+        "id": 25,
+        "point_a": "Temporal Derecho",
+        "point_b": "Temporal Derecho",
+        "type": "Emocional",
+        "pathology": "Agresividad",
+        "description": "Ira, violencia."
+    },
+    {
+        "id": 26,
+        "point_a": "Pineal",
+        "point_b": "Pineal",
+        "type": "Disfunción",
+        "pathology": "Disfunción Hormonal / Vitíligo",
+        "description": "Regulación melatonina."
+    },
+    {
+        "id": 27,
+        "point_a": "Hipófisis",
+        "point_b": "Hipófisis",
+        "type": "Disfunción",
+        "pathology": "Disfunción Pituitaria",
+        "description": "Problemas endocrinos."
+    },
+    {
+        "id": 28,
+        "point_a": "Tiroides",
+        "point_b": "Tiroides",
+        "type": "Disfunción",
+        "pathology": "Disfunción Tiroidea",
+        "description": "Bocio, obesidad."
+    },
+    {
+        "id": 29,
+        "point_a": "Paratiroides",
+        "point_b": "Paratiroides",
+        "type": "Disfunción",
+        "pathology": "Disfunción Paratiroidea",
+        "description": "Osteoporosis, calambres."
+    },
+    {
+        "id": 30,
+        "point_a": "Timo",
+        "point_b": "Timo",
+        "type": "Disfunción",
+        "pathology": "Disfunción Glandular",
+        "description": "Inmunodeficiencia."
+    },
+    {
+        "id": 31,
+        "point_a": "Páncreas",
+        "point_b": "Páncreas",
+        "type": "Disfunción",
+        "pathology": "Pancreatitis / Diabetes",
+        "description": "Inflamación páncreas."
+    },
+    {
+        "id": 32,
+        "point_a": "Suprarrenal",
+        "point_b": "Suprarrenal",
+        "type": "Disfunción",
+        "pathology": "Disfunción Suprarrenal",
+        "description": "Cansancio crónico."
+    },
+    {
+        "id": 33,
+        "point_a": "Ovario",
+        "point_b": "Ovario",
+        "type": "Disfunción",
+        "pathology": "Disfunción Ovárica",
+        "description": "Amenorrea, quistes."
+    },
+    {
+        "id": 34,
+        "point_a": "Testículo",
+        "point_b": "Testículo",
+        "type": "Disfunción",
+        "pathology": "Disfunción Testicular",
+        "description": "Bajo conteo esperma."
+    },
+    {
+        "id": 35,
+        "point_a": "Próstata",
+        "point_b": "Próstata",
+        "type": "Disfunción",
+        "pathology": "Disfunción Prostática",
+        "description": "Prostatitis."
+    },
+    {
+        "id": 36,
+        "point_a": "Útero",
+        "point_b": "Útero",
+        "type": "Disfunción",
+        "pathology": "Embarazo Falso / Parásitos",
+        "description": "Cólicos."
+    },
+    {
+        "id": 37,
+        "point_a": "Cervical",
+        "point_b": "Cervical",
+        "type": "Especial",
+        "pathology": "Insomnio",
+        "description": "No dormir bien."
+    },
+    {
+        "id": 38,
+        "point_a": "Dorsal",
+        "point_b": "Dorsal",
+        "type": "Especial",
+        "pathology": "Dolor de Espalda",
+        "description": "Lumbalgia."
+    },
+    {
+        "id": 39,
+        "point_a": "Lumbar",
+        "point_b": "Lumbar",
+        "type": "Especial",
+        "pathology": "Dolor Lumbar",
+        "description": "Ciática."
+    },
+    {
+        "id": 40,
+        "point_a": "Sacro",
+        "point_b": "Sacro",
+        "type": "Especial",
+        "pathology": "Dolor Sacro",
+        "description": "Problemas pélvicos."
+    },
+    {
+        "id": 41,
+        "point_a": "Coxis",
+        "point_b": "Coxis",
+        "type": "Especial",
+        "pathology": "Hemorroides",
+        "description": "Problemas rectales."
+    },
+    {
+        "id": 42,
+        "point_a": "Atlas",
+        "point_b": "Atlas",
+        "type": "Especial",
+        "pathology": "Juana",
+        "description": "Aspectos sexuales."
+    },
+    {
+        "id": 43,
+        "point_a": "Nervio Vago",
+        "point_b": "Riñón",
+        "type": "Especial",
+        "pathology": "Benavides",
+        "description": "Regula SNA."
+    },
+    {
+        "id": 44,
+        "point_a": "Vagina",
+        "point_b": "Vagina",
+        "type": "Reservorio",
+        "pathology": "Yersinia Pestis",
+        "description": "Reservorio bacteriano."
+    },
+    {
+        "id": 45,
+        "point_a": "Muñeca",
+        "point_b": "Muñeca",
+        "type": "Especial",
+        "pathology": "Ricketssia",
+        "description": "Alzheimer (falso)."
+    },
+    {
+        "id": 46,
+        "point_a": "Codo",
+        "point_b": "Codo",
+        "type": "Especial",
+        "pathology": "Trastornos Visuales",
+        "description": "Miopía."
+    },
+    {
+        "id": 47,
+        "point_a": "Hombro",
+        "point_b": "Hombro",
+        "type": "Especial",
+        "pathology": "Hombro Congelado",
+        "description": "Bursitis."
+    },
+    {
+        "id": 48,
+        "point_a": "Cuadriceps",
+        "point_b": "Cuadriceps",
+        "type": "Especial",
+        "pathology": "Intoxicación",
+        "description": "Químicos."
+    },
+    {
+        "id": 49,
+        "point_a": "Punta de Páncreas",
+        "point_b": "Bazo",
+        "type": "Virus",
+        "pathology": "Verruga Común",
+        "description": "VPH."
+    },
+    {
+        "id": 50,
+        "point_a": "Estómago",
+        "point_b": "Píloro",
+        "type": "Bacteria",
+        "pathology": "Clostridium Botulinum",
+        "description": "Botulismo."
+    },
+    {
+        "id": 51,
+        "point_a": "Bazo",
+        "point_b": "Hígado",
+        "type": "Bacteria",
+        "pathology": "Brucella",
+        "description": "Fiebre de malta."
+    },
+    {
+        "id": 52,
+        "point_a": "Colon Ascendente",
+        "point_b": "Colon Descendente",
+        "type": "Virus",
+        "pathology": "Herpes Zoster",
+        "description": "Culebrilla."
+    },
+    {
+        "id": 53,
+        "point_a": "Colon Ascendente",
+        "point_b": "Hígado",
+        "type": "Bacteria",
+        "pathology": "Klebsiella Pneumoniae",
+        "description": "Neumonía."
+    },
+    {
+        "id": 54,
+        "point_a": "Colon Transverso",
+        "point_b": "Colon Transverso",
+        "type": "Disfunción",
+        "pathology": "Disfunción Colon",
+        "description": "Estreñimiento."
+    },
+    {
+        "id": 55,
+        "point_a": "Colon Descendente",
+        "point_b": "Colon Descendente",
+        "type": "Bacteria",
+        "pathology": "Enterobacter Cloacae",
+        "description": "Intestino."
+    },
+    {
+        "id": 56,
+        "point_a": "Sigmoides",
+        "point_b": "Recto",
+        "type": "Virus",
+        "pathology": "R56",
+        "description": "VPH."
+    },
+    {
+        "id": 57,
+        "point_a": "Ano",
+        "point_b": "Ano",
+        "type": "Virus",
+        "pathology": "Papiloma Virus",
+        "description": "Verrugas."
+    },
+    {
+        "id": 58,
+        "point_a": "Riñón",
+        "point_b": "Riñón",
+        "type": "Bacteria",
+        "pathology": "Chlamydia Pneumoniae",
+        "description": "Hipertensión."
+    },
+    {
+        "id": 59,
+        "point_a": "Cáliz Renal",
+        "point_b": "Uréter",
+        "type": "Virus",
+        "pathology": "Herpes 5",
+        "description": "Urinario."
+    },
+    {
+        "id": 60,
+        "point_a": "Uréter",
+        "point_b": "Uréter",
+        "type": "Virus",
+        "pathology": "Varicela",
+        "description": "Infantil."
+    },
+    {
+        "id": 61,
+        "point_a": "Vejiga",
+        "point_b": "Vejiga",
+        "type": "Bacteria",
+        "pathology": "Streptococcus G",
+        "description": "Cistitis."
+    },
+    {
+        "id": 62,
+        "point_a": "Trompa",
+        "point_b": "Trompa",
+        "type": "Bacteria",
+        "pathology": "Parvovirus Canino",
+        "description": "Infeccioso."
+    },
+    {
+        "id": 63,
+        "point_a": "Laringe",
+        "point_b": "Laringe",
+        "type": "Bacteria",
+        "pathology": "Bacilo Tosferina",
+        "description": "Tos."
+    },
+    {
+        "id": 64,
+        "point_a": "Pleura",
+        "point_b": "Pleura",
+        "type": "Virus",
+        "pathology": "Pleuritis Viral",
+        "description": "Pleura."
+    },
+    {
+        "id": 65,
+        "point_a": "Hígado",
+        "point_b": "Corazón",
+        "type": "Emocional",
+        "pathology": "Ira Explosiva",
+        "description": "Rabia."
+    },
+    {
+        "id": 66,
+        "point_a": "Estómago",
+        "point_b": "Corazón",
+        "type": "Emocional",
+        "pathology": "Gula",
+        "description": "Ansiedad."
+    },
+    {
+        "id": 67,
+        "point_a": "Ombligo",
+        "point_b": "Ombligo",
+        "type": "Emocional",
+        "pathology": "Complejo Edipo",
+        "description": "Paterno."
+    },
+    {
+        "id": 68,
+        "point_a": "Cien",
+        "point_b": "Cien",
+        "type": "Disfunción",
+        "pathology": "Microcirculación",
+        "description": "Cerebro."
+    },
+    {
+        "id": 69,
+        "point_a": "Ojo",
+        "point_b": "Ojo",
+        "type": "Virus",
+        "pathology": "Citomegalovirus",
+        "description": "Ojos."
+    },
+    {
+        "id": 70,
+        "point_a": "Oreja",
+        "point_b": "Oreja",
+        "type": "Parásito",
+        "pathology": "Toxoplasma",
+        "description": "Audición."
+    },
+    {
+        "id": 71,
+        "point_a": "Mastoides",
+        "point_b": "Mastoides",
+        "type": "Parásito",
+        "pathology": "Filaria",
+        "description": "Tinnitus."
+    },
+    {
+        "id": 72,
+        "point_a": "Pómulo",
+        "point_b": "Riñón",
+        "type": "Parásito",
+        "pathology": "Plasmodium",
+        "description": "Paludismo."
+    },
+    {
+        "id": 73,
+        "point_a": "Lengua",
+        "point_b": "Lengua",
+        "type": "Parásito",
+        "pathology": "Sarna",
+        "description": "Piel."
+    },
+    {
+        "id": 74,
+        "point_a": "Cardias",
+        "point_b": "Suprarrenales",
+        "type": "Bacteria",
+        "pathology": "Streptococcus B",
+        "description": "Gastritis."
+    },
+    {
+        "id": 75,
+        "point_a": "Cabeza de Páncreas",
+        "point_b": "Suprarrenales",
+        "type": "Bacteria",
+        "pathology": "Staphylococcus Aureus",
+        "description": "Digestivo."
+    },
+    {
+        "id": 76,
+        "point_a": "Cola de Páncreas",
+        "point_b": "Hígado",
+        "type": "Bacteria",
+        "pathology": "Chlamydia",
+        "description": "Intoxicación."
+    },
+    {
+        "id": 77,
+        "point_a": "Ligamento Hepático",
+        "point_b": "Riñón Derecho",
+        "type": "Virus",
+        "pathology": "Adenovirus",
+        "description": "Gripe."
+    },
+    {
+        "id": 78,
+        "point_a": "Peritoneo",
+        "point_b": "Peritoneo",
+        "type": "Reservorio",
+        "pathology": "Reservorio Bacteria",
+        "description": "Universal."
+    },
+    {
+        "id": 79,
+        "point_a": "Interilíaco",
+        "point_b": "Riñón",
+        "type": "Reservorio",
+        "pathology": "Congreso",
+        "description": "Parásitos."
+    },
+    {
+        "id": 80,
+        "point_a": "Nervio Inguinal",
+        "point_b": "Articulaciones",
+        "type": "Especial",
+        "pathology": "Reumatismo",
+        "description": "Artic."
+    },
+    {
+        "id": 81,
+        "point_a": "Ciático",
+        "point_b": "Ciático",
+        "type": "Virus",
+        "pathology": "Poliomielitis",
+        "description": "Piernas."
+    },
+    {
+        "id": 82,
+        "point_a": "Aquiles",
+        "point_b": "Aquiles",
+        "type": "Bacteria",
+        "pathology": "Shigella",
+        "description": "Intestino."
+    },
+    {
+        "id": 83,
+        "point_a": "Calcáneo",
+        "point_b": "Calcáneo",
+        "type": "Parásito",
+        "pathology": "Ricketsia",
+        "description": "Debilidad."
+    },
+    {
+        "id": 84,
+        "point_a": "Rótula",
+        "point_b": "Rótula",
+        "type": "Emocional",
+        "pathology": "Miedo",
+        "description": "Avanzar."
+    },
+    {
+        "id": 85,
+        "point_a": "Tibia",
+        "point_b": "Tibia",
+        "type": "Hongo",
+        "pathology": "Malassezia",
+        "description": "Piel."
+    },
+    {
+        "id": 86,
+        "point_a": "Rama Mandibular",
+        "point_b": "Rama Mandibular",
+        "type": "Bacteria",
+        "pathology": "Staph Epidermis",
+        "description": "Acné."
+    },
+    {
+        "id": 87,
+        "point_a": "Comisura",
+        "point_b": "Comisura",
+        "type": "Virus",
+        "pathology": "Herpes 4",
+        "description": "Labial."
+    },
+    {
+        "id": 88,
+        "point_a": "Seno Nazal",
+        "point_b": "Seno Nazal",
+        "type": "Virus",
+        "pathology": "Sinusitis",
+        "description": "Nasal."
+    },
+    {
+        "id": 89,
+        "point_a": "Párpado",
+        "point_b": "Párpado",
+        "type": "Bacteria",
+        "pathology": "Neisseria",
+        "description": "Conjuntivitis."
+    },
+    {
+        "id": 90,
+        "point_a": "Lacrimal",
+        "point_b": "Lacrimal",
+        "type": "Bacteria",
+        "pathology": "Haemophilus",
+        "description": "Rinitis."
+    },
+    {
+        "id": 91,
+        "point_a": "Craneal",
+        "point_b": "Craneal",
+        "type": "Virus",
+        "pathology": "Bacilo Ántrax",
+        "description": "Respiratorio."
+    },
+    {
+        "id": 92,
+        "point_a": "Bulbo Raquídeo",
+        "point_b": "Cerebelo",
+        "type": "Especial",
+        "pathology": "New Castle",
+        "description": "Mareos."
+    },
+    {
+        "id": 93,
+        "point_a": "Cerebelo",
+        "point_b": "Cerebelo",
+        "type": "Disfunción",
+        "pathology": "Pánico",
+        "description": "Nervioso."
+    },
+    {
+        "id": 94,
+        "point_a": "Polígono Willis",
+        "point_b": "Polígono Willis",
+        "type": "Virus",
+        "pathology": "Reovirus",
+        "description": "Visión."
+    },
+    {
+        "id": 95,
+        "point_a": "Temporal",
+        "point_b": "Temporal",
+        "type": "Virus",
+        "pathology": "Tifo",
+        "description": "Fiebre."
+    },
+    {
+        "id": 96,
+        "point_a": "Sien",
+        "point_b": "Sien",
+        "type": "Disfunción",
+        "pathology": "Riego",
+        "description": "Cerebral."
+    },
+    {
+        "id": 97,
+        "point_a": "Angina",
+        "point_b": "Angina",
+        "type": "Virus",
+        "pathology": "Herpes 2",
+        "description": "Garganta."
+    },
+    {
+        "id": 98,
+        "point_a": "Carótida",
+        "point_b": "Carótida",
+        "type": "Disfunción",
+        "pathology": "Hipertensión",
+        "description": "Arterial."
+    },
+    {
+        "id": 99,
+        "point_a": "Pericardio",
+        "point_b": "Pericardio",
+        "type": "Bacteria",
+        "pathology": "Staph Aureus",
+        "description": "Corazón."
+    },
+    {
+        "id": 100,
+        "point_a": "Corazón",
+        "point_b": "Corazón",
+        "type": "Emocional",
+        "pathology": "Negatividad",
+        "description": "Emociones."
+    },
+    {
+        "id": 101,
+        "point_a": "Esternón",
+        "point_b": "Suprarrenales",
+        "type": "Especial",
+        "pathology": "Poliglobulia",
+        "description": "Sangre."
+    },
+    {
+        "id": 102,
+        "point_a": "Agujero",
+        "point_b": "Agujero",
+        "type": "Parásito",
+        "pathology": "Giardia Lamblia",
+        "description": "Digestivo."
+    },
+    {
+        "id": 103,
+        "point_a": "Anexo",
+        "point_b": "Ano",
+        "type": "Reservorio",
+        "pathology": "Paramixovirus",
+        "description": "Reservorio viral."
+    },
+    {
+        "id": 104,
+        "point_a": "Antecuerno",
+        "point_b": "Antecuerno",
+        "type": "Bacteria",
+        "pathology": "Aerobacter Aerogenes",
+        "description": "Problemas respiratorios."
+    },
+    {
+        "id": 105,
+        "point_a": "Aquiles",
+        "point_b": "Aquiles",
+        "type": "Bacteria",
+        "pathology": "Shigella",
+        "description": "Disentería."
+    },
+    {
+        "id": 106,
+        "point_a": "Arco del Pie",
+        "point_b": "Arco del Pie",
+        "type": "Virus",
+        "pathology": "Ébola",
+        "description": "Fiebre hemorrágica."
+    },
+    {
+        "id": 107,
+        "point_a": "Articulación",
+        "point_b": "Nervio Inguinal",
+        "type": "Especial",
+        "pathology": "Reumatismo",
+        "description": "Dolor articular."
+    },
+    {
+        "id": 108,
+        "point_a": "Atlas",
+        "point_b": "Píloro",
+        "type": "Parásito",
+        "pathology": "Plasmodium Falciparum",
+        "description": "Malaria grave."
+    },
+    {
+        "id": 109,
+        "point_a": "Axila",
+        "point_b": "Axila",
+        "type": "Virus",
+        "pathology": "Rabia",
+        "description": "Sistema nervioso."
+    },
+    {
+        "id": 110,
+        "point_a": "Bazo",
+        "point_b": "Duodeno",
+        "type": "Bacteria",
+        "pathology": "Leucemia Verdadera",
+        "description": "Trastorno sanguíneo."
+    },
+    {
+        "id": 111,
+        "point_a": "Bazo",
+        "point_b": "Hipotálamo",
+        "type": "Emocional",
+        "pathology": "Pereza",
+        "description": "Falta de energía."
+    },
+    {
+        "id": 112,
+        "point_a": "Bazo",
+        "point_b": "Pulmón",
+        "type": "Bacteria",
+        "pathology": "Rubéola",
+        "description": "Erupción cutánea."
+    },
+    {
+        "id": 113,
+        "point_a": "Borde Costal",
+        "point_b": "Borde Costal",
+        "type": "Bacteria",
+        "pathology": "Borrelia",
+        "description": "Enfermedad de Lyme."
+    },
+    {
+        "id": 114,
+        "point_a": "Botón Aórtico",
+        "point_b": "Pericardio",
+        "type": "Especial",
+        "pathology": "Hipertensión",
+        "description": "Presión arterial."
+    },
+    {
+        "id": 115,
+        "point_a": "Braquial",
+        "point_b": "Braquial",
+        "type": "Bacteria",
+        "pathology": "Streptococcus A",
+        "description": "Psoriasis (falsa)."
+    },
+    {
+        "id": 116,
+        "point_a": "Bulbo",
+        "point_b": "Corazón",
+        "type": "Emocional",
+        "pathology": "Crueldad",
+        "description": "Comportamiento agresivo."
+    },
+    {
+        "id": 117,
+        "point_a": "Bulbo",
+        "point_b": "Vejiga",
+        "type": "Virus",
+        "pathology": "Dengue Hemorrágico",
+        "description": "Fiebre alta."
+    },
+    {
+        "id": 118,
+        "point_a": "Bursa",
+        "point_b": "Bursa",
+        "type": "Bacteria",
+        "pathology": "Actinomyces",
+        "description": "Hombro doloroso."
+    },
+    {
+        "id": 119,
+        "point_a": "Cabeza de Fémur",
+        "point_b": "Cabeza de Fémur",
+        "type": "Hongo",
+        "pathology": "Micosis",
+        "description": "Infección hueso."
+    },
+    {
+        "id": 120,
+        "point_a": "Cadera",
+        "point_b": "Cadera",
+        "type": "Bacteria",
+        "pathology": "Chlamydia Pneumoniae",
+        "description": "Afectación pélvica."
+    },
+    {
+        "id": 121,
+        "point_a": "Cáliz Renal",
+        "point_b": "Uréter",
+        "type": "Bacteria",
+        "pathology": "Herpes 5",
+        "description": "Citomegalovirus."
+    },
+    {
+        "id": 122,
+        "point_a": "Canto del Ojo",
+        "point_b": "Canto del Ojo",
+        "type": "Hongo",
+        "pathology": "Aspergillus",
+        "description": "Afección ocular."
+    },
+    {
+        "id": 123,
+        "point_a": "Cápsula Renal",
+        "point_b": "Cápsula Renal",
+        "type": "Reservorio",
+        "pathology": "Proteus Mirabilis",
+        "description": "Lupus (falso)."
+    },
+    {
+        "id": 124,
+        "point_a": "Cápsula Renal",
+        "point_b": "Vejiga",
+        "type": "Bacteria",
+        "pathology": "Toxinas Riñón",
+        "description": "Desintoxicación."
+    },
+    {
+        "id": 125,
+        "point_a": "Carina",
+        "point_b": "Carina",
+        "type": "Virus",
+        "pathology": "Aftosa",
+        "description": "Fiebre aftosa."
+    },
+    {
+        "id": 126,
+        "point_a": "Carótida",
+        "point_b": "Yugular",
+        "type": "Especial",
+        "pathology": "Congestión",
+        "description": "Flujo sanguíneo."
+    },
+    {
+        "id": 127,
+        "point_a": "Cava",
+        "point_b": "Cava",
+        "type": "Hongo",
+        "pathology": "Trycophyton",
+        "description": "Pie de atleta."
+    },
+    {
+        "id": 128,
+        "point_a": "Cerebelo",
+        "point_b": "Bulbo",
+        "type": "Especial",
+        "pathology": "New Castle",
+        "description": "Mareos, equilibrio."
+    },
+    {
+        "id": 129,
+        "point_a": "Cerebelo",
+        "point_b": "Cerebelo",
+        "type": "Disfunción",
+        "pathology": "Crisis Pánico",
+        "description": "Ansiedad, miedo."
+    },
+    {
+        "id": 130,
+        "point_a": "Cervical 1",
+        "point_b": "Píloro",
+        "type": "Parásito",
+        "pathology": "Plasmodium Falciparum",
+        "description": "Paludismo."
+    },
+    {
+        "id": 131,
+        "point_a": "Cervical 3",
+        "point_b": "Supraespinoso",
+        "type": "Parásito",
+        "pathology": "Balantidium Tifus",
+        "description": "Diarrea, fiebre."
+    },
+    {
+        "id": 132,
+        "point_a": "Cervical 5",
+        "point_b": "Cervical 5",
+        "type": "Bacteria",
+        "pathology": "Staph Viridians",
+        "description": "Endocarditis."
+    },
+    {
+        "id": 133,
+        "point_a": "Cervical 6",
+        "point_b": "Cervical 6",
+        "type": "Bacteria",
+        "pathology": "Chlamydia Pneumoniae",
+        "description": "Tos, bronquitis."
+    },
+    {
+        "id": 134,
+        "point_a": "Cervical 7",
+        "point_b": "Cervical 7",
+        "type": "Bacteria",
+        "pathology": "Streptococcus Fecalis",
+        "description": "Infección urinaria."
+    },
+    {
+        "id": 135,
+        "point_a": "Ciático",
+        "point_b": "Ciático",
+        "type": "Virus",
+        "pathology": "Poliomielitis",
+        "description": "Parálisis, debilidad."
+    },
+    {
+        "id": 136,
+        "point_a": "Ciego",
+        "point_b": "Ciego",
+        "type": "Parásito",
+        "pathology": "Trichomonas",
+        "description": "Vaginitis, uretritis."
+    },
+    {
+        "id": 137,
+        "point_a": "Ciego",
+        "point_b": "Riñón Derecho",
+        "type": "Parásito",
+        "pathology": "Trichomonas",
+        "description": "Ginecológico."
+    },
+    {
+        "id": 138,
+        "point_a": "Cien",
+        "point_b": "Cien",
+        "type": "Disfunción",
+        "pathology": "Microcirculación Cerebral",
+        "description": "Memoria, atención."
+    },
+    {
+        "id": 139,
+        "point_a": "Cisura Media",
+        "point_b": "Cisura Media",
+        "type": "Emocional",
+        "pathology": "Rueda",
+        "description": "Orgullo, altivez."
+    },
+    {
+        "id": 140,
+        "point_a": "Cisura Silvio",
+        "point_b": "Cisura Silvio",
+        "type": "Virus",
+        "pathology": "Sor",
+        "description": "Problemas respiratorios."
+    },
+    {
+        "id": 141,
+        "point_a": "Clítoris",
+        "point_b": "Clítoris",
+        "type": "Virus",
+        "pathology": "Spiroqueta",
+        "description": "Trastornos pélvicos."
+    },
+    {
+        "id": 142,
+        "point_a": "Clítoris",
+        "point_b": "Pelvis",
+        "type": "Bactería",
+        "pathology": "Treponema",
+        "description": "Sífilis."
+    },
+    {
+        "id": 143,
+        "point_a": "Codo",
+        "point_b": "Braquial",
+        "type": "Especial",
+        "pathology": "Castañeda",
+        "description": "Trastornos visuales."
+    },
+    {
+        "id": 144,
+        "point_a": "Cola de Caballo",
+        "point_b": "Stomachus",
+        "type": "Virus",
+        "pathology": "Herpes 6",
+        "description": "Fatiga crónica."
+    },
+    {
+        "id": 145,
+        "point_a": "Cola de Páncreas",
+        "point_b": "Hígado",
+        "type": "Bacteria",
+        "pathology": "Chlamydia",
+        "description": "Intoxicación metales."
+    },
+    {
+        "id": 146,
+        "point_a": "Colon Ascen",
+        "point_b": "Colon Descen",
+        "type": "Virus",
+        "pathology": "Herpes Zoster",
+        "description": "Dolor intercostal."
+    },
+    {
+        "id": 147,
+        "point_a": "Colon Ascen",
+        "point_b": "Hígado",
+        "type": "Bacteria",
+        "pathology": "Klebsiella Pneumoniae",
+        "description": "Neumonía."
+    },
+    {
+        "id": 148,
+        "point_a": "Colon Ascen",
+        "point_b": "Riñón Derecho",
+        "type": "Bacteria",
+        "pathology": "Klebsiella Pneumoniae",
+        "description": "Afección renal."
+    },
+    {
+        "id": 149,
+        "point_a": "Colon Descen",
+        "point_b": "Colon Descen",
+        "type": "Bacteria",
+        "pathology": "Enterobacter Cloacae",
+        "description": "Gases, distensión."
+    },
+    {
+        "id": 150,
+        "point_a": "Colon Descen",
+        "point_b": "Recto",
+        "type": "Estomacal",
+        "pathology": "Obstrucción intestinal",
+        "description": "Estreñimiento."
+    },
+    {
+        "id": 151,
+        "point_a": "Colon Transverso",
+        "point_b": "Hígado",
+        "type": "Bacteria",
+        "pathology": "Vibrio Cholerae",
+        "description": "Diarrea acuosa."
+    },
+    {
+        "id": 152,
+        "point_a": "Colon Transverso",
+        "point_b": "Vejiga",
+        "type": "Bacteria",
+        "pathology": "Vibrio Cholerae",
+        "description": "Deshidratación."
+    },
+    {
+        "id": 153,
+        "point_a": "Comisura",
+        "point_b": "Comisura",
+        "type": "Virus",
+        "pathology": "Herpes 4",
+        "description": "Parálisis facial."
+    },
+    {
+        "id": 154,
+        "point_a": "Condral",
+        "point_b": "Condral",
+        "type": "Hongo",
+        "pathology": "Pneumocystis Carinii",
+        "description": "Neumonía, VIH."
+    },
+    {
+        "id": 155,
+        "point_a": "Conducto Páncreas",
+        "point_b": "Riñón Izquierdo",
+        "type": "Bacteria",
+        "pathology": "Spiroqueta",
+        "description": "Diabetes falsa."
+    },
+    {
+        "id": 156,
+        "point_a": "Conducto Vesícula",
+        "point_b": "Riñón Derecho",
+        "type": "Bacteria",
+        "pathology": "Espiroqueta",
+        "description": "Digestión grasas."
+    },
+    {
+        "id": 157,
+        "point_a": "Contra Ciego",
+        "point_b": "Contra Ciego",
+        "type": "Bacteria",
+        "pathology": "Bordetella Pertussis",
+        "description": "Tos ferina."
+    },
+    {
+        "id": 158,
+        "point_a": "Corazón",
+        "point_b": "Corazón",
+        "type": "Emocional",
+        "pathology": "Negatividad",
+        "description": "Pesimismo."
+    },
+    {
+        "id": 159,
+        "point_a": "Corazón",
+        "point_b": "Costilla",
+        "type": "Especial",
+        "pathology": "Asfixia",
+        "description": "Falta de aire."
+    },
+    {
+        "id": 160,
+        "point_a": "Corazón",
+        "point_b": "Páncreas",
+        "type": "Especial",
+        "pathology": "Envidia",
+        "description": "Daño energético."
+    },
+    {
+        "id": 161,
+        "point_a": "Corazón",
+        "point_b": "Vejiga",
+        "type": "Emocional",
+        "pathology": "Resentimiento",
+        "description": "Rencor acumulado."
+    },
+    {
+        "id": 162,
+        "point_a": "Coronaria",
+        "point_b": "Pulmón",
+        "type": "Bacteria",
+        "pathology": "Streptococcus Pyogenes",
+        "description": "Angina de pecho."
+    },
+    {
+        "id": 163,
+        "point_a": "Costal",
+        "point_b": "Costal",
+        "type": "Bacteria",
+        "pathology": "Proteus Mirabilis",
+        "description": "Derrame pleural."
+    },
+    {
+        "id": 164,
+        "point_a": "Costilla 1",
+        "point_b": "Costilla 1",
+        "type": "Hongo",
+        "pathology": "Trycophyton",
+        "description": "Tiña."
+    },
+    {
+        "id": 165,
+        "point_a": "Coxo",
+        "point_b": "Coxo",
+        "type": "Reservorio",
+        "pathology": "Treponema",
+        "description": "Sifilis R."
+    },
+    {
+        "id": 166,
+        "point_a": "Craneal",
+        "point_b": "Craneal",
+        "type": "Virus",
+        "pathology": "Ántrax",
+        "description": "Carbunco."
+    },
+    {
+        "id": 167,
+        "point_a": "Cresta Ilíaca",
+        "point_b": "Cresta Ilíaca",
+        "type": "Bacteria",
+        "pathology": "Trypanosoma Gambiense",
+        "description": "Enfermedad del sueño."
+    },
+    {
+        "id": 168,
+        "point_a": "Cuadrado Lumbar",
+        "point_b": "Cuadrado Lumbar",
+        "type": "Bacteria",
+        "pathology": "Trypanosoma",
+        "description": "Dolor lumbar."
+    },
+    {
+        "id": 169,
+        "point_a": "Cuádriceps",
+        "point_b": "Cuádriceps",
+        "type": "Especial",
+        "pathology": "Intoxicación",
+        "description": "Metales pesados."
+    },
+    {
+        "id": 170,
+        "point_a": "Cúbito",
+        "point_b": "Cúbito",
+        "type": "Virus",
+        "pathology": "Herpes 3",
+        "description": "Afección brazos."
+    },
+    {
+        "id": 171,
+        "point_a": "Cuello",
+        "point_b": "Cuello",
+        "type": "Hongo",
+        "pathology": "Blastocistis Hominis",
+        "description": "Convulsiones."
+    },
+    {
+        "id": 172,
+        "point_a": "Cuerpo Calloso",
+        "point_b": "Cuerpo Calloso",
+        "type": "Emocional",
+        "pathology": "Adicción",
+        "description": "Drogas, fármacos."
+    },
+    {
+        "id": 173,
+        "point_a": "Cuerpo de Páncreas",
+        "point_b": "Cola de Páncreas",
+        "type": "Especial",
+        "pathology": "Pancreatitis",
+        "description": "Dolor abdominal."
+    },
+    {
+        "id": 174,
+        "point_a": "Dedo Gordo",
+        "point_b": "Dedo Gordo",
+        "type": "Hongo",
+        "pathology": "Micosis",
+        "description": "Uñas."
+    },
+    {
+        "id": 175,
+        "point_a": "Dedo Índice",
+        "point_b": "Dedo Índice",
+        "type": "Bacteria",
+        "pathology": "Escherichia Coli",
+        "description": "Infección."
+    },
+    {
+        "id": 176,
+        "point_a": "Deltoides",
+        "point_b": "Deltoides",
+        "type": "Bacteria",
+        "pathology": "Treponema Pallidum",
+        "description": "Reumatismo falso."
+    },
+    {
+        "id": 177,
+        "point_a": "Deltoides",
+        "point_b": "Riñón",
+        "type": "Bacteria",
+        "pathology": "Leishmania",
+        "description": "Úlcera cutánea."
+    },
+    {
+        "id": 178,
+        "point_a": "Dental",
+        "point_b": "Riñón",
+        "type": "Reservorio",
+        "pathology": "Universal",
+        "description": "Cualquier patógeno."
+    },
+    {
+        "id": 179,
+        "point_a": "Diafragma",
+        "point_b": "Diafragma",
+        "type": "Hongo",
+        "pathology": "Candida Albicans",
+        "description": "Gases, acidez."
+    },
+    {
+        "id": 180,
+        "point_a": "Diafragma",
+        "point_b": "Píloro",
+        "type": "Bacteria",
+        "pathology": "Astrovirus",
+        "description": "Gastroenteritis."
+    },
+    {
+        "id": 181,
+        "point_a": "Dorso",
+        "point_b": "Lumbar",
+        "type": "Bacteria",
+        "pathology": "Meningococo",
+        "description": "Meningitis."
+    },
+    {
+        "id": 182,
+        "point_a": "Dorso Mano",
+        "point_b": "Dorso Mano",
+        "type": "Emocional",
+        "pathology": "Duda",
+        "description": "Inseguridad."
+    },
+    {
+        "id": 183,
+        "point_a": "Duodeno",
+        "point_b": "Duodeno",
+        "type": "Disfunción",
+        "pathology": "Fermentación",
+        "description": "Colitis, gases."
+    },
+    {
+        "id": 184,
+        "point_a": "Duodeno",
+        "point_b": "Hígado",
+        "type": "Bacteria",
+        "pathology": "Chlamydia Trachomatis",
+        "description": "Hepatitis D."
+    },
+    {
+        "id": 185,
+        "point_a": "Duodeno",
+        "point_b": "Riñón Derecho",
+        "type": "Bacteria",
+        "pathology": "Diabetes Mellitus",
+        "description": "Falta insulina."
+    },
+    {
+        "id": 186,
+        "point_a": "Duodeno",
+        "point_b": "Riñón Izquierdo",
+        "type": "Bacteria",
+        "pathology": "Chlamydia",
+        "description": "Pterigion."
+    },
+    {
+        "id": 187,
+        "point_a": "Epigastrio",
+        "point_b": "Epigastrio",
+        "type": "Parásito",
+        "pathology": "Giardia Lamblia",
+        "description": "Anorexia, cólicos."
+    },
+    {
+        "id": 188,
+        "point_a": "Epiplón",
+        "point_b": "Epiplón",
+        "type": "Bacteria",
+        "pathology": "Staphylococcus Albus",
+        "description": "Acné vulgar."
+    },
+    {
+        "id": 189,
+        "point_a": "Escápula",
+        "point_b": "Escápula",
+        "type": "Bacteria",
+        "pathology": "Mycobacterium Leprae",
+        "description": "Lepra, piel."
+    },
+    {
+        "id": 190,
+        "point_a": "Esófago",
+        "point_b": "Esófago",
+        "type": "Bacteria",
+        "pathology": "Fasciolopsis Buski",
+        "description": "Problemas hepáticos."
+    },
+    {
+        "id": 191,
+        "point_a": "Esófago",
+        "point_b": "Píloro",
+        "type": "Bacteria",
+        "pathology": "Helicobacter Pylori",
+        "description": "Gastritis, úlcera."
+    },
+    {
+        "id": 192,
+        "point_a": "Esófago",
+        "point_b": "Vejiga",
+        "type": "Hongo",
+        "pathology": "Histoplasma Capsulatum",
+        "description": "Pulmón."
+    },
+    {
+        "id": 193,
+        "point_a": "Esternocleidomastoideo",
+        "point_b": "Esternocleidomastoideo",
+        "type": "Disfunción",
+        "pathology": "Disfunción SN Simpático",
+        "description": "Mala circulación."
+    },
+    {
+        "id": 194,
+        "point_a": "Esternón",
+        "point_b": "Bazo",
+        "type": "Especial",
+        "pathology": "Enfisema",
+        "description": "Pulmonar."
+    },
+    {
+        "id": 195,
+        "point_a": "Esternón",
+        "point_b": "Suprarrenales",
+        "type": "Especial",
+        "pathology": "Poliglobulia",
+        "description": "Sangre espesa."
+    },
+    {
+        "id": 196,
+        "point_a": "Estómago",
+        "point_b": "Cola Páncreas",
+        "type": "Especial",
+        "pathology": "Desintoxicación",
+        "description": "Limpieza."
+    },
+    {
+        "id": 197,
+        "point_a": "Estómago",
+        "point_b": "Corazón",
+        "type": "Emocional",
+        "pathology": "Gula",
+        "description": "Ansiedad orla."
+    },
+    {
+        "id": 198,
+        "point_a": "Estómago",
+        "point_b": "Estómago",
+        "type": "Disfunción",
+        "pathology": "Disfunción Estomacal",
+        "description": "Mala digestión."
+    },
+    {
+        "id": 199,
+        "point_a": "Estómago",
+        "point_b": "Píloro",
+        "type": "Bacteria",
+        "pathology": "Clostridium Perfringens",
+        "description": "Gangrena gaseosa."
+    },
+    {
+        "id": 200,
+        "point_a": "Estómago",
+        "point_b": "Suprarrenales",
+        "type": "Virus",
+        "pathology": "Sarampión",
+        "description": "Exantema, fiebre."
+    },
+    {
+        "id": 201,
+        "point_a": "Flanco",
+        "point_b": "Flanco",
+        "type": "Bacteria",
+        "pathology": "Yersinia Intestinalis",
+        "description": "Diarrea."
+    },
+    {
+        "id": 202,
+        "point_a": "Frontal",
+        "point_b": "Frontal",
+        "type": "Especial",
+        "pathology": "Bienestar",
+        "description": "Relajación."
+    },
+    {
+        "id": 203,
+        "point_a": "Ganglios Mesentéricos",
+        "point_b": "Ganglios Mesentéricos",
+        "type": "Virus",
+        "pathology": "Enterovirus",
+        "description": "Cólicos."
+    },
+    {
+        "id": 204,
+        "point_a": "Glúteo",
+        "point_b": "Glúteo",
+        "type": "Parásito",
+        "pathology": "Parásitos Intestinales",
+        "description": "Lombrices."
+    },
+    {
+        "id": 205,
+        "point_a": "Glúteo",
+        "point_b": "Píloro",
+        "type": "Bacteria",
+        "pathology": "Vellonella",
+        "description": "Digestivo."
+    },
+    {
+        "id": 206,
+        "point_a": "Hígado",
+        "point_b": "Cola Páncreas",
+        "type": "Especial",
+        "pathology": "Toxinas",
+        "description": "Desintoxicación."
+    },
+    {
+        "id": 207,
+        "point_a": "Hígado",
+        "point_b": "Colon Descen",
+        "type": "Virus",
+        "pathology": "Pasteurella",
+        "description": "Hepatitis A."
+    },
+    {
+        "id": 208,
+        "point_a": "Hígado",
+        "point_b": "Corazón",
+        "type": "Emocional",
+        "pathology": "Ira",
+        "description": "Enfado crónico."
+    },
+    {
+        "id": 209,
+        "point_a": "Hígado",
+        "point_b": "Hígado",
+        "type": "Disfunción",
+        "pathology": "Hepatitis Tóxica",
+        "description": "Inflamación tóxica."
+    },
+    {
+        "id": 210,
+        "point_a": "Hígado",
+        "point_b": "Riñón Derecho",
+        "type": "Disfunción",
+        "pathology": "Cirrosis",
+        "description": "Destrucción hepática."
+    },
+    {
+        "id": 211,
+        "point_a": "Hipófisis",
+        "point_b": "Bulbo",
+        "type": "Disfunción",
+        "pathology": "Diabetes Insípida",
+        "description": "Sed excesiva."
+    },
+    {
+        "id": 212,
+        "point_a": "Hipófisis",
+        "point_b": "Hipófisis",
+        "type": "Disfunción",
+        "pathology": "Galactorrea",
+        "description": "Hormonal."
+    },
+    {
+        "id": 213,
+        "point_a": "Hipófisis",
+        "point_b": "Ovario",
+        "type": "Disfunción",
+        "pathology": "Disfunción Ovárica",
+        "description": "Menstruación."
+    },
+    {
+        "id": 214,
+        "point_a": "Hipófisis",
+        "point_b": "Tiroides",
+        "type": "Emocional",
+        "pathology": "Angustia",
+        "description": "Venganza."
+    },
+    {
+        "id": 215,
+        "point_a": "Hipófisis",
+        "point_b": "Vejiga",
+        "type": "Virus",
+        "pathology": "Dengue",
+        "description": "Dolor huesos."
+    },
+    {
+        "id": 216,
+        "point_a": "Hipotálamo",
+        "point_b": "Sacro",
+        "type": "Especial",
+        "pathology": "Mycoplasma Hominis",
+        "description": "Infección genital."
+    },
+    {
+        "id": 217,
+        "point_a": "Hipotálamo",
+        "point_b": "Vesícula",
+        "type": "Emocional",
+        "pathology": "Ansiedad",
+        "description": "Nerviosismo."
+    },
+    {
+        "id": 218,
+        "point_a": "Húmero",
+        "point_b": "Húmero",
+        "type": "Bacteria",
+        "pathology": "Enterobacter Pneumoniae",
+        "description": "Respiratorio."
+    },
+    {
+        "id": 219,
+        "point_a": "Ilíaco",
+        "point_b": "Ilíaco",
+        "type": "Bacteria",
+        "pathology": "Elena",
+        "description": "Disfunción intestinal."
+    },
+    {
+        "id": 220,
+        "point_a": "Índice",
+        "point_b": "Índice",
+        "type": "Bacteria",
+        "pathology": "Escherichia Coli",
+        "description": "Infección orina."
+    },
+    {
+        "id": 221,
+        "point_a": "Infraaxilar",
+        "point_b": "Infraaxilar",
+        "type": "Virus",
+        "pathology": "Pleuritis Viral",
+        "description": "Dolor pleura."
+    },
+    {
+        "id": 222,
+        "point_a": "Interciliar",
+        "point_b": "Bulbo",
+        "type": "Especial",
+        "pathology": "Carácter",
+        "description": "Personalidad."
+    },
+    {
+        "id": 223,
+        "point_a": "Isquion",
+        "point_b": "Isquion",
+        "type": "Parásito",
+        "pathology": "Oncocercosis",
+        "description": "Parásitos piel."
+    },
+    {
+        "id": 224,
+        "point_a": "Lacrimal",
+        "point_b": "Lacrimal",
+        "type": "Bacteria",
+        "pathology": "Haemophilus Influenzae",
+        "description": "Gripe."
+    },
+    {
+        "id": 225,
+        "point_a": "Laringe",
+        "point_b": "Laringe",
+        "type": "Bacteria",
+        "pathology": "Bordetella Pertussis",
+        "description": "Tos ferina."
+    },
+    {
+        "id": 226,
+        "point_a": "Latissimus",
+        "point_b": "Latissimus",
+        "type": "Bacteria",
+        "pathology": "Yersinia Pneumoniae",
+        "description": "Pulmón."
+    },
+    {
+        "id": 227,
+        "point_a": "Lengua",
+        "point_b": "Lengua",
+        "type": "Parásito",
+        "pathology": "Sarna",
+        "description": "Dermatitis."
+    },
+    {
+        "id": 228,
+        "point_a": "Ligamento Hepático",
+        "point_b": "Riñón Derecho",
+        "type": "Virus",
+        "pathology": "Adenovirus",
+        "description": "Fiebre."
+    },
+    {
+        "id": 229,
+        "point_a": "Lóbulo Hepático",
+        "point_b": "Riñón Derecho",
+        "type": "Especial",
+        "pathology": "Intoxicación",
+        "description": "Metales."
+    },
+    {
+        "id": 230,
+        "point_a": "Lumbar 4",
+        "point_b": "Lumbar 4",
+        "type": "Bacteria",
+        "pathology": "Neisseria Gonorrhoeae",
+        "description": "Gonorrea."
+    },
+    {
+        "id": 231,
+        "point_a": "Lunadar",
+        "point_b": "Riñón",
+        "type": "Especial",
+        "pathology": "Meridiano Riñón",
+        "description": "Energía vital."
+    },
+    {
+        "id": 232,
+        "point_a": "Malar",
+        "point_b": "Malar",
+        "type": "Virus",
+        "pathology": "Enterovirus",
+        "description": "Diarrea viral."
+    },
+    {
+        "id": 233,
+        "point_a": "Mandíbula",
+        "point_b": "Mandíbula",
+        "type": "Bacteria",
+        "pathology": "Neisseria Gonorrhoeae",
+        "description": "Gingivitis."
+    },
+    {
+        "id": 234,
+        "point_a": "Mango Esternón",
+        "point_b": "Mango Esternón",
+        "type": "Virus",
+        "pathology": "Coxsackie",
+        "description": "Pericarditis."
+    },
+    {
+        "id": 235,
+        "point_a": "Mastoides",
+        "point_b": "Mastoides",
+        "type": "Parásito",
+        "pathology": "Filaria",
+        "description": "Sordera."
+    },
+    {
+        "id": 236,
+        "point_a": "Mediastino",
+        "point_b": "Mediastino",
+        "type": "Bacteria",
+        "pathology": "Proteus Mirabilis",
+        "description": "Laringitis."
+    },
+    {
+        "id": 237,
+        "point_a": "Muñeca",
+        "point_b": "Muñeca",
+        "type": "Bacteria",
+        "pathology": "Rickettsia",
+        "description": "Alzheimer falso."
+    },
+    {
+        "id": 238,
+        "point_a": "Nariz",
+        "point_b": "Nariz",
+        "type": "Reservorio",
+        "pathology": "Toxoides",
+        "description": "Mucosa nasal."
+    },
+    {
+        "id": 239,
+        "point_a": "Nervio Femoral",
+        "point_b": "Nervio Femoral",
+        "type": "Virus",
+        "pathology": "Herpes 6",
+        "description": "Fatiga."
+    },
+    {
+        "id": 240,
+        "point_a": "Nervio Inguinal",
+        "point_b": "Articulaciones",
+        "type": "Especial",
+        "pathology": "Reumatismo",
+        "description": "Monarticular."
+    },
+    {
+        "id": 241,
+        "point_a": "Nervio Inguinal",
+        "point_b": "Hígado",
+        "type": "Virus",
+        "pathology": "Roseola",
+        "description": "Exantema."
+    },
+    {
+        "id": 242,
+        "point_a": "Nervio Vago",
+        "point_b": "Riñón",
+        "type": "Especial",
+        "pathology": "Benavides",
+        "description": "Regulador."
+    },
+    {
+        "id": 243,
+        "point_a": "Occipital",
+        "point_b": "Occipital",
+        "type": "Virus",
+        "pathology": "Epstein Barr",
+        "description": "Mononucleosis."
+    },
+    {
+        "id": 244,
+        "point_a": "Oído",
+        "point_b": "Oído",
+        "type": "Parásito",
+        "pathology": "Toxoplasma",
+        "description": "Sistema nervioso."
+    },
+    {
+        "id": 245,
+        "point_a": "Ojo",
+        "point_b": "Ojo",
+        "type": "Virus",
+        "pathology": "Citomegalovirus",
+        "description": "Retinitis."
+    },
+    {
+        "id": 246,
+        "point_a": "Ombligo",
+        "point_b": "Ombligo",
+        "type": "Emocional",
+        "pathology": "Complejo",
+        "description": "Trauma."
+    },
+    {
+        "id": 247,
+        "point_a": "Ombligo",
+        "point_b": "Útero",
+        "type": "Especial",
+        "pathology": "Miedo",
+        "description": "Inseguridad."
+    },
+    {
+        "id": 248,
+        "point_a": "Oreja",
+        "point_b": "Oreja",
+        "type": "Especial",
+        "pathology": "Lenin",
+        "description": "Intoxicación."
+    },
+    {
+        "id": 249,
+        "point_a": "Ovario",
+        "point_b": "Ovario",
+        "type": "Disfunción",
+        "pathology": "Disfunción Ovárica",
+        "description": "Hormonal."
+    },
+    {
+        "id": 250,
+        "point_a": "Páncreas",
+        "point_b": "Páncreas",
+        "type": "Disfunción",
+        "pathology": "Diabetes",
+        "description": "Insulina."
+    },
+    {
+        "id": 251,
+        "point_a": "Paratiroides",
+        "point_b": "Paratiroides",
+        "type": "Disfunción",
+        "pathology": "Calcificación",
+        "description": "Osteoporosis."
+    },
+    {
+        "id": 252,
+        "point_a": "Parietal",
+        "point_b": "Colon Transverso",
+        "type": "Parásito",
+        "pathology": "Entamoeba Histolytica",
+        "description": "Digestivo."
+    },
+    {
+        "id": 253,
+        "point_a": "Parietal",
+        "point_b": "Parietal",
+        "type": "Virus",
+        "pathology": "Encefalitis",
+        "description": "Sueño, confusión."
+    },
+    {
+        "id": 254,
+        "point_a": "Parietal",
+        "point_b": "Riñón Contralateral",
+        "type": "Especial",
+        "pathology": "Goiz",
+        "description": "Acortamiento."
+    },
+    {
+        "id": 255,
+        "point_a": "Parótida",
+        "point_b": "Parótida",
+        "type": "Disfunción",
+        "pathology": "Parotiditis",
+        "description": "Producción saliva."
+    },
+    {
+        "id": 256,
+        "point_a": "Párpado",
+        "point_b": "Párpado",
+        "type": "Bacteria",
+        "pathology": "Neisseria Catarrhalis",
+        "description": "Conjuntivitis."
+    },
+    {
+        "id": 257,
+        "point_a": "Pericardio",
+        "point_b": "Pericardio",
+        "type": "Bacteria",
+        "pathology": "Staphylococcus Aureus",
+        "description": "Pericarditis."
+    },
+    {
+        "id": 258,
+        "point_a": "Perihepático",
+        "point_b": "Perihepático",
+        "type": "Bacteria",
+        "pathology": "Morganella Tifo",
+        "description": "Anorexia."
+    },
+    {
+        "id": 259,
+        "point_a": "Píloro",
+        "point_b": "Ano",
+        "type": "Virus",
+        "pathology": "Hanta",
+        "description": "Fiebre hemorrágica."
+    },
+    {
+        "id": 260,
+        "point_a": "Píloro",
+        "point_b": "Glúteo",
+        "type": "Bacteria",
+        "pathology": "Vellonella",
+        "description": "Digestivo."
+    },
+    {
+        "id": 261,
+        "point_a": "Píloro",
+        "point_b": "Hígado",
+        "type": "Parásito",
+        "pathology": "Oxiuros",
+        "description": "Picor anal."
+    },
+    {
+        "id": 262,
+        "point_a": "Píloro",
+        "point_b": "Píloro",
+        "type": "Disfunción",
+        "pathology": "Disfunción Píloro",
+        "description": "Acidez."
+    },
+    {
+        "id": 263,
+        "point_a": "Píloro",
+        "point_b": "Riñón Izquierdo",
+        "type": "Parásito",
+        "pathology": "Ameba Histolytica",
+        "description": "Absceso hepático."
+    },
+    {
+        "id": 264,
+        "point_a": "Píloro",
+        "point_b": "Uréter",
+        "type": "Hongo",
+        "pathology": "Micelio Intestinal",
+        "description": "Diarrea mucosa."
+    },
+    {
+        "id": 265,
+        "point_a": "Pineal",
+        "point_b": "Pineal",
+        "type": "Disfunción",
+        "pathology": "Melatonina",
+        "description": "Sueño, piel, sexo."
+    },
+    {
+        "id": 266,
+        "point_a": "Piso Orbital",
+        "point_b": "Piso Orbital",
+        "type": "Virus",
+        "pathology": "Orf Virus",
+        "description": "Problemas visión."
+    },
+    {
+        "id": 267,
+        "point_a": "Pleura",
+        "point_b": "Hígado",
+        "type": "Virus",
+        "pathology": "Hepatitis B",
+        "description": "Inflamación hígado."
+    },
+    {
+        "id": 268,
+        "point_a": "Pleura",
+        "point_b": "Peritoneo",
+        "type": "Reservorio",
+        "pathology": "Moisés",
+        "description": "Bacteria reservorio."
+    },
+    {
+        "id": 269,
+        "point_a": "Pleura",
+        "point_b": "Pleura",
+        "type": "Bacteria",
+        "pathology": "Pseudomona",
+        "description": "Pleuritis."
+    },
+    {
+        "id": 270,
+        "point_a": "Plexo Cervical",
+        "point_b": "Plexo Cervical",
+        "type": "Bacteria",
+        "pathology": "Streptococcus Fecalis",
+        "description": "Cuello, brazos."
+    },
+    {
+        "id": 271,
+        "point_a": "Polígono Willis",
+        "point_b": "Polígono Willis",
+        "type": "Virus",
+        "pathology": "Reovirus",
+        "description": "Vista."
+    },
+    {
+        "id": 272,
+        "point_a": "Pómulo",
+        "point_b": "Riñón Contralateral",
+        "type": "Parásito",
+        "pathology": "Plasmodium",
+        "description": "Paludismo."
+    },
+    {
+        "id": 273,
+        "point_a": "Poplíteo",
+        "point_b": "Poplíteo",
+        "type": "Bacteria",
+        "pathology": "Neumococo",
+        "description": "Neumonía."
+    },
+    {
+        "id": 274,
+        "point_a": "Postpineal",
+        "point_b": "Postpineal",
+        "type": "Especial",
+        "pathology": "Scaret",
+        "description": "Integridad."
+    },
+    {
+        "id": 275,
+        "point_a": "Preauricular",
+        "point_b": "Preauricular",
+        "type": "Bacteria",
+        "pathology": "Neocardia Americana",
+        "description": "Mandíbula."
+    },
+    {
+        "id": 276,
+        "point_a": "Prepineal",
+        "point_b": "Prepineal",
+        "type": "Bacteria",
+        "pathology": "Oxiuros",
+        "description": "Vejiga."
+    },
+    {
+        "id": 277,
+        "point_a": "Próstata",
+        "point_b": "Próstata",
+        "type": "Disfunción",
+        "pathology": "Prostatitis",
+        "description": "Inflamación próstata."
+    },
+    {
+        "id": 278,
+        "point_a": "Próstata",
+        "point_b": "Recto",
+        "type": "Virus",
+        "pathology": "Papiloma",
+        "description": "Verrugas."
+    },
+    {
+        "id": 279,
+        "point_a": "Pudendo",
+        "point_b": "Pudendo",
+        "type": "Virus",
+        "pathology": "Parotiditis",
+        "description": "Paperas (testículo)."
+    },
+    {
+        "id": 280,
+        "point_a": "Pulmón",
+        "point_b": "Corazón",
+        "type": "Emocional",
+        "pathology": "Tristeza",
+        "description": "Depresión."
+    },
+    {
+        "id": 281,
+        "point_a": "Punta Páncreas",
+        "point_b": "Bazo",
+        "type": "Virus",
+        "pathology": "Verruga Común",
+        "description": "VPH."
+    },
+    {
+        "id": 282,
+        "point_a": "Quiasma",
+        "point_b": "Quiasma",
+        "type": "Especial",
+        "pathology": "Lucina",
+        "description": "Flujo linfático."
+    },
+    {
+        "id": 283,
+        "point_a": "Radio",
+        "point_b": "Radio",
+        "type": "Hongo",
+        "pathology": "Microsporum",
+        "description": "Tiña cabeza."
+    },
+    {
+        "id": 284,
+        "point_a": "Rama Isquiática",
+        "point_b": "Rama Isquiática",
+        "type": "Bacteria",
+        "pathology": "Streptococcus C",
+        "description": "Infección garganta."
+    },
+    {
+        "id": 285,
+        "point_a": "Rama Mandíbula",
+        "point_b": "Rama Mandíbula",
+        "type": "Bacteria",
+        "pathology": "Staphylococcus Epidermis",
+        "description": "Piel cara."
+    },
+    {
+        "id": 286,
+        "point_a": "Recto",
+        "point_b": "Recto",
+        "type": "Bacteria",
+        "pathology": "Pseudomona Aeruginosa",
+        "description": "Diarrea fétida."
+    },
+    {
+        "id": 287,
+        "point_a": "Retrohepático",
+        "point_b": "Retrohepático",
+        "type": "Parásito",
+        "pathology": "Toxocara",
+        "description": "Alergias."
+    },
+    {
+        "id": 289,
+        "point_a": "Riñón",
+        "point_b": "Pómulo",
+        "type": "Parásito",
+        "pathology": "Plasmodium",
+        "description": "Fiebre."
+    },
+    {
+        "id": 290,
+        "point_a": "Riñón",
+        "point_b": "Riñón",
+        "type": "Bacteria",
+        "pathology": "Chlamydia",
+        "description": "Presión arterial."
+    },
+    {
+        "id": 291,
+        "point_a": "Riñón",
+        "point_b": "Uréter",
+        "type": "Especial",
+        "pathology": "Cólico",
+        "description": "Cálculo renal."
+    },
+    {
+        "id": 292,
+        "point_a": "Riñón Superior",
+        "point_b": "Riñón Inferior",
+        "type": "Disfunción",
+        "pathology": "Inmunocompetencia",
+        "description": "Sistema inmune."
+    },
+    {
+        "id": 293,
+        "point_a": "Estómago",
+        "point_b": "Duodeno",
+        "type": "Bacteria",
+        "pathology": "Herpes",
+        "description": "Gastritis."
+    },
+    {
+        "id": 294,
+        "point_a": "Rótula",
+        "point_b": "Rótula",
+        "type": "Emocional",
+        "pathology": "Miedo",
+        "description": "Parálisis."
+    },
+    {
+        "id": 295,
+        "point_a": "Saco Douglas",
+        "point_b": "Vena Femoral",
+        "type": "Virus",
+        "pathology": "Norwalk",
+        "description": "Gastroenteritis."
+    },
+    {
+        "id": 296,
+        "point_a": "Sacro",
+        "point_b": "Sacro",
+        "type": "Bacteria",
+        "pathology": "Proteus Mirabilis",
+        "description": "Irritación cola caballo."
+    },
+    {
+        "id": 297,
+        "point_a": "Seno Auriculoventricular",
+        "point_b": "Riñón",
+        "type": "Especial",
+        "pathology": "Taquicardia",
+        "description": "Ritmo cardíaco."
+    },
+    {
+        "id": 298,
+        "point_a": "Seno Frontal",
+        "point_b": "Seno Frontal",
+        "type": "Virus",
+        "pathology": "Sinusitis Viral",
+        "description": "Moco, dolor."
+    },
+    {
+        "id": 299,
+        "point_a": "Seno Nasal",
+        "point_b": "Seno Nasal",
+        "type": "Virus",
+        "pathology": "Sinusitis",
+        "description": "Obstrucción."
+    },
+    {
+        "id": 300,
+        "point_a": "Sien",
+        "point_b": "Sien",
+        "type": "Disfunción",
+        "pathology": "Vascularización",
+        "description": "Dolor cabeza."
+    },
+    {
+        "id": 301,
+        "point_a": "Sigmoides",
+        "point_b": "Recto",
+        "type": "Virus",
+        "pathology": "R-40",
+        "description": "VPH."
+    },
+    {
+        "id": 302,
+        "point_a": "Subclavia",
+        "point_b": "Subclavia",
+        "type": "Bacteria",
+        "pathology": "Bacilo Difteria",
+        "description": "Tos, crup."
+    },
+    {
+        "id": 303,
+        "point_a": "Suprarrenal",
+        "point_b": "Pulmón",
+        "type": "Bacteria",
+        "pathology": "Pseudomona",
+        "description": "Asma."
+    },
+    {
+        "id": 304,
+        "point_a": "Suprarrenal",
+        "point_b": "Recto",
+        "type": "Especial",
+        "pathology": "Hemorroides",
+        "description": "Varices anales."
+    },
+    {
+        "id": 305,
+        "point_a": "Suprarrenal",
+        "point_b": "Suprarrenal",
+        "type": "Disfunción",
+        "pathology": "Disfunción Suprarrenal",
+        "description": "Energía, estrés."
+    },
+    {
+        "id": 306,
+        "point_a": "Supraespinoso",
+        "point_b": "Supraespinoso",
+        "type": "Bacteria",
+        "pathology": "Mycobacterium Tuberculosis",
+        "description": "Koch."
+    },
+    {
+        "id": 307,
+        "point_a": "Tálamo",
+        "point_b": "Tálamo",
+        "type": "Emocional",
+        "pathology": "Hiperactividad",
+        "description": "Déficit atención."
+    },
+    {
+        "id": 308,
+        "point_a": "Tarso",
+        "point_b": "Tarso",
+        "type": "Especial",
+        "pathology": "Ácido Úrico",
+        "description": "Gota."
+    },
+    {
+        "id": 309,
+        "point_a": "Temporal",
+        "point_b": "Temporal",
+        "type": "Virus",
+        "pathology": "Tifo",
+        "description": "Fiebre tifoidea."
+    },
+    {
+        "id": 310,
+        "point_a": "Tendón Aquiles",
+        "point_b": "Tendón Aquiles",
+        "type": "Bacteria",
+        "pathology": "Shigella",
+        "description": "Disentería."
+    },
+    {
+        "id": 311,
+        "point_a": "Tensor Fascia Lata",
+        "point_b": "Tensor Fascia Lata",
+        "type": "Bacteria",
+        "pathology": "Gardnerella",
+        "description": "Vaginitis."
+    },
+    {
+        "id": 312,
+        "point_a": "Testículo",
+        "point_b": "Testículo",
+        "type": "Bacteria",
+        "pathology": "Yersinia Pestis",
+        "description": "Tos seca."
+    },
+    {
+        "id": 313,
+        "point_a": "Tibia",
+        "point_b": "Tibia",
+        "type": "Hongo",
+        "pathology": "Malassezia",
+        "description": "Pitiriasis."
+    },
+    {
+        "id": 314,
+        "point_a": "Timo",
+        "point_b": "Bazo",
+        "type": "Especial",
+        "pathology": "Marco Antonio",
+        "description": "Policitemia."
+    },
+    {
+        "id": 315,
+        "point_a": "Timo",
+        "point_b": "Hipófisis",
+        "type": "Emocional",
+        "pathology": "Avaricia",
+        "description": "Egoísmo."
+    },
+    {
+        "id": 316,
+        "point_a": "Timo",
+        "point_b": "Parietal",
+        "type": "Virus",
+        "pathology": "Rubéola",
+        "description": "Dolor cabeza."
+    },
+    {
+        "id": 317,
+        "point_a": "Timo",
+        "point_b": "Recto",
+        "type": "Virus",
+        "pathology": "VIH",
+        "description": "SIDA."
+    },
+    {
+        "id": 318,
+        "point_a": "Timo",
+        "point_b": "Suprarrenales",
+        "type": "Emocional",
+        "pathology": "Regulador",
+        "description": "Hormonal."
+    },
+    {
+        "id": 319,
+        "point_a": "Timo",
+        "point_b": "Timo",
+        "type": "Disfunción",
+        "pathology": "Fallo Inmune",
+        "description": "Defensas bajas."
+    },
+    {
+        "id": 320,
+        "point_a": "Tiroides",
+        "point_b": "Tiroides",
+        "type": "Disfunción",
+        "pathology": "Bocio",
+        "description": "Peso, temperatura."
+    },
+    {
+        "id": 321,
+        "point_a": "Tráquea",
+        "point_b": "Tráquea",
+        "type": "Virus",
+        "pathology": "Influenza",
+        "description": "Gripe estacional."
+    },
+    {
+        "id": 322,
+        "point_a": "Triángulo Escarpa",
+        "point_b": "Triángulo Escarpa",
+        "type": "Bacteria",
+        "pathology": "Mycobacterium Leprae",
+        "description": "Problemas piel."
+    },
+    {
+        "id": 323,
+        "point_a": "Trocánter Mayor",
+        "point_b": "Trocánter Mayor",
+        "type": "Bacteria",
+        "pathology": "Salmonella Tifo",
+        "description": "Fiebre, dolor espalda."
+    },
+    {
+        "id": 324,
+        "point_a": "Trocánter Menor",
+        "point_b": "Trocánter Menor",
+        "type": "Virus",
+        "pathology": "VIH Falso",
+        "description": "Inmunidad."
+    },
+    {
+        "id": 325,
+        "point_a": "Trompa",
+        "point_b": "Trompa",
+        "type": "Bacteria",
+        "pathology": "Parvovirus",
+        "description": "Infertilidad."
+    },
+    {
+        "id": 326,
+        "point_a": "Uréter",
+        "point_b": "Uréter",
+        "type": "Virus",
+        "pathology": "Varicela",
+        "description": "Herpes zoster."
+    },
+    {
+        "id": 327,
+        "point_a": "Uretra",
+        "point_b": "Uretra",
+        "type": "Virus",
+        "pathology": "Corona Virus",
+        "description": "Uretritis."
+    },
+    {
+        "id": 328,
+        "point_a": "Útero",
+        "point_b": "Útero",
+        "type": "Parásito",
+        "pathology": "Falso Embarazo",
+        "description": "Constricción uterina."
+    },
+    {
+        "id": 329,
+        "point_a": "Vagina",
+        "point_b": "Vagina",
+        "type": "Virus",
+        "pathology": "Yersinia",
+        "description": "Flujo."
+    },
+    {
+        "id": 330,
+        "point_a": "Válvula Ileocecal",
+        "point_b": "Riñón Derecho",
+        "type": "Parásito",
+        "pathology": "Trichomonas",
+        "description": "Digestivo."
+    },
+    {
+        "id": 331,
+        "point_a": "Vejiga",
+        "point_b": "Vejiga",
+        "type": "Bacteria",
+        "pathology": "Streptococcus G",
+        "description": "Cistitis."
+    },
+    {
+        "id": 332,
+        "point_a": "Vesícula",
+        "point_b": "Riñón Derecho",
+        "type": "Virus",
+        "pathology": "Catarro Común",
+        "description": "Congestión."
+    }
+]

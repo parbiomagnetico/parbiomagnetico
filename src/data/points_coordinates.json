@@ -1,0 +1,530 @@
+{
+    "Frontal": {
+        "Pineal": {
+            "x": 50,
+            "y": 8
+        },
+        "Prepineal": {
+            "x": 50,
+            "y": 7
+        },
+        "Postpineal": {
+            "x": 50,
+            "y": 9
+        },
+        "Parietal": {
+            "x": 30,
+            "y": 10
+        },
+        "Hipófisis": {
+            "x": 50,
+            "y": 11
+        },
+        "Seno Frontal": {
+            "x": 42,
+            "y": 10
+        },
+        "Seno Nasal": {
+            "x": 45,
+            "y": 13
+        },
+        "Ojo": {
+            "x": 40,
+            "y": 12
+        },
+        "Sien": {
+            "x": 35,
+            "y": 11
+        },
+        "Oído": {
+            "x": 30,
+            "y": 12
+        },
+        "Oreja": {
+            "x": 25,
+            "y": 12
+        },
+        "Mastoides": {
+            "x": 28,
+            "y": 14
+        },
+        "Pómulo": {
+            "x": 38,
+            "y": 14
+        },
+        "Lengua": {
+            "x": 50,
+            "y": 16
+        },
+        "Mandíbula": {
+            "x": 35,
+            "y": 17
+        },
+        "Parótida": {
+            "x": 30,
+            "y": 16
+        },
+        "Tiroides": {
+            "x": 50,
+            "y": 20
+        },
+        "Paratiroides": {
+            "x": 50,
+            "y": 19
+        },
+        "Laringe": {
+            "x": 50,
+            "y": 18
+        },
+        "Timo": {
+            "x": 50,
+            "y": 25
+        },
+        "Mediastino": {
+            "x": 50,
+            "y": 23
+        },
+        "Carina": {
+            "x": 50,
+            "y": 27
+        },
+        "Corazón": {
+            "x": 55,
+            "y": 28
+        },
+        "Pericardio": {
+            "x": 55,
+            "y": 29
+        },
+        "Aurícula Derecha": {
+            "x": 48,
+            "y": 28
+        },
+        "Ventrículo Izquierdo": {
+            "x": 58,
+            "y": 30
+        },
+        "Coronaria": {
+            "x": 55,
+            "y": 27
+        },
+        "Pulmón": {
+            "x": 65,
+            "y": 28
+        },
+        "Pleura": {
+            "x": 70,
+            "y": 30
+        },
+        "Diafragma": {
+            "x": 50,
+            "y": 38
+        },
+        "Epigastrio": {
+            "x": 50,
+            "y": 42
+        },
+        "Estómago": {
+            "x": 55,
+            "y": 43
+        },
+        "Píloro": {
+            "x": 52,
+            "y": 45
+        },
+        "Duodeno": {
+            "x": 48,
+            "y": 46
+        },
+        "Hígado": {
+            "x": 40,
+            "y": 42
+        },
+        "Lóbulo Hepático": {
+            "x": 35,
+            "y": 42
+        },
+        "Ligamento Hepático": {
+            "x": 42,
+            "y": 43
+        },
+        "Vesícula": {
+            "x": 45,
+            "y": 44
+        },
+        "Conducto Vesícula": {
+            "x": 46,
+            "y": 45
+        },
+        "Páncreas": {
+            "x": 55,
+            "y": 44
+        },
+        "Cabeza de Páncreas": {
+            "x": 52,
+            "y": 44
+        },
+        "Cuerpo de Páncreas": {
+            "x": 56,
+            "y": 44
+        },
+        "Cola de Páncreas": {
+            "x": 60,
+            "y": 43
+        },
+        "Punta de Páncreas": {
+            "x": 62,
+            "y": 43
+        },
+        "Bazo": {
+            "x": 70,
+            "y": 42
+        },
+        "Axila": {
+            "x": 25,
+            "y": 25
+        },
+        "Subclavia": {
+            "x": 35,
+            "y": 22
+        },
+        "Deltoides": {
+            "x": 20,
+            "y": 22
+        },
+        "Húmero": {
+            "x": 18,
+            "y": 30
+        },
+        "Codo": {
+            "x": 15,
+            "y": 40
+        },
+        "Braquial": {
+            "x": 15,
+            "y": 35
+        },
+        "Cúbito": {
+            "x": 12,
+            "y": 45
+        },
+        "Radio": {
+            "x": 18,
+            "y": 45
+        },
+        "Muñeca": {
+            "x": 15,
+            "y": 55
+        },
+        "Palma": {
+            "x": 15,
+            "y": 60
+        },
+        "Dedo Índice": {
+            "x": 12,
+            "y": 62
+        },
+        "Dedo Gordo": {
+            "x": 18,
+            "y": 62
+        },
+        "Colon Ascendente": {
+            "x": 35,
+            "y": 55
+        },
+        "Colon Transverso": {
+            "x": 50,
+            "y": 50
+        },
+        "Colon Descendente": {
+            "x": 65,
+            "y": 55
+        },
+        "Ciego": {
+            "x": 35,
+            "y": 60
+        },
+        "Sigmoides": {
+            "x": 65,
+            "y": 65
+        },
+        "Recto": {
+            "x": 50,
+            "y": 70
+        },
+        "Ano": {
+            "x": 50,
+            "y": 75
+        },
+        "Vejiga": {
+            "x": 50,
+            "y": 65
+        },
+        "Uréter": {
+            "x": 45,
+            "y": 60
+        },
+        "Útero": {
+            "x": 50,
+            "y": 62
+        },
+        "Ovario": {
+            "x": 40,
+            "y": 62
+        },
+        "Trompa": {
+            "x": 45,
+            "y": 62
+        },
+        "Vagina": {
+            "x": 50,
+            "y": 72
+        },
+        "Clítoris": {
+            "x": 50,
+            "y": 70
+        },
+        "Testículo": {
+            "x": 50,
+            "y": 72
+        },
+        "Pene": {
+            "x": 50,
+            "y": 70
+        },
+        "Próstata": {
+            "x": 50,
+            "y": 73
+        },
+        "Ingle": {
+            "x": 40,
+            "y": 68
+        },
+        "Nervio Inguinal": {
+            "x": 35,
+            "y": 68
+        },
+        "Trocánter Mayor": {
+            "x": 25,
+            "y": 65
+        },
+        "Trocánter Menor": {
+            "x": 30,
+            "y": 68
+        },
+        "Cadera": {
+            "x": 30,
+            "y": 60
+        },
+        "Ilíaco": {
+            "x": 30,
+            "y": 58
+        },
+        "Interilíaco": {
+            "x": 50,
+            "y": 58
+        },
+        "Cuadriceps": {
+            "x": 35,
+            "y": 75
+        },
+        "Aductor": {
+            "x": 45,
+            "y": 75
+        },
+        "Rótula": {
+            "x": 35,
+            "y": 85
+        },
+        "Tibia": {
+            "x": 35,
+            "y": 92
+        },
+        "Peroné": {
+            "x": 30,
+            "y": 92
+        },
+        "Tobillo": {
+            "x": 35,
+            "y": 96
+        },
+        "Empeine": {
+            "x": 35,
+            "y": 98
+        }
+    },
+    "Dorsal": {
+        "Occipital": {
+            "x": 50,
+            "y": 10
+        },
+        "Cerebelo": {
+            "x": 50,
+            "y": 12
+        },
+        "Bulbo": {
+            "x": 50,
+            "y": 15
+        },
+        "Atlas": {
+            "x": 50,
+            "y": 18
+        },
+        "Cervical": {
+            "x": 50,
+            "y": 20
+        },
+        "Cervical 1": {
+            "x": 50,
+            "y": 18
+        },
+        "Cervical 2": {
+            "x": 50,
+            "y": 19
+        },
+        "Cervical 3": {
+            "x": 50,
+            "y": 20
+        },
+        "Cervical 4": {
+            "x": 50,
+            "y": 21
+        },
+        "Cervical 5": {
+            "x": 50,
+            "y": 22
+        },
+        "Cervical 6": {
+            "x": 50,
+            "y": 23
+        },
+        "Cervical 7": {
+            "x": 50,
+            "y": 24
+        },
+        "Dorsal": {
+            "x": 50,
+            "y": 30
+        },
+        "Dorsal 1": {
+            "x": 50,
+            "y": 26
+        },
+        "Dorsal 2": {
+            "x": 50,
+            "y": 28
+        },
+        "Dorsal 12": {
+            "x": 50,
+            "y": 40
+        },
+        "Lumbar": {
+            "x": 50,
+            "y": 50
+        },
+        "Lumbar 1": {
+            "x": 50,
+            "y": 45
+        },
+        "Lumbar 2": {
+            "x": 50,
+            "y": 48
+        },
+        "Lumbar 3": {
+            "x": 50,
+            "y": 50
+        },
+        "Lumbar 4": {
+            "x": 50,
+            "y": 52
+        },
+        "Lumbar 5": {
+            "x": 50,
+            "y": 55
+        },
+        "Sacro": {
+            "x": 50,
+            "y": 60
+        },
+        "Coxis": {
+            "x": 50,
+            "y": 65
+        },
+        "Escápula": {
+            "x": 30,
+            "y": 28
+        },
+        "Supraespinoso": {
+            "x": 35,
+            "y": 25
+        },
+        "Infraespinoso": {
+            "x": 35,
+            "y": 30
+        },
+        "Latissimus": {
+            "x": 30,
+            "y": 40
+        },
+        "Cuadrado Lumbar": {
+            "x": 35,
+            "y": 50
+        },
+        "Riñón": {
+            "x": 40,
+            "y": 48
+        },
+        "Riñón Derecho": {
+            "x": 60,
+            "y": 48
+        },
+        "Riñón Izquierdo": {
+            "x": 40,
+            "y": 48
+        },
+        "Cápsula Renal": {
+            "x": 40,
+            "y": 46
+        },
+        "Suprarrenal": {
+            "x": 40,
+            "y": 45
+        },
+        "Cáliz Renal": {
+            "x": 42,
+            "y": 49
+        },
+        "Uréter": {
+            "x": 45,
+            "y": 55
+        },
+        "Glúteo": {
+            "x": 35,
+            "y": 65
+        },
+        "Isquion": {
+            "x": 35,
+            "y": 70
+        },
+        "Ciático": {
+            "x": 35,
+            "y": 75
+        },
+        "Poplíteo": {
+            "x": 35,
+            "y": 85
+        },
+        "Gemelo": {
+            "x": 35,
+            "y": 90
+        },
+        "Aquiles": {
+            "x": 35,
+            "y": 95
+        },
+        "Calcáneo": {
+            "x": 35,
+            "y": 98
+        }
+    }
+}

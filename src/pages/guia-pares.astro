@@ -1,0 +1,205 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+import PairsFinder from "../components/PairsFinder.astro";
+import { Picture } from "astro:assets";
+import bokehBg from "../assets/images/composition/bokeh_bg.png";
+
+const title = "Guía Interactiva de Pares | Par Biomagnético";
+const description =
+    "Consulta nuestra base de datos completa de pares biomagnéticos. Filtra por patología, tipo o ubicación.";
+---
+
+<BaseLayout title={title} description={description}>
+    <main class="pairs-page">
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <Picture
+                src={bokehBg}
+                formats={["avif", "webp"]}
+                widths={[720, 1280, 1920]}
+                sizes="100vw"
+                alt="Fondo energético"
+                class="bokeh-bg"
+                loading="eager"
+                fetchpriority="high"
+            />
+            <div class="hero-overlay"></div>
+
+            <!-- Sparkles -->
+            <div class="sparkles">
+                <span class="sparkle"></span>
+                <span class="sparkle"></span>
+                <span class="sparkle"></span>
+                <span class="sparkle"></span>
+                <span class="sparkle"></span>
+            </div>
+
+            <Nav currentPage="guia" />
+
+            <div class="hero-content">
+                <span class="hero-badge">Base de Datos</span>
+                <h1 class="page-title">Guía de Pares Biomagnéticos</h1>
+                <p class="hero-subtitle">
+                    Una herramienta rápida para terapeutas y estudiantes.
+                    Encuentra el par exacto para cada desequilibrio.
+                </p>
+            </div>
+        </section>
+
+        <!-- Finder Section -->
+        <section class="finder-section">
+            <div class="container">
+                <PairsFinder />
+            </div>
+        </section>
+
+        <Footer />
+    </main>
+</BaseLayout>
+
+<style>
+    .pairs-page {
+        min-height: 100vh;
+        background: #0f1f1a;
+    }
+
+    /* Hero Styles */
+    .page-hero {
+        position: relative;
+        min-height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2rem;
+        overflow: hidden;
+    }
+
+    .bokeh-bg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+    }
+
+    .hero-overlay {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background: linear-gradient(
+            to bottom,
+            rgba(10, 10, 12, 0.4) 0%,
+            rgba(10, 10, 12, 0.6) 60%,
+            #0f1f1a 100%
+        );
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 10;
+        text-align: center;
+        margin-top: auto;
+        margin-bottom: 4rem;
+        padding: 0 1.5rem;
+        max-width: 800px;
+    }
+
+    .hero-badge {
+        display: inline-block;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #4ade80;
+        margin-bottom: 1rem;
+        padding: 0.4rem 1rem;
+        background: rgba(74, 222, 128, 0.1);
+        border-radius: 2rem;
+        border: 1px solid rgba(74, 222, 128, 0.2);
+    }
+
+    .page-title {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        color: #d4a853;
+        margin-bottom: 1rem;
+        text-shadow: 0 0 30px rgba(212, 168, 83, 0.2);
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+        color: rgba(255, 255, 255, 0.8);
+        line-height: 1.6;
+    }
+
+    /* Finder Section */
+    .finder-section {
+        position: relative;
+        padding: 2rem 1.5rem 6rem;
+        z-index: 10;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* Sparkles */
+    .sparkles {
+        position: absolute;
+        inset: 0;
+        z-index: 2;
+        pointer-events: none;
+    }
+
+    .sparkle {
+        position: absolute;
+        width: 3px;
+        height: 3px;
+        background: white;
+        border-radius: 50%;
+        opacity: 0.6;
+        animation: sparkle 3s infinite;
+    }
+
+    .sparkle:nth-child(1) {
+        top: 20%;
+        left: 20%;
+        animation-delay: 0s;
+    }
+    .sparkle:nth-child(2) {
+        top: 40%;
+        left: 80%;
+        animation-delay: 0.5s;
+    }
+    .sparkle:nth-child(3) {
+        top: 60%;
+        left: 30%;
+        animation-delay: 1s;
+    }
+    .sparkle:nth-child(4) {
+        top: 30%;
+        left: 60%;
+        animation-delay: 1.5s;
+    }
+    .sparkle:nth-child(5) {
+        top: 70%;
+        left: 70%;
+        animation-delay: 2s;
+    }
+
+    @keyframes sparkle {
+        0%,
+        100% {
+            transform: scale(0.5);
+            opacity: 0.3;
+        }
+        50% {
+            transform: scale(1.2);
+            opacity: 0.8;
+        }
+    }
+</style>

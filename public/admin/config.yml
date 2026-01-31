@@ -1,0 +1,24 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+media_folder: "src/assets/images/posts"
+public_folder: "/images/posts"
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "src/content/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Título", name: "title", widget: "string"}
+      - {label: "Fecha", name: "date", widget: "string"} 
+      - {label: "Autor", name: "author", widget: "string", default: "Cristina Murciano"}
+      - {label: "Imagen Destacada", name: "image", widget: "image"}
+      - {label: "Extracto", name: "excerpt", widget: "text"}
+      - {label: "Categoría", name: "category", widget: "select", options: ["SALUD", "TÉCNICA", "EMOCIONES", "HISTORIA", "BIENESTAR", "NUTRICIÓN", "GENERAL", "ANIMALES", "CIENCIA", "SINTOMAS"]}
+      - {label: "Activo", name: "active", widget: "boolean", default: true}
+      - {label: "Cuerpo", name: "body", widget: "markdown"}
