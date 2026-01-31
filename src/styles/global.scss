@@ -40,3 +40,38 @@ canvas {
     pointer-events: auto;
   }
 }
+
+/* Custom Scrollbar - Desktop Only */
+@media (min-width: 769px) {
+
+  /* Webkit browsers (Chrome, Edge, Safari) */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgba(10, 15, 13, 0.8);
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--color-emerald) 0%, #065f46 100%);
+    border-radius: 5px;
+    border: 2px solid rgba(10, 15, 13, 0.8);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #34d399 0%, var(--color-emerald) 100%);
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: var(--color-bg-deep);
+  }
+
+  /* Firefox */
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-emerald) rgba(10, 15, 13, 0.8);
+  }
+}
