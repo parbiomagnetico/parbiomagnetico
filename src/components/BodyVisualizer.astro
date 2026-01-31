@@ -120,9 +120,9 @@ const coordinatesJSON = JSON.stringify(coordinates);
             // For lateral points, mirror the X coordinate
             const originalX = infoA.x;
             if (originalX >= 45 && originalX <= 55) {
-                // Centered point - offset both markers by 8%
-                infoA = { ...infoA, x: originalX - 8 };
-                infoB = { ...infoB, x: originalX + 8 };
+                // Centered point - offset both markers by 5%
+                infoA = { ...infoA, x: originalX - 5 };
+                infoB = { ...infoB, x: originalX + 5 };
             } else {
                 // Already lateral - mirror X: if original is 35%, mirrored is 65%
                 infoB = { ...infoB, x: 100 - originalX };
