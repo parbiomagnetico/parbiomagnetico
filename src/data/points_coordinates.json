@@ -20,6 +20,14 @@
             "x": 50,
             "y": 7
         },
+        "Hipotálamo": {
+            "x": 50,
+            "y": 6
+        },
+        "Tálamo": {
+            "x": 50,
+            "y": 5
+        },
         "Seno Frontal": {
             "x": 46,
             "y": 6
@@ -28,13 +36,53 @@
             "x": 50,
             "y": 8
         },
+        "Seno Nazal": {
+            "x": 50,
+            "y": 8
+        },
+        "Frontal": {
+            "x": 50,
+            "y": 5
+        },
         "Ojo": {
             "x": 45,
             "y": 7
         },
+        "Ojo Derecho": {
+            "x": 55,
+            "y": 7
+        },
+        "Canto del Ojo": {
+            "x": 43,
+            "y": 7
+        },
+        "Párpado": {
+            "x": 45,
+            "y": 6
+        },
+        "Lacrimal": {
+            "x": 47,
+            "y": 7
+        },
+        "Piso Orbital": {
+            "x": 45,
+            "y": 8
+        },
+        "Interciliar": {
+            "x": 50,
+            "y": 6
+        },
         "Sien": {
             "x": 40,
             "y": 6
+        },
+        "Temporal": {
+            "x": 38,
+            "y": 5
+        },
+        "Temporal Derecho": {
+            "x": 62,
+            "y": 5
         },
         "Oído": {
             "x": 38,
@@ -44,12 +92,24 @@
             "x": 36,
             "y": 7
         },
+        "Preauricular": {
+            "x": 37,
+            "y": 8
+        },
         "Mastoides": {
             "x": 38,
             "y": 9
         },
         "Pómulo": {
             "x": 44,
+            "y": 8
+        },
+        "Malar": {
+            "x": 43,
+            "y": 8
+        },
+        "Nariz": {
+            "x": 50,
             "y": 8
         },
         "Lengua": {
@@ -60,9 +120,33 @@
             "x": 44,
             "y": 10
         },
+        "Rama Mandibular": {
+            "x": 40,
+            "y": 9
+        },
+        "Rama Mandíbula": {
+            "x": 40,
+            "y": 9
+        },
+        "Dental": {
+            "x": 48,
+            "y": 9
+        },
         "Parótida": {
             "x": 40,
             "y": 9
+        },
+        "Comisura": {
+            "x": 48,
+            "y": 10
+        },
+        "Angina": {
+            "x": 48,
+            "y": 11
+        },
+        "Cuello": {
+            "x": 50,
+            "y": 12
         },
         "Tiroides": {
             "x": 50,
@@ -76,6 +160,30 @@
             "x": 50,
             "y": 11
         },
+        "Tráquea": {
+            "x": 50,
+            "y": 14
+        },
+        "Esófago": {
+            "x": 50,
+            "y": 15
+        },
+        "Carótida": {
+            "x": 46,
+            "y": 12
+        },
+        "Yugular": {
+            "x": 44,
+            "y": 13
+        },
+        "Plexo Cervical": {
+            "x": 44,
+            "y": 14
+        },
+        "Esternocleidomastoideo": {
+            "x": 42,
+            "y": 13
+        },
         "Timo": {
             "x": 50,
             "y": 18
@@ -87,6 +195,14 @@
         "Carina": {
             "x": 50,
             "y": 22
+        },
+        "Esternón": {
+            "x": 50,
+            "y": 22
+        },
+        "Mango Esternón": {
+            "x": 50,
+            "y": 18
         },
         "Corazón": {
             "x": 54,
@@ -108,6 +224,18 @@
             "x": 54,
             "y": 23
         },
+        "Botón Aórtico": {
+            "x": 52,
+            "y": 22
+        },
+        "Seno Auriculoventricular": {
+            "x": 52,
+            "y": 24
+        },
+        "Cava": {
+            "x": 48,
+            "y": 24
+        },
         "Pulmón": {
             "x": 60,
             "y": 22
@@ -115,6 +243,26 @@
         "Pleura": {
             "x": 62,
             "y": 24
+        },
+        "Costilla": {
+            "x": 38,
+            "y": 26
+        },
+        "Costilla 1": {
+            "x": 40,
+            "y": 20
+        },
+        "Borde Costal": {
+            "x": 40,
+            "y": 32
+        },
+        "Costal": {
+            "x": 38,
+            "y": 28
+        },
+        "Condral": {
+            "x": 42,
+            "y": 30
         },
         "Diafragma": {
             "x": 50,
@@ -124,9 +272,21 @@
             "x": 50,
             "y": 35
         },
+        "Epiplón": {
+            "x": 50,
+            "y": 40
+        },
         "Estómago": {
             "x": 54,
             "y": 36
+        },
+        "Stomachus": {
+            "x": 54,
+            "y": 36
+        },
+        "Cardias": {
+            "x": 52,
+            "y": 34
         },
         "Píloro": {
             "x": 52,
@@ -147,6 +307,14 @@
         "Ligamento Hepático": {
             "x": 44,
             "y": 35
+        },
+        "Perihepático": {
+            "x": 40,
+            "y": 34
+        },
+        "Retrohepático": {
+            "x": 42,
+            "y": 36
         },
         "Vesícula": {
             "x": 44,
@@ -172,17 +340,49 @@
             "x": 58,
             "y": 37
         },
+        "Cola Páncreas": {
+            "x": 58,
+            "y": 37
+        },
         "Punta de Páncreas": {
             "x": 60,
             "y": 37
+        },
+        "Punta Páncreas": {
+            "x": 60,
+            "y": 37
+        },
+        "Conducto Páncreas": {
+            "x": 54,
+            "y": 39
         },
         "Bazo": {
             "x": 62,
             "y": 35
         },
+        "Peritoneo": {
+            "x": 50,
+            "y": 42
+        },
+        "Ganglios Mesentéricos": {
+            "x": 50,
+            "y": 44
+        },
+        "Ombligo": {
+            "x": 50,
+            "y": 45
+        },
+        "Flanco": {
+            "x": 38,
+            "y": 42
+        },
         "Axila": {
             "x": 35,
             "y": 20
+        },
+        "Infraaxilar": {
+            "x": 36,
+            "y": 24
         },
         "Subclavia": {
             "x": 42,
@@ -224,7 +424,15 @@
             "x": 18,
             "y": 50
         },
+        "Dorso Mano": {
+            "x": 18,
+            "y": 49
+        },
         "Dedo Índice": {
+            "x": 17,
+            "y": 52
+        },
+        "Índice": {
             "x": 17,
             "y": 52
         },
@@ -236,6 +444,10 @@
             "x": 42,
             "y": 44
         },
+        "Colon Ascen": {
+            "x": 42,
+            "y": 44
+        },
         "Colon Transverso": {
             "x": 50,
             "y": 42
@@ -244,9 +456,25 @@
             "x": 58,
             "y": 44
         },
+        "Colon Descen": {
+            "x": 58,
+            "y": 44
+        },
         "Ciego": {
             "x": 42,
             "y": 48
+        },
+        "Contra Ciego": {
+            "x": 58,
+            "y": 48
+        },
+        "Apéndice": {
+            "x": 40,
+            "y": 49
+        },
+        "Válvula Ileocecal": {
+            "x": 44,
+            "y": 47
         },
         "Sigmoides": {
             "x": 58,
@@ -260,6 +488,10 @@
             "x": 50,
             "y": 56
         },
+        "Saco Douglas": {
+            "x": 50,
+            "y": 53
+        },
         "Vejiga": {
             "x": 50,
             "y": 52
@@ -268,8 +500,16 @@
             "x": 46,
             "y": 48
         },
+        "Uretra": {
+            "x": 50,
+            "y": 54
+        },
         "Útero": {
             "x": 50,
+            "y": 50
+        },
+        "Anexo": {
+            "x": 44,
             "y": 50
         },
         "Ovario": {
@@ -300,6 +540,10 @@
             "x": 50,
             "y": 53
         },
+        "Pudendo": {
+            "x": 50,
+            "y": 55
+        },
         "Ingle": {
             "x": 44,
             "y": 54
@@ -307,6 +551,22 @@
         "Nervio Inguinal": {
             "x": 42,
             "y": 53
+        },
+        "Nervio Femoral": {
+            "x": 44,
+            "y": 56
+        },
+        "Nervio Vago": {
+            "x": 44,
+            "y": 14
+        },
+        "Vena Femoral": {
+            "x": 46,
+            "y": 56
+        },
+        "Triángulo Escarpa": {
+            "x": 44,
+            "y": 55
         },
         "Trocánter Mayor": {
             "x": 38,
@@ -316,19 +576,43 @@
             "x": 42,
             "y": 56
         },
+        "Cabeza de Fémur": {
+            "x": 42,
+            "y": 54
+        },
         "Cadera": {
             "x": 38,
+            "y": 50
+        },
+        "Pelvis": {
+            "x": 50,
             "y": 50
         },
         "Ilíaco": {
             "x": 40,
             "y": 48
         },
+        "Cresta Ilíaca": {
+            "x": 38,
+            "y": 46
+        },
         "Interilíaco": {
             "x": 50,
             "y": 48
         },
+        "Rama Isquiática": {
+            "x": 46,
+            "y": 55
+        },
+        "Tensor Fascia Lata": {
+            "x": 36,
+            "y": 56
+        },
         "Cuadriceps": {
+            "x": 44,
+            "y": 65
+        },
+        "Cuádriceps": {
             "x": 44,
             "y": 65
         },
@@ -337,6 +621,14 @@
             "y": 60
         },
         "Rótula": {
+            "x": 44,
+            "y": 72
+        },
+        "Articulaciones": {
+            "x": 44,
+            "y": 72
+        },
+        "Articulación": {
             "x": 44,
             "y": 72
         },
@@ -352,15 +644,35 @@
             "x": 44,
             "y": 90
         },
+        "Tarso": {
+            "x": 44,
+            "y": 92
+        },
         "Empeine": {
             "x": 44,
             "y": 94
+        },
+        "Arco del Pie": {
+            "x": 44,
+            "y": 95
+        },
+        "Tendón Aquiles": {
+            "x": 44,
+            "y": 88
+        },
+        "Bursa": {
+            "x": 44,
+            "y": 73
         }
     },
     "Dorsal": {
         "Occipital": {
             "x": 50,
             "y": 5
+        },
+        "Craneal": {
+            "x": 50,
+            "y": 4
         },
         "Cerebelo": {
             "x": 50,
@@ -369,6 +681,38 @@
         "Bulbo": {
             "x": 50,
             "y": 9
+        },
+        "Bulbo Raquídeo": {
+            "x": 50,
+            "y": 9
+        },
+        "Cuerpo Calloso": {
+            "x": 50,
+            "y": 5
+        },
+        "Quiasma": {
+            "x": 50,
+            "y": 6
+        },
+        "Polígono Willis": {
+            "x": 50,
+            "y": 6
+        },
+        "Cisura Media": {
+            "x": 50,
+            "y": 4
+        },
+        "Cisura Silvio": {
+            "x": 42,
+            "y": 5
+        },
+        "Antecuerno": {
+            "x": 50,
+            "y": 5
+        },
+        "Agujero": {
+            "x": 50,
+            "y": 8
         },
         "Atlas": {
             "x": 50,
@@ -406,7 +750,15 @@
             "x": 50,
             "y": 17
         },
+        "Cien": {
+            "x": 40,
+            "y": 5
+        },
         "Dorsal": {
+            "x": 50,
+            "y": 25
+        },
+        "Dorso": {
             "x": 50,
             "y": 25
         },
@@ -454,6 +806,14 @@
             "x": 50,
             "y": 52
         },
+        "Coxo": {
+            "x": 50,
+            "y": 52
+        },
+        "Cola de Caballo": {
+            "x": 50,
+            "y": 50
+        },
         "Escápula": {
             "x": 40,
             "y": 22
@@ -469,6 +829,14 @@
         "Latissimus": {
             "x": 38,
             "y": 30
+        },
+        "Trapecio": {
+            "x": 44,
+            "y": 16
+        },
+        "Romboide": {
+            "x": 42,
+            "y": 23
         },
         "Cuadrado Lumbar": {
             "x": 42,
@@ -486,11 +854,27 @@
             "x": 44,
             "y": 38
         },
+        "Riñón Superior": {
+            "x": 44,
+            "y": 36
+        },
+        "Riñón Inferior": {
+            "x": 44,
+            "y": 40
+        },
+        "Riñón Contralateral": {
+            "x": 56,
+            "y": 38
+        },
         "Cápsula Renal": {
             "x": 44,
             "y": 36
         },
         "Suprarrenal": {
+            "x": 44,
+            "y": 35
+        },
+        "Suprarrenales": {
             "x": 44,
             "y": 35
         },
@@ -501,6 +885,10 @@
         "Uréter": {
             "x": 46,
             "y": 44
+        },
+        "Lunadar": {
+            "x": 50,
+            "y": 42
         },
         "Glúteo": {
             "x": 42,
@@ -529,14 +917,6 @@
         "Calcáneo": {
             "x": 44,
             "y": 92
-        },
-        "Trapecio": {
-            "x": 44,
-            "y": 16
-        },
-        "Romboide": {
-            "x": 42,
-            "y": 23
         }
     }
 }
