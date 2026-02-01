@@ -332,25 +332,29 @@ const types = [...new Set(pairs.map((p) => p.type))].sort();
 
 <script>
     // Client-side filtering logic
+    let cleanupPairsFinder = null;
+
     function initPairsFinder() {
+        if (cleanupPairsFinder) cleanupPairsFinder();
+
         const searchInput = document.getElementById("pair-search");
         const filterBtns = document.querySelectorAll(".filter-btn");
         const cards = document.querySelectorAll(".pair-card");
         const noResults = document.getElementById("no-results");
+        const viewBtns = document.querySelectorAll(".view-map-btn");
 
-        // Get initial active filter
-        const activeBtn = document.querySelector(".filter-btn.active");
-        let currentFilter = activeBtn
-            ? activeBtn.getAttribute("data-filter")
-            : "all";
+        let currentFilter = "all";
         let currentSearch = "";
+
+        const activeBtn = document.querySelector(".filter-btn.active");
+        if (activeBtn) {
+            currentFilter = activeBtn.getAttribute("data-filter") || "all";
+        }
 
         function filterCards() {
             let visibleCount = 0;
-
             cards.forEach((card) => {
                 if (!(card instanceof HTMLElement)) return;
-
                 const type = card.getAttribute("data-type");
                 const searchText = card.getAttribute("data-search") || "";
 
@@ -368,73 +372,76 @@ const types = [...new Set(pairs.map((p) => p.type))].sort();
             });
 
             if (noResults) {
-                if (visibleCount === 0) {
-                    noResults.classList.remove("hidden");
-                } else {
-                    noResults.classList.add("hidden");
-                }
+                noResults.classList.toggle("hidden", visibleCount > 0);
             }
         }
 
-        // Event Listeners
-        searchInput?.addEventListener("input", (e) => {
-            const target = e.target as HTMLInputElement;
+        const onSearchInput = (e) => {
+            const target = e.target;
             currentSearch = target.value.toLowerCase().trim();
 
-            // If searching, switch to ALL to search globally
             if (currentSearch.length > 0) {
                 currentFilter = "all";
-                // Update buttons UI
                 filterBtns.forEach((b) => {
-                    b.classList.remove("active");
-                    if (b.getAttribute("data-filter") === "all") {
-                        b.classList.add("active");
-                    }
+                    b.classList.toggle(
+                        "active",
+                        b.getAttribute("data-filter") === "all",
+                    );
                 });
             } else {
-                // If cleared, maybe revert? Or keep all. Let's keep current state or logic intact.
-                // It's better to just filter with current state if empty.
-                const activeBtn = document.querySelector(".filter-btn.active");
-                currentFilter = activeBtn
-                    ? activeBtn.getAttribute("data-filter") || "all"
+                const currentActive =
+                    document.querySelector(".filter-btn.active");
+                currentFilter = currentActive
+                    ? currentActive.getAttribute("data-filter") || "all"
                     : "all";
             }
-
             filterCards();
-        });
+        };
 
-        filterBtns.forEach((btn) => {
-            btn.addEventListener("click", () => {
-                filterBtns.forEach((b) => b.classList.remove("active"));
-                btn.classList.add("active");
+        const onFilterClick = (e) => {
+            const btn = e.currentTarget;
+            filterBtns.forEach((b) => b.classList.remove("active"));
+            btn.classList.add("active");
+            currentFilter = btn.getAttribute("data-filter") || "all";
+            filterCards();
+        };
 
-                currentFilter = btn.getAttribute("data-filter") || "all";
-                filterCards();
-            });
-        });
+        const onViewClick = (e) => {
+            e.stopPropagation();
+            const btn = e.currentTarget;
+            const detail = {
+                pointA: btn.getAttribute("data-point-a"),
+                pointB: btn.getAttribute("data-point-b"),
+                pathology: btn.getAttribute("data-pathology"),
+                type: btn.getAttribute("data-type"),
+            };
+            document.dispatchEvent(
+                new CustomEvent("open-visualizer", { detail }),
+            );
+        };
 
-        // Visualizer Buttons
-        const viewBtns = document.querySelectorAll(".view-map-btn");
-        viewBtns.forEach((btn) => {
-            btn.addEventListener("click", (e) => {
-                e.stopPropagation();
-                const detail = {
-                    pointA: btn.getAttribute("data-point-a"),
-                    pointB: btn.getAttribute("data-point-b"),
-                    pathology: btn.getAttribute("data-pathology"),
-                    type: btn.getAttribute("data-type"),
-                };
+        if (searchInput) searchInput.addEventListener("input", onSearchInput);
+        filterBtns.forEach((btn) =>
+            btn.addEventListener("click", onFilterClick),
+        );
+        viewBtns.forEach((btn) => btn.addEventListener("click", onViewClick));
 
-                document.dispatchEvent(
-                    new CustomEvent("open-visualizer", { detail }),
-                );
-            });
-        });
+        cleanupPairsFinder = () => {
+            if (searchInput)
+                searchInput.removeEventListener("input", onSearchInput);
+            filterBtns.forEach((btn) =>
+                btn.removeEventListener("click", onFilterClick),
+            );
+            viewBtns.forEach((btn) =>
+                btn.removeEventListener("click", onViewClick),
+            );
+        };
     }
 
-    // Init on load
-    initPairsFinder();
-
-    // Re-init on astro page swap (if ViewTransitions used)
+    // Initialize on astro:page-load (covers initial load + navigation)
     document.addEventListener("astro:page-load", initPairsFinder);
+
+    document.addEventListener("astro:before-swap", () => {
+        if (cleanupPairsFinder) cleanupPairsFinder();
+    });
 </script>

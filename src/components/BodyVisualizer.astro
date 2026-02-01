@@ -60,102 +60,118 @@ const coordinatesJSON = JSON.stringify(coordinates);
 </div>
 
 <script define:vars={{ coordinatesJSON }}>
-    const coords = JSON.parse(coordinatesJSON);
+    let cleanupVisualizer = null;
 
-    const modal = document.getElementById("body-visualizer-modal");
-    const closeBtn = document.getElementById("close-modal");
-    const backdrop = document.querySelector(".modal-backdrop");
+    function initBodyVisualizer() {
+        if (cleanupVisualizer) cleanupVisualizer();
 
-    // Elements to update
-    const titleA = document.getElementById("modal-point-a");
-    const titleB = document.getElementById("modal-point-b");
-    const subTitle = document.getElementById("modal-pathology");
+        const coords = JSON.parse(coordinatesJSON);
+        const modal = document.getElementById("body-visualizer-modal");
+        const closeBtn = document.getElementById("close-modal");
+        const backdrop = document.querySelector(".modal-backdrop");
 
-    // Markers
-    const mFA = document.getElementById("marker-front-a");
-    const mFB = document.getElementById("marker-front-b");
-    const mBA = document.getElementById("marker-back-a");
-    const mBB = document.getElementById("marker-back-b");
+        // Elements to update
+        const titleA = document.getElementById("modal-point-a");
+        const titleB = document.getElementById("modal-point-b");
+        const subTitle = document.getElementById("modal-pathology");
 
-    function getPointCoords(pointName) {
-        if (coords.Frontal[pointName])
-            return { view: "front", ...coords.Frontal[pointName] };
-        if (coords.Dorsal[pointName])
-            return { view: "back", ...coords.Dorsal[pointName] };
-        // Try fuzzy match/normalization if needed, or default to null
-        // Simple normalization: Remove accents? No, keys have accents.
-        return null;
-    }
+        // Markers
+        const mFA = document.getElementById("marker-front-a");
+        const mFB = document.getElementById("marker-front-b");
+        const mBA = document.getElementById("marker-back-a");
+        const mBB = document.getElementById("marker-back-b");
 
-    function setMarker(element, pointInfo, typeClass) {
-        if (pointInfo) {
-            element.style.left = `${pointInfo.x}%`;
-            // Use 'top' for y
-            element.style.top = `${pointInfo.y}%`;
-            element.className = `marker ${typeClass}`; // Remove hidden
-        } else {
-            element.className = `marker hidden`;
+        function getPointCoords(pointName) {
+            if (coords.Frontal[pointName])
+                return { view: "front", ...coords.Frontal[pointName] };
+            if (coords.Dorsal[pointName])
+                return { view: "back", ...coords.Dorsal[pointName] };
+            return null;
         }
-    }
 
-    // Expose toggle function globally or event listener?
-    // Let's use a custom event on document
-    document.addEventListener("open-visualizer", (e) => {
-        const { pointA, pointB, pathology, type } = e.detail;
-
-        // Update Text
-        if (titleA) titleA.textContent = pointA;
-        if (titleB) titleB.textContent = pointB;
-        if (subTitle) subTitle.textContent = `${type} - ${pathology}`;
-
-        // Resolve Coordinates
-        let infoA = getPointCoords(pointA);
-        let infoB = getPointCoords(pointB);
-
-        // Handle BILATERAL pairs (same point on both sides)
-        // Separate markers so both are visible
-        const isBilateral = pointA === pointB && infoA;
-        if (isBilateral && infoB) {
-            // For centered points (x near 50), offset both markers to opposite sides
-            // For lateral points, mirror the X coordinate
-            const originalX = infoA.x;
-            if (originalX >= 45 && originalX <= 55) {
-                // Centered point - offset both markers by 5%
-                infoA = { ...infoA, x: originalX - 5 };
-                infoB = { ...infoB, x: originalX + 5 };
+        function setMarker(element, pointInfo, typeClass) {
+            if (pointInfo) {
+                element.style.left = `${pointInfo.x}%`;
+                element.style.top = `${pointInfo.y}%`;
+                element.className = `marker ${typeClass}`;
             } else {
-                // Already lateral - mirror X: if original is 35%, mirrored is 65%
-                infoB = { ...infoB, x: 100 - originalX };
+                element.className = `marker hidden`;
             }
         }
 
-        // Reset all markers
-        [mFA, mFB, mBA, mBB].forEach((m) => m?.classList.add("hidden"));
+        const onOpenVisualizer = (e) => {
+            const { pointA, pointB, pathology, type } = e.detail;
 
-        // Set A
-        if (infoA) {
-            if (infoA.view === "front" && mFA) setMarker(mFA, infoA, "is-a");
-            if (infoA.view === "back" && mBA) setMarker(mBA, infoA, "is-a");
+            // Update Text
+            if (titleA) titleA.textContent = pointA;
+            if (titleB) titleB.textContent = pointB;
+            if (subTitle) subTitle.textContent = `${type} - ${pathology}`;
+
+            // Resolve Coordinates
+            let infoA = getPointCoords(pointA);
+            let infoB = getPointCoords(pointB);
+
+            // Handle BILATERAL pairs (same point on both sides)
+            // Separate markers so both are visible
+            const isBilateral = pointA === pointB && infoA;
+            if (isBilateral && infoB) {
+                const originalX = infoA.x;
+                if (originalX >= 45 && originalX <= 55) {
+                    infoA = { ...infoA, x: originalX - 5 };
+                    infoB = { ...infoB, x: originalX + 5 };
+                } else {
+                    infoB = { ...infoB, x: 100 - originalX };
+                }
+            }
+
+            // Reset all markers
+            [mFA, mFB, mBA, mBB].forEach((m) => m?.classList.add("hidden"));
+
+            // Set A
+            if (infoA) {
+                if (infoA.view === "front" && mFA)
+                    setMarker(mFA, infoA, "is-a");
+                if (infoA.view === "back" && mBA) setMarker(mBA, infoA, "is-a");
+            }
+
+            // Set B
+            if (infoB) {
+                if (infoB.view === "front" && mFB)
+                    setMarker(mFB, infoB, "is-b");
+                if (infoB.view === "back" && mBB) setMarker(mBB, infoB, "is-b");
+            }
+
+            modal?.classList.remove("hidden");
+        };
+
+        function closeModal() {
+            modal?.classList.add("hidden");
         }
 
-        // Set B
-        if (infoB) {
-            if (infoB.view === "front" && mFB) setMarker(mFB, infoB, "is-b");
-            if (infoB.view === "back" && mBB) setMarker(mBB, infoB, "is-b");
-        }
+        const onKeyDown = (e) => {
+            if (e.key === "Escape") closeModal();
+        };
 
-        modal?.classList.remove("hidden");
-    });
+        // Attach Listeners
+        document.addEventListener("open-visualizer", onOpenVisualizer);
+        closeBtn?.addEventListener("click", closeModal);
+        backdrop?.addEventListener("click", closeModal);
+        document.addEventListener("keydown", onKeyDown);
 
-    // Close logic
-    function closeModal() {
-        modal?.classList.add("hidden");
+        cleanupVisualizer = () => {
+            document.removeEventListener("open-visualizer", onOpenVisualizer);
+            closeBtn?.removeEventListener("click", closeModal);
+            backdrop?.removeEventListener("click", closeModal);
+            document.removeEventListener("keydown", onKeyDown);
+        };
     }
 
-    closeBtn?.addEventListener("click", closeModal);
-    backdrop?.addEventListener("click", closeModal);
-    document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape") closeModal();
+    // Initialize on astro:page-load
+    document.addEventListener("astro:page-load", initBodyVisualizer);
+
+    // Cleanup on page swap
+    document.addEventListener("astro:before-swap", () => {
+        if (cleanupVisualizer) cleanupVisualizer();
     });
 </script>
 
