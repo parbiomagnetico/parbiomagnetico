@@ -6,6 +6,21 @@ import WhatsAppButton from "../components/WhatsAppButton.astro";
 
 import SEO from "../components/SEO.astro";
 
+// Merriweather
+import "@fontsource/merriweather/300.css";
+import "@fontsource/merriweather/300-italic.css";
+import "@fontsource/merriweather/400.css";
+import "@fontsource/merriweather/400-italic.css";
+import "@fontsource/merriweather/700.css";
+import "@fontsource/merriweather/700-italic.css";
+import "@fontsource/merriweather/900.css";
+import "@fontsource/merriweather/900-italic.css";
+
+// Outfit
+import "@fontsource/outfit/300.css";
+import "@fontsource/outfit/400.css";
+import "@fontsource/outfit/600.css";
+
 interface Props {
 	title: string;
 	description?: string;
@@ -31,13 +46,6 @@ const {
 		<link rel="manifest" href="/site.webmanifest" />
 		<meta name="generator" content={Astro.generator} />
 		<ClientRouter />
-
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Outfit:wght@300;400;600&display=swap"
-			rel="stylesheet"
-		/>
 
 		<SEO {title} {description} {image} {canonical} />
 	</head>
