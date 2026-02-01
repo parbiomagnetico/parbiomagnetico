@@ -66,26 +66,13 @@ const { currentPage = "" } = Astro.props;
 </nav>
 
 <script>
-  // Mobile menu toggle
-  const toggle = document.querySelector(".nav-toggle");
-  const navLinks = document.querySelector(".nav-links");
-  const nav = document.querySelector(".site-nav");
-
-  if (toggle && navLinks) {
-    toggle.addEventListener("click", () => {
-      const isOpen = navLinks.classList.toggle("open");
-      toggle.classList.toggle("open");
-      toggle.setAttribute("aria-expanded", String(isOpen));
-
-      // Prevenir scroll cuando el menú está abierto
-      document.body.style.overflow = isOpen ? "hidden" : "";
-    });
-  }
-
-  // Header scroll effect with requestAnimationFrame for performance
+  // Navigation Logic with View Transitions Support
+  let nav: HTMLElement | null;
+  let toggle: Element | null;
+  let navLinks: Element | null;
   let ticking = false;
 
-  window.addEventListener("scroll", () => {
+  function onScroll() {
     if (!ticking) {
       window.requestAnimationFrame(() => {
         if (nav) {
@@ -99,7 +86,41 @@ const { currentPage = "" } = Astro.props;
       });
       ticking = true;
     }
-  });
+  }
+
+  function onToggle() {
+    if (navLinks && toggle) {
+      const isOpen = navLinks.classList.toggle("open");
+      toggle.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", String(isOpen));
+      document.body.style.overflow = isOpen ? "hidden" : "";
+    }
+  }
+
+  function initNav() {
+    nav = document.querySelector(".site-nav");
+    toggle = document.querySelector(".nav-toggle");
+    navLinks = document.querySelector(".nav-links");
+
+    if (toggle) {
+      toggle.addEventListener("click", onToggle);
+    }
+
+    window.addEventListener("scroll", onScroll);
+  }
+
+  function cleanupNav() {
+    window.removeEventListener("scroll", onScroll);
+    if (toggle) {
+      toggle.removeEventListener("click", onToggle);
+    }
+  }
+
+  // Initialize on load
+  document.addEventListener("astro:page-load", initNav);
+
+  // Cleanup before swapping to next page to prevent listener accumulation
+  document.addEventListener("astro:before-swap", cleanupNav);
 </script>
 
 <style>
