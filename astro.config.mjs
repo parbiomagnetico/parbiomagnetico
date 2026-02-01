@@ -38,4 +38,29 @@ export default defineConfig({
       },
     },
   },
+  vite: {
+    build: {
+      rollupOptions: {
+        output: {
+          // Force proper naming for assets (CSS, Images, Fonts)
+          assetFileNames: (assetInfo) => {
+            if (assetInfo.name && assetInfo.name.endsWith('.css')) {
+              // Try to name it based on content or usage
+              return 'assets/styles/[name]-[hash][extname]';
+            }
+            return 'assets/[name]-[hash][extname]';
+          },
+          // Force shared code into named chunks to avoid "aviso-legal" dominance
+          manualChunks(id) {
+            if (id.includes('node_modules')) {
+              return 'vendor';
+            }
+            if (id.includes('global.scss')) {
+              return 'global-styles';
+            }
+          },
+        },
+      },
+    },
+  },
 });

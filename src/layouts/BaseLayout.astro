@@ -6,15 +6,8 @@ import WhatsAppButton from "../components/WhatsAppButton.astro";
 
 import SEO from "../components/SEO.astro";
 
-// Merriweather
-import "@fontsource/merriweather/300.css";
-import "@fontsource/merriweather/300-italic.css";
-import "@fontsource/merriweather/400.css";
-import "@fontsource/merriweather/400-italic.css";
-import "@fontsource/merriweather/700.css";
-import "@fontsource/merriweather/700-italic.css";
-import "@fontsource/merriweather/900.css";
-import "@fontsource/merriweather/900-italic.css";
+// Merriweather (Manual Override for Performance)
+// Removed @fontsource imports to use manual @font-face and preload
 
 // Outfit (Manual Override for Performance to avoid Chaining)
 // Removed @fontsource imports to use manual @font-face and preload
@@ -45,7 +38,7 @@ const {
 		<meta name="generator" content={Astro.generator} />
 		<ClientRouter />
 
-		<!-- Preload Critical Fonts (Outfit) to avoid Request Chaining -->
+		<!-- Preload Critical Fonts (Outfit & Merriweather) to avoid Request Chaining -->
 		<link
 			rel="preload"
 			href="/fonts/outfit-300.woff2"
@@ -63,6 +56,27 @@ const {
 		<link
 			rel="preload"
 			href="/fonts/outfit-600.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+		<link
+			rel="preload"
+			href="/fonts/merriweather-300.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+		<link
+			rel="preload"
+			href="/fonts/merriweather-400.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+		<link
+			rel="preload"
+			href="/fonts/merriweather-700.woff2"
 			as="font"
 			type="font/woff2"
 			crossorigin
@@ -90,6 +104,66 @@ const {
 				font-weight: 600;
 				font-display: swap;
 				src: url("/fonts/outfit-600.woff2") format("woff2");
+			}
+
+			/* Merriweather Manual Font Face */
+			/* Normal */
+			@font-face {
+				font-family: "Merriweather";
+				font-style: normal;
+				font-weight: 300;
+				font-display: swap;
+				src: url("/fonts/merriweather-300.woff2") format("woff2");
+			}
+			@font-face {
+				font-family: "Merriweather";
+				font-style: normal;
+				font-weight: 400;
+				font-display: swap;
+				src: url("/fonts/merriweather-400.woff2") format("woff2");
+			}
+			@font-face {
+				font-family: "Merriweather";
+				font-style: normal;
+				font-weight: 700;
+				font-display: swap;
+				src: url("/fonts/merriweather-700.woff2") format("woff2");
+			}
+			@font-face {
+				font-family: "Merriweather";
+				font-style: normal;
+				font-weight: 900;
+				font-display: swap;
+				src: url("/fonts/merriweather-900.woff2") format("woff2");
+			}
+			/* Italic */
+			@font-face {
+				font-family: "Merriweather";
+				font-style: italic;
+				font-weight: 300;
+				font-display: swap;
+				src: url("/fonts/merriweather-300-italic.woff2") format("woff2");
+			}
+			@font-face {
+				font-family: "Merriweather";
+				font-style: italic;
+				font-weight: 400;
+				font-display: swap;
+				src: url("/fonts/merriweather-400-italic.woff2") format("woff2");
+			}
+			@font-face {
+				font-family: "Merriweather";
+				font-style: italic;
+				font-weight: 700;
+				font-display: swap;
+				src: url("/fonts/merriweather-700-italic.woff2") format("woff2");
+			}
+			@font-face {
+				font-family: "Merriweather";
+				font-style: italic;
+				font-weight: 900;
+				font-display: swap;
+				src: url("/fonts/merriweather-900-italic.woff2") format("woff2");
 			}
 		</style>
 
