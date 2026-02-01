@@ -17,8 +17,9 @@ const postImages = import.meta.glob<{ default: ImageMetadata }>(
 );
 
 // Helper para resolver la imagen desde la ruta del JSON
-function resolveImage(url: string) {
+function resolveImage(url: string | undefined) {
   // Convertir ruta pública (/images/posts/...) a ruta relativa de assets (../../assets/images/posts/...)
+  if (!url) return null;
   const filename = url.split("/").pop();
   const path = `../../assets/images/posts/${filename}`;
 
@@ -29,7 +30,6 @@ function resolveImage(url: string) {
     // but the CMS ensures /images/posts/filename
     // We already handle /images/posts/ in the split logic.
     // If image is undefined (optional field), return null.
-    if (!url) return null;
     console.warn(`Image not found: ${path}`);
     return null;
   }
@@ -558,29 +558,33 @@ function resolveImage(url: string) {
 </style>
 
 <script>
-  const loadMoreBtn = document.getElementById("load-more-btn");
-  const articles = document.querySelectorAll(".article-card");
-  let visibleCount = 6;
-  const increment = 6;
+  document.addEventListener("astro:page-load", () => {
+    const loadMoreBtn = document.getElementById("load-more-btn");
+    const articles = document.querySelectorAll(".article-card");
+    let visibleCount = 6;
+    const increment = 6;
 
-  if (loadMoreBtn) {
-    loadMoreBtn.addEventListener("click", () => {
-      const hiddenArticles = document.querySelectorAll(".article-card.hidden");
+    if (loadMoreBtn) {
+      loadMoreBtn.addEventListener("click", () => {
+        const hiddenArticles = document.querySelectorAll(
+          ".article-card.hidden",
+        );
 
-      hiddenArticles.forEach((article, index) => {
-        if (index < increment) {
-          article.classList.remove("hidden");
-          (article as HTMLElement).style.animation =
-            "fadeIn 0.5s ease forwards";
+        hiddenArticles.forEach((article, index) => {
+          if (index < increment) {
+            article.classList.remove("hidden");
+            (article as HTMLElement).style.animation =
+              "fadeIn 0.5s ease forwards";
+          }
+        });
+
+        visibleCount += increment;
+
+        // Hide button if all articles are visible
+        if (visibleCount >= articles.length) {
+          loadMoreBtn.classList.add("hidden");
         }
       });
-
-      visibleCount += increment;
-
-      // Hide button if all articles are visible
-      if (visibleCount >= articles.length) {
-        loadMoreBtn.classList.add("hidden");
-      }
-    });
-  }
+    }
+  });
 </script>
