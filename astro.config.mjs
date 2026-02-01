@@ -30,6 +30,9 @@ export default defineConfig({
   prefetch: {
     defaultStrategy: 'hover',
   },
+  build: {
+    inlineStylesheets: 'always',
+  },
   image: {
     service: {
       entrypoint: 'astro/assets/services/sharp',
