@@ -5,7 +5,7 @@ author: "Cristina Murciano"
 image: "/images/posts/equilibrio-ph-vital.png"
 excerpt: "Descubre la ciencia del pH interno y cómo el equilibrio ácido-base rige tu vitalidad. Aprende por qué el 'terreno biológico' es la clave de tu salud."
 category: "SALUD"
-active: true
+active: false
 ---
 
 Como especialista en salud bioenergética con años de práctica clínica, he observado una constante: el bienestar no es un estado estático, sino un **equilibrio dinámico**. Mantener una **homeostasis** interna correcta es fundamental para que nuestro organismo funcione al 100%. En mi consulta de [Par Biomagnético](/tratamientos), abordamos la salud desde una perspectiva integral, utilizando esta terapia complementaria para ayudar al cuerpo a recuperar su pH natural neutral (Nivel Energético Normal).

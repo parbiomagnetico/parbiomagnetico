@@ -5,7 +5,7 @@ author: "Cristina Murciano"
 image: "/images/posts/terapia-no-invasiva.webp"
 excerpt: "¿Miedo a las agujas o a la química? Descubre por qué el biomagnetismo es la opción más segura y respetuosa para tratar a toda tu familia."
 category: "GENERAL"
-active: true
+active: false
 ---
 
 En un mundo cada vez más medicalizado, donde a menudo parece que la única solución a un problema de salud es añadir una carga química extra al cuerpo, el **Par Biomagnético** surge como una respuesta respetuosa, natural y profundamente efectiva. Se trata de una terapia no invasiva en el sentido más estricto del término: no introducimos nada, no cortamos nada y no forzamos nada. Simplemente equilibramos lo que ya está en ti.

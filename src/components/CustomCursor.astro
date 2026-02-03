@@ -1,0 +1,224 @@
+---
+
+---
+
+<div class="cursor-wrapper hidden md:block">
+    <div class="cursor-outer" id="cursor-outer"></div>
+    <div class="cursor-inner" id="cursor-inner"></div>
+</div>
+
+<script>
+    function initCursor() {
+        const outer = document.getElementById("cursor-outer");
+        const inner = document.getElementById("cursor-inner");
+
+        if (!outer || !inner) return;
+
+        let mouseX = 0;
+        let mouseY = 0;
+        let outerX = 0;
+        let outerY = 0;
+        let isVisible = false;
+
+        const lerp = (start, end, amt) => (1 - amt) * start + amt * end;
+
+        const updatePosition = (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+
+            if (!isVisible) {
+                isVisible = true;
+                outer.style.opacity = "1";
+                inner.style.opacity = "1";
+                // Jump to position initially to avoid sliding from (0,0)
+                outerX = mouseX;
+                outerY = mouseY;
+            }
+
+            inner.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
+        };
+
+        const animate = () => {
+            outerX = lerp(outerX, mouseX, 0.15);
+            outerY = lerp(outerY, mouseY, 0.15);
+
+            outer.style.transform = `translate(${outerX}px, ${outerY}px)`;
+
+            requestAnimationFrame(animate);
+        };
+
+        const handleMouseDown = () => {
+            outer.classList.add("cursor-clicked");
+        };
+
+        const handleMouseUp = () => {
+            outer.classList.remove("cursor-clicked");
+        };
+
+        const handleMouseEnter = (e) => {
+            const target = e.target as HTMLElement;
+            if (
+                target.closest(
+                    'a, button, [role="button"], .interactive, .whatsapp-btn',
+                )
+            ) {
+                outer.classList.add("cursor-hover");
+                inner.classList.add("cursor-hover");
+            }
+
+            if (target.closest("input, textarea, select")) {
+                outer.classList.add("cursor-input");
+            }
+        };
+
+        const handleMouseLeave = (e) => {
+            outer.classList.remove("cursor-hover");
+            inner.classList.remove("cursor-hover");
+            outer.classList.remove("cursor-input");
+        };
+
+        const handleWindowLeave = () => {
+            isVisible = false;
+            outer.style.opacity = "0";
+            inner.style.opacity = "0";
+        };
+
+        window.addEventListener("mousemove", updatePosition);
+        window.addEventListener("mousedown", handleMouseDown);
+        window.addEventListener("mouseup", handleMouseUp);
+
+        // Event delegation for hover states
+        window.addEventListener("mouseover", handleMouseEnter);
+        window.addEventListener("mouseout", handleMouseLeave);
+
+        document.addEventListener("mouseleave", handleWindowLeave);
+
+        animate();
+
+        return () => {
+            window.removeEventListener("mousemove", updatePosition);
+            window.removeEventListener("mousedown", handleMouseDown);
+            window.removeEventListener("mouseup", handleMouseUp);
+            window.removeEventListener("mouseover", handleMouseEnter);
+            window.removeEventListener("mouseout", handleMouseLeave);
+            document.removeEventListener("mouseleave", handleWindowLeave);
+        };
+    }
+
+    // Initialize on page load and after transitions
+    document.addEventListener("astro:page-load", () => {
+        initCursor();
+    });
+</script>
+
+<style>
+    .cursor-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 9999;
+        mix-blend-mode: difference;
+    }
+
+    .cursor-outer,
+    .cursor-inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        opacity: 0;
+        transition:
+            width 0.3s cubic-bezier(0.23, 1, 0.32, 1),
+            height 0.3s cubic-bezier(0.23, 1, 0.32, 1),
+            background-color 0.3s ease,
+            border-color 0.3s ease,
+            opacity 0.3s ease,
+            transform 0.1s ease-out; /* transform inertia handled by JS, but this helps the click scale */
+    }
+
+    .cursor-outer {
+        width: 30px;
+        height: 30px;
+        border: 1.5px solid #10b981; /* Emerald */
+        margin-left: -15px;
+        margin-top: -15px;
+        z-index: 9998;
+        backdrop-filter: blur(1px);
+    }
+
+    .cursor-inner {
+        width: 5px;
+        height: 5px;
+        background-color: #10b981; /* Emerald */
+        margin-left: -2.5px;
+        margin-top: -2.5px;
+        z-index: 9999;
+    }
+
+    /* Hover States */
+    .cursor-outer.cursor-hover {
+        width: 50px;
+        height: 50px;
+        margin-left: -25px;
+        margin-top: -25px;
+        background-color: rgba(16, 185, 129, 0.2);
+        border-color: rgba(16, 185, 129, 1);
+    }
+
+    .cursor-inner.cursor-hover {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    .cursor-outer.cursor-input {
+        width: 2px;
+        height: 30px;
+        margin-left: -1px;
+        margin-top: -15px;
+        border-radius: 0;
+        background-color: #10b981;
+        border: none;
+    }
+
+    /* Click Animation */
+    .cursor-outer.cursor-clicked {
+        transform: translate(-50%, -50%) scale(0.85) !important;
+        background-color: rgba(16, 185, 129, 0.4);
+    }
+
+    /* Global cursor hiding */
+    :global(html),
+    :global(body) {
+        cursor: none !important;
+    }
+
+    :global(a),
+    :global(button),
+    :global([role="button"]),
+    :global(.interactive) {
+        cursor: none !important;
+    }
+
+    :global(input),
+    :global(textarea),
+    :global(select) {
+        cursor: none !important;
+    }
+
+    @media (max-width: 768px) {
+        .cursor-wrapper {
+            display: none;
+        }
+        :global(html),
+        :global(body),
+        :global(a),
+        :global(button) {
+            cursor: auto !important;
+        }
+    }
+</style>

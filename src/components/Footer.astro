@@ -1,12 +1,18 @@
 ---
-
+import { Image } from "astro:assets";
+import logoNR from "../assets/images/logo-NRstudio-blanco.webp";
 ---
 
 <footer class="site-footer">
     <div class="footer-content">
         <div class="footer-brand">
-            <span class="footer-nr">NR</span>
-            <span class="footer-studio">STUDIO</span>
+            <Image
+                src={logoNR}
+                alt="NRstudio Logo"
+                width={120}
+                height={40}
+                class="footer-logo-img"
+            />
         </div>
         <p class="footer-text">
             © {new Date().getFullYear()} Par Biomagnético - Equilibrio y Bienestar.
@@ -77,21 +83,19 @@
         flex-direction: column;
         align-items: center;
         line-height: 1;
+        margin-bottom: 0.5rem;
     }
 
-    .footer-nr {
-        font-size: 1.8rem;
-        font-weight: 700;
-        color: #fff;
-        letter-spacing: -0.03em;
+    .footer-logo-img {
+        width: auto;
+        height: 32px;
+        object-fit: contain;
+        opacity: 0.9;
+        transition: opacity 0.3s ease;
     }
 
-    .footer-studio {
-        font-size: 0.55rem;
-        font-weight: 400;
-        color: #ffffff; /* Pure white for max contrast on small text */
-        letter-spacing: 0.25em;
-        margin-top: 2px;
+    .footer-logo-img:hover {
+        opacity: 1;
     }
 
     .footer-text {
