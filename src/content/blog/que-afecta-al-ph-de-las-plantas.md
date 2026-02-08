@@ -1,11 +1,21 @@
 ---
-title: "pH del Suelo: Salud desde la Raíz para una Nutrición Humana Real"
-date: "26 de enero de 2026"
-author: "Cristina Murciano"
-image: "/images/posts/que-afecta-al-ph-de-las-plantas.webp"
-excerpt: "Tierra enferma, cuerpo enfermo. Descubre cómo el pH del suelo determina la densidad nutricional de tus alimentos y por qué debemos cuidar la tierra para sanarnos."
-category: "NUTRICIÓN"
-active: false
+active: true
+ai_image_style: STYLE_A
+author: Cristina Murciano
+category: NUTRICIÓN
+date: 26 de enero de 2026
+excerpt: Tierra enferma, cuerpo enfermo. Descubre cómo el pH del suelo determina la
+  densidad nutricional de tus alimentos y por qué debemos cuidar la tierra para sanarnos.
+image: /images/posts/que-afecta-al-ph-de-las-plantas.webp
+midjourney_prompt: Dark mode, bio-energy aesthetic. A person, wearing light, comfortable
+  clothing, lies serenely on a modern, professional therapeutic bed. Strategic placement
+  of one red and one black therapeutic vinyl magnet on their body. A deep green atmospheric
+  background with glowing golden-green energy lines and ethereal particles subtly
+  emanating from and around the person and magnets, suggesting a flow of restorative
+  energy. Subtle, warm lighting highlights the serene expression and the therapeutic
+  setup. The overall atmosphere is professional, clinical, yet profoundly mystical,
+  conveying a sense of deep healing and rebalancing vital for human well-being.
+title: 'pH del Suelo: Salud desde la Raíz para una Nutrición Humana Real'
 ---
 
 Como seres biológicos, estamos en una conversación constante con la tierra que nos sostiene. El **pH del suelo** no es solo un dato para agricultores; es el primer eslabón en la cadena de nuestra propia salud. Una tierra con un pH desequilibrado no puede producir alimentos con la densidad mineral que nuestro cuerpo necesita para mantener su propia neutralidad biológica. Si la tierra está 'ácida' y saturada de químicos, lo que llega a tu plato es una sombra de lo que debería ser nutricionalmente hablando.

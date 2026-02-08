@@ -5,7 +5,7 @@ author: "Cristina Murciano"
 image: "/images/posts/consulta-monzon-cinca.png"
 excerpt: "¿Buscas Biomagnetismo en Huesca? Descubre mi consulta profesional en Monzón, atendiendo a personas de Barbastro, Binéfar y toda la comarca."
 category: "CONSULTA"
-active: false
+active: true
 ---
 
 Si resides en **Monzón, Barbastro, Binéfar** o cualquier localidad del Cinca Medio y buscas una alternativa de salud profesional, cercana y eficaz, mi consulta de Biomagnetismo es el lugar que necesitas. Ofrezco tratamientos basados en el método del Dr. Goiz, diseñados para regular tu pH y fortalecer tu sistema inmunitario de forma totalmente no invasiva.

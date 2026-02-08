@@ -5,7 +5,7 @@ author: "Cristina Murciano"
 image: "/images/posts/las-glandulas.webp"
 excerpt: "Hormonas, glándulas y equilibrio. Descubre cómo el biomagnetismo ayuda a coordinar tu orquesta hormonal para prevenir desde la diabetes hasta el insomnio."
 category: "SALUD"
-active: false
+active: true
 ---
 
 Tu cuerpo se comunica a través de una compleja red de mensajeros químicos llamados hormonas. Estos mensajes dictan tu hambre, tu sueño, tu humor y tu capacidad de sanar. El **Sistema Endocrino** es la orquesta de esta comunicación, y las glándulas son los músicos. Si solo uno de ellos desafina (debido a una distorsión de pH), toda la sinfonía de tu salud se resiente.

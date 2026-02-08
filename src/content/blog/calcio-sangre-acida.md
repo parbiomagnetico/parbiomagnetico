@@ -1,10 +1,25 @@
 ---
-title: "Protege tus Huesos: El Equilibrio del pH con Par Biomagnético en Monzón"
-date: "2024-05-15"
-active: false
-excerpt: "Descubre cómo el pH de tu cuerpo afecta la salud ósea. El Par Biomagnético en Monzón te ayuda a restablecer el equilibrio para proteger tus huesos. ¡Tu bienestar empieza aquí!"
-image: "/images/blog/par-biomagnetico-osteoporosis-monzon.jpg"
-social_caption: "🤔 ¿Sabías que el pH de tu cuerpo puede estar debilitando tus huesos? La osteoporosis no siempre es por falta de calcio. Descubre cómo el Par Biomagnético en Monzón puede ayudarte a restablecer el equilibrio y proteger tu esqueleto de forma natural. ¡Tu bienestar es mi prioridad! Agenda tu cita. 🧲✨ #ParBiomagnetico #SaludMonzon #Bienestar"
+active: true
+ai_image_style: STYLE_A
+date: '2024-05-15'
+excerpt: Descubre cómo el pH de tu cuerpo afecta la salud ósea. El Par Biomagnético
+  en Monzón te ayuda a restablecer el equilibrio para proteger tus huesos. ¡Tu bienestar
+  empieza aquí!
+image: /images/blog/par-biomagnetico-osteoporosis-monzon.jpg
+midjourney_prompt: Dark mode, bio-energy aesthetic. A person, fully clothed, lies
+  serenely on a treatment bed. Therapeutic vinyl magnets, one red and one black, are
+  strategically placed on their body, subtly indicating a biomagnetic pair therapy
+  session focused on systemic pH balance and bone health. The deep green background
+  is alive with glowing golden-green energy lines and subtle particles that emanate
+  and gently flow towards the person's skeletal system, symbolizing energetic support
+  for bone structure and osteoporosis prevention. Subtle, warm light bathes the scene,
+  creating a professional, clinical yet mystical atmosphere.
+social_caption: "\U0001F914 ¿Sabías que el pH de tu cuerpo puede estar debilitando
+  tus huesos? La osteoporosis no siempre es por falta de calcio. Descubre cómo el
+  Par Biomagnético en Monzón puede ayudarte a restablecer el equilibrio y proteger
+  tu esqueleto de forma natural. ¡Tu bienestar es mi prioridad! Agenda tu cita. \U0001F9F2✨
+  #ParBiomagnetico #SaludMonzon #Bienestar"
+title: 'Protege tus Huesos: El Equilibrio del pH con Par Biomagnético en Monzón'
 ---
 
 ¿Te preocupa la salud de tus huesos? La osteoporosis es una inquietud común, y a menudo, la primera solución que se nos viene a la mente es simplemente aumentar la ingesta de calcio. Sin embargo, desde la perspectiva del **Par Biomagnético** y la **Salud Bioenergética**, la raíz del problema rara vez es una simple "falta" de este mineral. Como Cristina Murciano, tu terapeuta experta en Monzón, quiero explicarte una visión más profunda y cómo podemos apoyar a tu organismo para proteger su estructura ósea.

@@ -5,7 +5,7 @@ author: "Cristina Murciano"
 image: "/images/posts/tratamiento-de-emociones.png"
 excerpt: "¿Vives en estado de alerta constante? Aprende cómo el biomagnetismo y la bioenergética ayudan a reprogramar tu sistema nervioso para vivir desde la calma."
 category: "EMOCIONES"
-active: false
+active: true
 ---
 
 La gestión de nuestras emociones es, probablemente, el reto más grande de la vida moderna. Vivimos inmersos en una cultura del 'hacer' que descuida el 'sentir', lo que nos lleva a estados de ansiedad y estrés crónico que agotan nuestro sistema nervioso. El **Tratamiento de Emociones** con Biomagnetismo no solo busca aliviar el síntoma, sino reprogramar la forma en que tu cuerpo reacciona ante los estímulos.

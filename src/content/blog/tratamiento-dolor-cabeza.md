@@ -5,7 +5,7 @@ author: "Cristina Murciano"
 image: "/images/posts/tratamiento-dolor-cabeza.png"
 excerpt: "¿Vives condicionado por el dolor de cabeza? Descubre las causas ocultas, desde la Helicobacter Pylori hasta el estrés, y cómo eliminarlas sin fármacos."
 category: "SALUD"
-active: false
+active: true
 ---
 
 El dolor de cabeza persistente no es un inconveniente menor; es un grito de auxilio de tu organismo. En mi práctica clínica, he comprobado que la **migraña** suele ser la manifestación de un desequilibrio que ocurre lejos de la cabeza, generalmente en el sistema digestivo o hepático. Tratar el dolor con analgésicos es como apagar la alarma de incendios sin buscar el fuego; el alivio es temporal, pero el daño continúa.

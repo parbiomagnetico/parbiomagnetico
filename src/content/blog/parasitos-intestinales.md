@@ -5,7 +5,7 @@ author: "Cristina Murciano"
 image: "/images/posts/parasitos-intestinales.webp"
 excerpt: "¿Picor anal, bruxismo o irritabilidad? Los parásitos son maestros del camuflaje. Descubre cómo el biomagnetismo rompe su ciclo de vida naturalmente."
 category: "GENERAL"
-active: false
+active: true
 ---
 
 Hablar de parásitos parece algo de otra época o de países lejanos, pero la realidad en mi consulta es muy distinta. Los **parásitos intestinales** (como los oxiuros, las giardias o las tenias) son extremadamente comunes en nuestra sociedad y suelen ser los culpables detrás de síntomas inexplicables como la anemia, el cansancio crónico o la ansiedad por la comida. No solo comen lo que tú comes, sino que sus desechos metabólicos intoxican tu sistema nervioso.

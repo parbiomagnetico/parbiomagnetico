@@ -1,10 +1,23 @@
 ---
-title: "Par Biomagnético en Monzón: Tu Guía Esencial para el Equilibrio y Bienestar Natural"
-date: "2026-02-02"
-active: false
-excerpt: "Descubre cómo el Par Biomagnético te ayuda a restaurar el equilibrio de pH en tu organismo y apoyar tu bienestar en Monzón. Terapia natural para tu salud."
-image: "/images/blog/par-biomagnetico-monzon-salud-bienestar.jpg"
-social_caption: "En Monzón, el Par Biomagnético te ofrece una vía natural para recuperar tu equilibrio. ✨ Como Cristina Murciano, te guío hacia un bienestar duradero. ¡Descubre cómo! 🧲 #ParBiomagnetico #SaludMonzon #Bienestar #TerapiaNatural"
+active: true
+ai_image_style: STYLE_A
+date: '2026-02-02'
+excerpt: Descubre cómo el Par Biomagnético te ayuda a restaurar el equilibrio de pH
+  en tu organismo y apoyar tu bienestar en Monzón. Terapia natural para tu salud.
+image: /images/blog/par-biomagnetico-monzon-salud-bienestar.jpg
+midjourney_prompt: Dark mode, bio-energy aesthetic. A person, dressed in comfortable,
+  light clothing, is lying calmly on a professional treatment table. Therapeutic vinyl
+  magnets are precisely placed on specific points of their body, one red and one black,
+  clearly visible. The background is a deep, rich green, characteristic of a dark
+  mode interface. Subtle, warm light gently illuminates the scene. Glowing golden-green
+  energy lines and delicate particles emanate subtly from the magnets and around the
+  person, visualizing the flow of bio-energy and the restoration of natural balance.
+  The overall impression is professional, clinical, and profoundly mystical.
+social_caption: "En Monzón, el Par Biomagnético te ofrece una vía natural para recuperar
+  tu equilibrio. ✨ Como Cristina Murciano, te guío hacia un bienestar duradero. ¡Descubre
+  cómo! \U0001F9F2 #ParBiomagnetico #SaludMonzon #Bienestar #TerapiaNatural"
+title: 'Par Biomagnético en Monzón: Tu Guía Esencial para el Equilibrio y Bienestar
+  Natural'
 ---
 
 ¿Te sientes con falta de energía, experimentas molestias recurrentes o notas que tu cuerpo no funciona con la vitalidad de antes? Es habitual buscar respuestas y soluciones que respeten la sabiduría intrínseca de nuestro organismo. Como Cristina Murciano, terapeuta especializada en **Salud Bioenergética** con consulta en **Monzón (Huesca)**, he sido testigo de la capacidad transformadora del **Par Biomagnético** en la vida de muchas personas. No es una promesa de cura, sino un camino para **restablecer el equilibrio natural** que tu cuerpo anhela.

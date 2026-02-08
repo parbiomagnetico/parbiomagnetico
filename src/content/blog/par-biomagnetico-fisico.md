@@ -5,7 +5,7 @@ author: "Cristina Murciano"
 image: "/images/posts/par-biomagnetico-fisico.webp"
 excerpt: "Aprende cómo el magnetismo cambia físicamente el ambiente de tus órganos para favorecer la regeneración celular inmediata."
 category: "TÉCNICA"
-active: false
+active: true
 ---
 
 El núcleo científico del Biomagnetismo reside en el concepto de **Par Biomagnético Físico**. A diferencia de enfoques puramente energéticos o sugestivos, el PB actúa directamente sobre la materia biológica, alterando las condiciones fisicoquímicas que permiten la persistencia de la enfermedad. Entender este mecanismo es clave para valorar la seriedad y el rigor de esta técnica desarrollada por el Dr. Goiz.

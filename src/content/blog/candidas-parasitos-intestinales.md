@@ -1,8 +1,19 @@
+---
+ai_image_style: STYLE_A
+midjourney_prompt: A full-body shot of a person lying dressed on a therapy gurney,
+  with therapeutic vinyl magnets (one red, one black) strategically placed on their
+  body. Dark mode, bio-energy aesthetic. Deep green background, glowing golden-green
+  energy lines and particles softly emanating from and surrounding the magnets, symbolizing
+  internal balance and healing. Subtle, warm light. The scene is professional, clinical
+  yet imbued with a mystical, serene therapeutic atmosphere, conveying a sense of
+  well-being and restoration from chronic conditions.
+---
+
 yaml
 ---
 title: "Candidiasis Crónica: Recupera el Equilibrio con Biomagnetismo en Monzón | Cristina Murciano"
 date: "2026-02-02"
-active: false
+active: true
 excerpt: "En Monzón, Cristina Murciano te guía para restaurar el equilibrio de tu organismo y apoyar la gestión de la candidiasis crónica a través del Par Biomagnético. Descubre el bienestar."
 image: "/images/blog/candidiasis-biomagnetismo-monzon.jpg"
 social_caption: "¡Combate la candidiasis crónica desde la raíz! 🌿 En Monzón, el Par Biomagnético te ofrece una vía natural para reequilibrar tu pH y apoyar a tu organismo. Deja atrás la fatiga y el malestar. ¡Es hora de sentirte bien! #ParBiomagnetico #SaludMonzon #Bienestar #Candidiasis #MonzonHuesca"

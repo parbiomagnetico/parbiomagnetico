@@ -5,7 +5,7 @@ author: "Cristina Murciano"
 image: "/images/posts/que-ph-es-mejor-para-mi-planta.webp"
 excerpt: "¿Tus plantas no crecen o tienen las hojas amarillas? El problema suele ser el pH de la tierra. Aprende a corregirlo de forma natural para obtener alimentos más nutritivos."
 category: "NUTRICIÓN"
-active: false
+active: true
 ---
 
 Si tienes un pequeño huerto o incluso unas macetas en casa, habrás notado que algunas plantas prosperan con facilidad mientras otras languidecen sin motivo aparente. La respuesta suele estar enterrada: en el **pH de la tierra**. Entender y ajustar este parámetro es una de las habilidades más valiosas para cualquier persona interesada en una vida autosuficiente y saludable, ya que determina qué nutrientes podrá ofrecerte cada cosecha.

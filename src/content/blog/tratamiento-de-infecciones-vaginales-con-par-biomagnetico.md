@@ -5,7 +5,7 @@ author: "Cristina Murciano"
 image: "/images/posts/tratamiento-de-infecciones-vaginales-con-par-biomagnetico.webp"
 excerpt: "¿Cansada de óvulos y cremas que no solucionan el problema? Descubre cómo el Par Biomagnético restaura tu barrera microbiológica natural."
 category: "SALUD"
-active: false
+active: true
 ---
 
 Las infecciones vaginales —ya sean por hongos como la cándida o bacterias como la gardnerella— son una de las causas más frecuentes de malestar e inseguridad en la mujer. Muchas personas llegan a mi consulta tras años de tratamientos con antibióticos y antifúngicos que solo ofrecen un alivio temporal. El problema es que estos fármacos matan al patógeno pero también a la **flora protectora**, dejando el terreno aún más debilitado para la siguiente reinfección.

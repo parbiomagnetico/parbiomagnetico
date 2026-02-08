@@ -5,7 +5,7 @@ author: "Cristina Murciano"
 image: "/images/posts/que-beneficios-aporta-el-par-biomagnetico.png"
 excerpt: "Mucho más que quitar el dolor. Descubre por qué el biomagnetismo es la terapia preferida por quienes buscan una salud integral, natural y preventiva."
 category: "BIENESTAR"
-active: false
+active: true
 ---
 
 La terapia de **Par Biomagnético** se ha consolidado como una de las herramientas más potentes y versátiles de la medicina integrativa actual. Al equilibrar el pH y la bionergética del cuerpo, logramos resultados que van mucho más allá de la simple ausencia de síntomas. Como terapeuta certificada, destaco estos 7 beneficios fundamentales que transformarán tu visión de la salud:

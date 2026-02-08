@@ -1,10 +1,24 @@
 ---
-title: "Adiós al Síndrome del Intestino Irritable en Monzón: Recupera tu Bienestar con Par Biomagnético"
-date: "2024-05-15"
-active: false
-excerpt: "Cristina Murciano, experta en Monzón, te guía para aliviar el SII con Par Biomagnético. Descubre cómo equilibrar tu pH y eliminar patógenos para un bienestar duradero."
-image: "/images/blog/sindrome-intestino-irritable-par-biomagnetico-monzon.jpg"
-social_caption: "¡Deja atrás el #ColonIrritable! 🌿 Si sufres SII en Monzón, el Par Biomagnético puede ser tu aliado. Ayudo a restablecer el equilibrio de tu organismo, reducir la inflamación y eliminar patógenos. ✨ Recupera tu paz digestiva. ¡Agenda tu cita! #ParBiomagnetico #SaludMonzon #BienestarDigestivo #SII"
+active: true
+ai_image_style: STYLE_C
+date: '2024-05-15'
+excerpt: Cristina Murciano, experta en Monzón, te guía para aliviar el SII con Par
+  Biomagnético. Descubre cómo equilibrar tu pH y eliminar patógenos para un bienestar
+  duradero.
+image: /images/blog/sindrome-intestino-irritable-par-biomagnetico-monzon.jpg
+midjourney_prompt: Close-up, artistic shot of the lower abdominal area, with therapeutic
+  vinyl magnets (one red, one black) gently placed on the skin. Dark mode, bio-energy
+  aesthetic. Deep green background, glowing golden-green energy lines and particles
+  subtly emanating from the magnets and surrounding the gut area, symbolizing balance,
+  calming, and healing of the intestines from Irritable Bowel Syndrome. Subtle, warm
+  light. Professional, clinical yet mystical atmosphere. Focus on smooth, healthy
+  skin texture. High detail, vibrant energy.
+social_caption: "¡Deja atrás el #ColonIrritable! \U0001F33F Si sufres SII en Monzón,
+  el Par Biomagnético puede ser tu aliado. Ayudo a restablecer el equilibrio de tu
+  organismo, reducir la inflamación y eliminar patógenos. ✨ Recupera tu paz digestiva.
+  ¡Agenda tu cita! #ParBiomagnetico #SaludMonzon #BienestarDigestivo #SII"
+title: 'Adiós al Síndrome del Intestino Irritable en Monzón: Recupera tu Bienestar
+  con Par Biomagnético'
 ---
 
 Como terapeuta experta en Salud Bioenergética y Par Biomagnético en Monzón (Huesca), comprendo profundamente la frustración y el impacto que el **Síndrome del Intestino Irritable (SII)** tiene en tu vida. Es mucho más que un malestar digestivo; es una condición que condiciona cada decisión, desde la comida que eliges hasta tus planes sociales. Esos cólicos punzantes, la hinchazón constante, la impredecible alternancia entre diarrea y estreñimiento... entiendo el agotamiento que provoca vivir en alerta.

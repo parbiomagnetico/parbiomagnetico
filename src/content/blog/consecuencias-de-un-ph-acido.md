@@ -1,10 +1,22 @@
 ---
-title: "Tu Bienestar Comienza Aquí: Desequilibrio de pH y el Poder del Par Biomagnético en Monzón"
-date: "2026-02-02"
-active: false
-excerpt: "Descubre cómo el Par Biomagnético en Monzón te ayuda a restablecer el equilibrio de pH de tu organismo, apoyando tu bienestar y vitalidad. ¡Pide tu cita hoy!"
-image: "/images/blog/par-biomagnetico-equilibrio-ph-monzon.jpg"
-social_caption: "✨ ¿Cansado de sentirte sin energía o con molestias constantes? Tu cuerpo te está hablando. Aprende cómo el desequilibrio de pH afecta tu salud y cómo el Par Biomagnético puede ayudarte a recuperar tu bienestar. ¡Te espero en Monzón! 🧲 #ParBiomagnetico #SaludMonzon #Bienestar #CristinaMurciano #Huesca"
+active: true
+ai_image_style: STYLE_A
+date: '2026-02-02'
+excerpt: Descubre cómo el Par Biomagnético en Monzón te ayuda a restablecer el equilibrio
+  de pH de tu organismo, apoyando tu bienestar y vitalidad. ¡Pide tu cita hoy!
+image: /images/blog/par-biomagnetico-equilibrio-ph-monzon.jpg
+midjourney_prompt: A person, fully dressed, lying comfortably on a treatment bed.
+  Therapeutic vinyl magnets, one red and one black, are placed on their body. The
+  scene is in dark mode, with a deep green background. Glowing golden-green bio-energy
+  lines and particles emanate around the person and the magnets, creating a strong
+  bio-energy aesthetic. Subtle, warm light illuminates the professional and clinical
+  setting, imbued with a mystical aura. High detail, photographic quality.
+social_caption: "✨ ¿Cansado de sentirte sin energía o con molestias constantes? Tu
+  cuerpo te está hablando. Aprende cómo el desequilibrio de pH afecta tu salud y cómo
+  el Par Biomagnético puede ayudarte a recuperar tu bienestar. ¡Te espero en Monzón!
+  \U0001F9F2 #ParBiomagnetico #SaludMonzon #Bienestar #CristinaMurciano #Huesca"
+title: 'Tu Bienestar Comienza Aquí: Desequilibrio de pH y el Poder del Par Biomagnético
+  en Monzón'
 ---
 
 ¿Te sientes constantemente agotado, con digestiones pesadas o una piel sin vitalidad, a pesar de cuidar tu descanso y alimentación? Esos "achaques" que a menudo atribuimos al estrés o al paso del tiempo, podrían ser las señales claras de un desequilibrio interno: una alteración del delicado **pH de tu organismo**. En mi consulta de **Monzón (Huesca)**, como terapeuta experta en Par Biomagnético, entiendo lo frustrante que es vivir con estas sensaciones. No son caprichos del cuerpo, sino un llamado a la acción.

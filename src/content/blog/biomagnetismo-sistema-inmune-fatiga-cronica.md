@@ -1,10 +1,25 @@
 ---
-title: "Recupera tu Energía y Bienestar en Monzón: El Poder del Par Biomagnético contra el Cansancio Crónico"
-date: "2026-02-02"
-active: false
-excerpt: "Descubre cómo el Par Biomagnético restablece tu equilibrio bioenergético en Monzón, eliminando el cansancio crónico y la fatiga con Cristina Murciano."
-image: "/images/blog/biomagnetismo-cansancio-monzon.jpg"
-social_caption: "¡Adiós al cansancio crónico! 👋 Si te sientes agotado a pesar de descansar, el Par Biomagnético puede ser tu solución. ✨ En mi consulta de Monzón, te ayudo a restablecer tu equilibrio energético para que recuperes tu vitalidad. ¡Vuelve a sentirte al 100%! 🧲 #ParBiomagnetico #CansancioCrónico #SaludMonzon #Bienestar #Fatiga"
+active: true
+ai_image_style: STYLE_A
+date: '2026-02-02'
+excerpt: Descubre cómo el Par Biomagnético restablece tu equilibrio bioenergético
+  en Monzón, eliminando el cansancio crónico y la fatiga con Cristina Murciano.
+image: /images/blog/biomagnetismo-cansancio-monzon.jpg
+midjourney_prompt: Dark mode, bio-energy aesthetic. A person, comfortably dressed,
+  lies serenely on a professional treatment bed, receiving biomagnetic therapy. Therapeutic
+  vinyl magnets, one red and one black, are gently placed on their body. The background
+  is a deep, calming green. Glowing golden-green energy lines and subtle particles
+  subtly emanate around the person and magnets, symbolizing the restoration of vitality
+  and relief from chronic fatigue. Subtle, warm light bathes the scene, creating a
+  professional, clinical, yet profoundly mystical and healing atmosphere. High detail,
+  photorealistic.
+social_caption: "¡Adiós al cansancio crónico! \U0001F44B Si te sientes agotado a pesar
+  de descansar, el Par Biomagnético puede ser tu solución. ✨ En mi consulta de Monzón,
+  te ayudo a restablecer tu equilibrio energético para que recuperes tu vitalidad.
+  ¡Vuelve a sentirte al 100%! \U0001F9F2 #ParBiomagnetico #CansancioCrónico #SaludMonzon
+  #Bienestar #Fatiga"
+title: 'Recupera tu Energía y Bienestar en Monzón: El Poder del Par Biomagnético contra
+  el Cansancio Crónico'
 ---
 
 # Recupera tu Energía y Bienestar en Monzón: El Poder del Par Biomagnético contra el Cansancio Crónico

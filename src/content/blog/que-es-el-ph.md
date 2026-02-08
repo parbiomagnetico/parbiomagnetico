@@ -5,7 +5,7 @@ author: "Cristina Murciano"
 image: "/images/posts/que-es-el-ph.webp"
 excerpt: "Aprende qué es el pH de forma sencilla. Descubre la escala de acidez y alcalinidad y por qué es fundamental para el funcionamiento de tu cuerpo y sistema inmune."
 category: "CIENCIA"
-active: false
+active: true
 ---
 
 Escuchamos hablar del pH en los anuncios de geles de ducha, en las etiquetas de las aguas minerales y en las noticias sobre el cambio climático en los océanos. Pero, ¿realmente comprendemos qué significa este valor para nuestra salud diaria? Entender el pH no es solo una curiosidad para químicos; es el **conocimiento base indispensable** para que dejes de ser un espectador de tu salud y pases a ser el protagonista y gestor de tu bienestar biológico.

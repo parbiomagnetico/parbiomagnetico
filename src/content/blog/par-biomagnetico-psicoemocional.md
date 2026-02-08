@@ -5,7 +5,7 @@ author: "Cristina Murciano"
 image: "/images/posts/par-biomagnetico-psicoemocional.webp"
 excerpt: "Descubre cómo las emociones no resueltas se almacenan en tus órganos alterando tu salud. El biomagnetismo psicoemocional libera traumas y bloqueos profundos."
 category: "EMOCIONES"
-active: false
+active: true
 ---
 
 Nuestras vivencias dejan una huella que va mucho más allá de la memoria consciente; se graban en nuestra **memoria corporal**. Como terapeuta especializada en salud integral, utilizo el **Par Biomagnético Psicoemocional** para identificar y liberar esas cargas que a menudo nos impiden avanzar, sanando la conexión bidireccional entre la mente y los órganos.

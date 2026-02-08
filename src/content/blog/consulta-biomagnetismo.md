@@ -1,8 +1,19 @@
+---
+ai_image_style: STYLE_A
+midjourney_prompt: Dark mode, bio-energy aesthetic. A person is comfortably lying
+  clothed on a professional treatment bed. Therapeutic vinyl magnets, one vibrant
+  red and one deep black, are strategically placed on their body. The background is
+  a deep green, with glowing golden-green energy lines and subtle particles emanating,
+  symbolizing healing and bio-energetic balance. Subtle, warm light illuminates the
+  scene, creating a professional, clinical yet mystical atmosphere. Focus on conveying
+  a sense of relief and well-being during a professional Par Biomagnético session.
+---
+
 yaml
 ---
 title: "Dolores Crónicos o Malestar Constante en Monzón: Así Te Ayuda una Sesión de Par Biomagnético Profesional"
 date: "2024-05-15"
-active: false
+active: true
 excerpt: "Descubre cómo el Par Biomagnético puede aliviar tus dolores crónicos y malestar constante. Cristina Murciano, experta en Monzón, te guía hacia el equilibrio bioenergético."
 image: "/images/blog/sesion-par-biomagnetico-monzon.jpg"
 social_caption: "Transforma tu salud en Monzón. ¿Cansado/a de dolores y fatiga? Descubre el poder del Par Biomagnético para restablecer tu equilibrio y bienestar. En mi consulta, te acompaño hacia una vida más plena. ¡Pide tu cita hoy! 🧲✨ #ParBiomagnetico #SaludMonzon #Bienestar"

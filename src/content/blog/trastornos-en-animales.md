@@ -5,7 +5,7 @@ author: "Cristina Murciano"
 image: "/images/posts/trastornos-en-animales.webp"
 excerpt: "¿Agresividad, miedo o ansiedad por separación? A veces el problema no es el carácter, sino un pH desequilibrado que irrita su sistema nervioso."
 category: "ANIMALES"
-active: false
+active: true
 ---
 
 Cuando un animal muestra conductas inusuales como agresividad repentina, miedos paralizantes o ansiedad por separación, los dueños solemos sentirnos impotentes. Lo primero es, sin duda, descartar patologías orgánicas graves con un veterinario. Pero si el animal está 'físicamente sano' y el problema persiste, debemos mirar hacia su **terreno bionergético**. Al igual que en los humanos, un pH desequilibrado en el sistema límbico o digestivo de un animal puede provocar una 'irritación' constante de su sistema nervioso.

@@ -5,7 +5,7 @@ author: "Cristina Murciano"
 image: "/images/posts/teoria-completa.webp"
 excerpt: "No es fe, es física. Conoce cómo los campos magnéticos interactúan con la electricidad de tus células para mejorar la oxigenación y la eliminación de radicales libres."
 category: "CIENCIA"
-active: false
+active: true
 ---
 
 Para entender el éxito del **par biomagnético**, debemos dejar de ver el cuerpo solo como un conjunto de reacciones químicas y empezar a verlo como un **sistema electromagnético complejo**. Cada célula de nuestro cuerpo funciona como una pequeña pila que mantiene un voltaje específico. Cuando nos enfermamos, ese voltaje cae o se distorsiona, alterando el campo magnético de nuestros órganos.

@@ -5,7 +5,7 @@ author: "Cristina Murciano"
 image: "/images/posts/ph-de-la-cerveza.webp"
 excerpt: "De la cerveza al kéfir. Descubre por qué el pH es el parámetro maestro que separa un alimento saludable de uno tóxico en el mundo de los fermentados."
 category: "CIENCIA"
-active: false
+active: true
 ---
 
 En el fascinante mundo de la fermentación —ya sea para crear cerveza, kombucha o kéfir—, el pH es el director de orquesta. Sin un control preciso de la acidez, la alquimia biológica se detiene o, peor aún, se contamina. Como profesional de la salud familiarizada con la biofísica, encuentro paralelismos asombrosos entre la fermentación de un alimento y la **salud bionergética** de una persona.

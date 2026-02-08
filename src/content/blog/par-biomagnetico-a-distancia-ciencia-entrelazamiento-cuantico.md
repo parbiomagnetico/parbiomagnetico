@@ -5,7 +5,7 @@ author: "Cristina Murciano"
 image: "/images/posts/biomagnetismo-distancia-cuantica.png"
 excerpt: "¿Se pueden usar imanes a miles de kilómetros? Descubre la ciencia del entrelazamiento cuántico y cómo funciona la terapia de Par Biomagnético a distancia con la misma eficacia."
 category: "CIENCIA"
-active: false
+active: true
 ---
 
 La terapia de **Par Biomagnético a distancia** suele despertar escepticismo inicial: ¿Cómo es posible que un terapeuta en España trate a una persona en América sin contacto físico? La respuesta no está en la magia, sino en las fronteras de la **física cuántica** y la bioenergética moderna.

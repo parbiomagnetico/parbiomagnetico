@@ -5,7 +5,7 @@ author: "Cristina Murciano"
 image: "/images/posts/importancia-del-ph-queso.webp"
 excerpt: "Descubre por qué medir el pH es vital en la producción de quesos. De la fermentación láctica a la prevención de bacterias, conoce la química detrás de este alimento."
 category: "CIENCIA"
-active: false
+active: true
 ---
 
 La elaboración del queso es un arte ancestral, pero en su corazón es un proceso estrictamente gobernado por la química y la física. En el mundo de la quesería profesional, el **pHímetro** es la herramienta más importante. Desde el momento en que la leche llega a la tina hasta que la cuña llega a tu mesa, el valor del pH dicta absolutamente todo: el sabor que experimentarás, la textura que sentirás al morder y, lo más crítico de todo, la seguridad microbiológica del producto.

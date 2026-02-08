@@ -5,7 +5,7 @@ author: "Cristina Murciano"
 image: "/images/posts/tratamiento-detox.png"
 excerpt: "Hígado, riñones y pulmones saturados. Descubre cómo el magnetismo optimiza la expulsión de metales pesados y toxinas acumuladas por años."
 category: "BIENESTAR"
-active: false
+active: true
 ---
 
 Vivimos en un entorno saturado de sustancias químicas, metales pesados (mercurio, plomo, aluminio) y partículas de contaminación que sobrecargan nuestros filtros naturales. Un **Tratamiento Detox** mediante Par Biomagnético no es una dieta pasajera basada en zumos; es una optimización bionergética profunda de tus sistemas de eliminación para que el cuerpo recupere su capacidad innata de purificación.

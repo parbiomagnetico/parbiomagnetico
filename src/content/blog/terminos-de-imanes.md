@@ -5,7 +5,7 @@ author: "Cristina Murciano"
 image: "/images/posts/terminos-de-imanes.png"
 excerpt: "¿Qué es un rastreo? ¿Qué significa NEN o Bipolo? Domina la terminología experta para entender tu proceso de curación con imanes."
 category: "TÉCNICA"
-active: false
+active: true
 ---
 
 Entrar en el mundo del **Par Biomagnético** puede sentirse al principio como aprender un nuevo idioma. Como terapeuta, considero fundamental que la persona entienda los términos que usamos en consulta, ya que esa comprensión activa tu propia inteligencia biológica en el proceso de sanación. Cuando sabes qué está ocurriendo en tu cuerpo, la respuesta al tratamiento suele ser mucho más rápida y efectiva. Aquí tienes los conceptos clave que debes conocer para navegar con confianza en tu proceso de salud.

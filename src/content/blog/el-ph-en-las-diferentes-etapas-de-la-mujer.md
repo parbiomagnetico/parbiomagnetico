@@ -1,10 +1,22 @@
 ---
-title: "Salud Femenina Integral en Monzón: Reequilibra tu pH con Par Biomagnético"
-date: "2024-05-15"
-active: false
-excerpt: "Descubre cómo el Par Biomagnético en Monzón apoya tu salud femenina. Reequilibra el pH, mejora síntomas y optimiza tu bienestar desde la pubertad hasta la menopausia."
-image: "/images/blog/salud-femenina-par-biomagnetico-monzon.jpg"
-social_caption: "¿Sientes que tu cuerpo femenino te habla, pero no logras descifrarlo? 🤔 En Monzón, te ayudo a reestablecer el equilibrio de tu pH y bienestar con Par Biomagnético. ¡Adiós molestias, hola vitalidad! 🧲✨ #ParBiomagnetico #SaludMonzon #BienestarFemenino #EquilibrioPH #CristinaMurciano"
+active: true
+ai_image_style: STYLE_A
+date: '2024-05-15'
+excerpt: Descubre cómo el Par Biomagnético en Monzón apoya tu salud femenina. Reequilibra
+  el pH, mejora síntomas y optimiza tu bienestar desde la pubertad hasta la menopausia.
+image: /images/blog/salud-femenina-par-biomagnetico-monzon.jpg
+midjourney_prompt: A serene woman, fully dressed, is comfortably reclined on a treatment
+  bed in a professional clinic setting. Strategically placed on her body are therapeutic
+  vinyl magnets, one vibrant red and one deep black. The scene is enveloped in a dark
+  mode aesthetic with a rich, deep green background. Glowing golden-green energy lines
+  and particles subtly radiate around her, representing vital bio-energy and the rebalancing
+  of female pH for integral health. Subtle, warm light illuminates the professional,
+  clinical yet deeply mystical atmosphere. High detail, photorealistic.
+social_caption: "¿Sientes que tu cuerpo femenino te habla, pero no logras descifrarlo?
+  \U0001F914 En Monzón, te ayudo a reestablecer el equilibrio de tu pH y bienestar
+  con Par Biomagnético. ¡Adiós molestias, hola vitalidad! \U0001F9F2✨ #ParBiomagnetico
+  #SaludMonzon #BienestarFemenino #EquilibrioPH #CristinaMurciano"
+title: 'Salud Femenina Integral en Monzón: Reequilibra tu pH con Par Biomagnético'
 ---
 
 # Salud Femenina en Monzón: Reequilibra tu pH con Par Biomagnético para un Bienestar Duradero

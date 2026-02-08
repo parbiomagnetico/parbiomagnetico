@@ -5,7 +5,7 @@ author: "Cristina Murciano"
 image: "/images/posts/tratamiento-de-alergias-alimentarias.png"
 excerpt: "¿Sientes que cada comida es un riesgo? Descubre cómo el Par Biomagnético ayuda a 'resetear' la respuesta inmunitaria de tu sistema digestivo."
 category: "SALUD"
-active: false
+active: true
 ---
 
 Las alergias e intolerancias alimentarias se han disparado en las últimas décadas, convirtiéndose en un reto diario para millones de personas. Como especialista en medicina bioenergética, no veo la alergia como una enfermedad del alimento, sino como un **error de comunicación** de tu sistema inmunitario. Tu cuerpo identifica una sustancia inofensiva como una amenaza mortal, y esa respuesta exagerada es lo que nos enferma.

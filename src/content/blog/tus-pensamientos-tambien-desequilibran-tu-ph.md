@@ -5,7 +5,7 @@ author: "Cristina Murciano"
 image: "/images/posts/tus-pensamientos-tambien-desequilibran-tu-ph.webp"
 excerpt: "Tus células inmunes escuchan lo que piensas. Descubre la ciencia de la PNI y cómo tu actitud mental determina el pH de tu cuerpo y tu salud física."
 category: "EMOCIONES"
-active: false
+active: true
 ---
 
 ¿Qué pasaría si te dijera que tus glóbulos blancos tienen receptores para la tristeza, la alegría o el miedo? Esta es la premisa de la **Psiconeuroinmunología (PNI)**, la ciencia que estudia la conexión íntima entre la psicología, el sistema nervioso y el sistema inmunitario. Como especialista, considero esta disciplina la clave para entender por qué la salud es un fenómeno verdaderamente holístico.

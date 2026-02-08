@@ -1,7 +1,7 @@
 ---
 title: "Equilibrio Ácido-Base y Biomagnetismo en Monzón: Recupera tu Vitalidad con Cristina Murciano"
 date: "2023-10-27"
-active: false
+active: true
 excerpt: "Descubre cómo el Biomagnetismo en Monzón puede equilibrar tu pH, eliminar patógenos y devolverte la energía vital. Sesiones personalizadas con Cristina Murciano."
 image: "/images/blog/biomagnetismo-equilibrio-ph-monzon.jpg"
 social_caption: "¡Cansancio crónico y molestias? Es hora de revisar tu equilibrio ácido-base. Descubre el poder del Par Biomagnético en Monzón para restablecer tu vitalidad. ✨ ¡Pide tu cita y empieza a sentirte mejor! 🧲 #ParBiomagnetico #SaludMonzon #BienestarBioenergético #CristinaMurciano"

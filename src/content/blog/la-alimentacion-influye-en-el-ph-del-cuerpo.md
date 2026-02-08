@@ -5,7 +5,7 @@ author: "Cristina Murciano"
 image: "/images/posts/la-alimentacion-influye-en-el-ph-del-cuerpo.webp"
 excerpt: "¿El limón es ácido o alcalino? Descubre cómo tu dieta impacta realmente en tu química interna y por qué el sabor no lo es todo."
 category: "NUTRICIÓN"
-active: false
+active: true
 ---
 
 La nutrición es, sin duda, el combustible de nuestra vida, pero existe una gran confusión sobre cómo los alimentos afectan a nuestro **equilibrio ácido-base**. Muchas personas llegan a mi consulta convencidas de que deben comer solo alimentos alcalinos para estar sanos, sin entender que el cuerpo es un sistema regulado que necesita equilibrio, no extremos. Como experta en nutrición bioenergética, mi objetivo es aclararte qué influye realmente en tu pH diario.

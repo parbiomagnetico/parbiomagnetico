@@ -5,7 +5,7 @@ author: "Cristina Murciano"
 image: "/images/posts/quien-descubrio-el-biomagnetismo.webp"
 excerpt: "Homenaje al descubridor del Par Biomagnético. Conoce la historia de una de las mentes más brillantes de la medicina bionergética del siglo XX."
 category: "HISTORIA"
-active: false
+active: true
 ---
 
 La historia de la medicina tiene nombres que marcan un antes y un después: Pasteur, Fleming, y en la era moderna de la bioenergética, el **Dr. Isaac Goiz Durán**. Entender su legado no es solo conocer una biografía, es comprender el origen de una de las terapias más revolucionarias de nuestro tiempo: el **Par Biomagnético**. Como terapeuta, cada vez que hago un rastreo, siento la responsabilidad de honrar la pureza de un descubrimiento que ha salvado millones de vidas.

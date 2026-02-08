@@ -1,10 +1,22 @@
 ---
-title: "Adiós al Dolor Menstrual en Monzón: El Par Biomagnético Restaura Tu Equilibrio"
-date: "2026-02-02"
-active: false
-excerpt: "Descubre cómo el Par Biomagnético en Monzón te ayuda a superar el dolor menstrual. Cristina Murciano te guía para restaurar tu equilibrio y bienestar."
-image: "/images/blog/dismenorrea-biomagnetismo-monzon.jpg"
-social_caption: "¿Cansada del dolor menstrual? 😩 Con el Par Biomagnético, tu regla no tiene por qué ser una tortura. Restaura tu equilibrio y siéntete mejor cada mes. ¡Agenda tu cita en Monzón! 🧲✨ #ParBiomagnetico #SaludMonzon #BienestarFemenino #Dismenorrea"
+active: true
+ai_image_style: STYLE_A
+date: '2026-02-02'
+excerpt: Descubre cómo el Par Biomagnético en Monzón te ayuda a superar el dolor menstrual.
+  Cristina Murciano te guía para restaurar tu equilibrio y bienestar.
+image: /images/blog/dismenorrea-biomagnetismo-monzon.jpg
+midjourney_prompt: A full shot of a person, dressed and peacefully lying on a professional,
+  clinical stretcher, undergoing biomagnetic pair therapy. Strategic placement of
+  therapeutic vinyl magnets, one red and one black, on the body. The environment is
+  dark mode, featuring a deep green background. Glowing golden-green bio-energy lines
+  and ethereal particles surround the person and the magnets, symbolizing energetic
+  rebalancing and healing. Subtle, warm lighting creates a professional, clinical
+  yet mystical ambiance, enhancing the bio-energy aesthetic.
+social_caption: "¿Cansada del dolor menstrual? \U0001F629 Con el Par Biomagnético,
+  tu regla no tiene por qué ser una tortura. Restaura tu equilibrio y siéntete mejor
+  cada mes. ¡Agenda tu cita en Monzón! \U0001F9F2✨ #ParBiomagnetico #SaludMonzon #BienestarFemenino
+  #Dismenorrea"
+title: 'Adiós al Dolor Menstrual en Monzón: El Par Biomagnético Restaura Tu Equilibrio'
 ---
 
 # Adiós al Dolor Menstrual en Monzón: El Par Biomagnético Restaura Tu Equilibrio

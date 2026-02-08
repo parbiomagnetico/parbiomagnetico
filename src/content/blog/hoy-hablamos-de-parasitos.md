@@ -5,7 +5,7 @@ author: "Cristina Murciano"
 image: "/images/posts/hoy-hablamos-de-parasitos.webp"
 excerpt: "¿Anisakis, Malaria o Enfermedad de Chagas? Los parásitos son maestros de la supervivencia. Aprende cómo la bioenergética global puede frenar su invasión silenciosa."
 category: "CIENCIA"
-active: false
+active: true
 ---
 
 Hoy entramos en un terreno que a menudo preferimos ignorar, pero que es crucial para la salud global: el mundo de los parásitos. Estos organismos son asombrosamente sofisticados; han evolucionado durante millones de años para pasar desapercibidos bajo el radar de nuestro sistema inmunitario. En este vídeo educativo, exploramos desde las patologías tropicales hasta las más cotidianas en nuestro entorno occidental.

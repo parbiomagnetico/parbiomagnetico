@@ -5,7 +5,7 @@ author: "Cristina Murciano"
 image: "/images/posts/h-pylori.webp"
 excerpt: "¿Vives con acidez constante? La Helicobacter Pylori es una bacteria experta en camuflaje. Descubre cómo el Par Biomagnético neutraliza su ambiente sin antibióticos agresivos."
 category: "SALUD"
-active: false
+active: true
 ---
 
 La **Helicobacter pylori (H. pylori)** es una de las bacterias más exitosas y peligrosas que habitan en el ser humano. Se estima que más de la mitad de la población mundial está infectada. Como especialista en salud integrativa, ayudo habitualmente a personas que han pasado por múltiples ciclos de antibióticos sin éxito. El problema no es la bacteria en sí, sino el **terreno gástrico** que le permite esconderse.

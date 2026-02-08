@@ -5,7 +5,7 @@ author: "Cristina Murciano"
 image: "/images/posts/que-iman-usar.png"
 excerpt: "No todos los imanes sirven para sanar. Aprende la diferencia entre neodimio y ferrita, qué son los Gauss reales y cómo elegir la herramienta adecuada para cada tejido."
 category: "TÉCNICA"
-active: false
+active: true
 ---
 
 En la práctica profesional del **Par Biomagnético**, la herramienta es tan importante como el rastreo. No se trata simplemente de colocar 'imanes'; se trata de aplicar campos magnéticos controlados con la potencia y profundidad necesarias para alcanzar los órganos internos. Como experta, a menudo me preguntan sobre la calidad de los materiales: ¿Neodimio o Ferrita? ¿Cuántos Gauss son necesarios?

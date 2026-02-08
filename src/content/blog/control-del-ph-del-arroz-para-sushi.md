@@ -1,10 +1,24 @@
 ---
-title: "Descubre el Equilibrio: Tu Guía de Par Biomagnético y Salud Bioenergética en Monzón"
-date: "2026-02-02"
-active: false
-excerpt: "Descubre cómo el Par Biomagnético restablece tu equilibrio interno. Cristina Murciano, experta en Monzón, te guía hacia una salud óptima y sin molestias."
-image: "/images/blog/par-biomagnetico-equilibrio-monzon.jpg"
-social_caption: "Cansancio, molestias... ¿y si la clave está en tu pH? 🧐 Como Cristina Murciano, tu terapeuta experta en Monzón, te guío para equilibrar tu organismo con el Par Biomagnético. ¡Dale a tu cuerpo el apoyo que necesita! 🌿✨ #ParBiomagnetico #SaludMonzon #Bienestar #TerapiaNatural"
+active: true
+ai_image_style: STYLE_A
+date: '2026-02-02'
+excerpt: Descubre cómo el Par Biomagnético restablece tu equilibrio interno. Cristina
+  Murciano, experta en Monzón, te guía hacia una salud óptima y sin molestias.
+image: /images/blog/par-biomagnetico-equilibrio-monzon.jpg
+midjourney_prompt: A person, dressed in comfortable, light clothing, lying peacefully
+  on a professional therapy bed. Therapeutic vinyl magnets (one red, one black) are
+  clearly visible on specific points of their body. The setting is dark mode with
+  a deep green background. Subtle, warm lighting creates a professional, clinical
+  yet mystical atmosphere. Glowing golden-green bio-energy lines and particles subtly
+  emanate around the magnets and the patient, emphasizing a sense of balance, healing,
+  and restored vitality. High-detail, cinematic photography, soft focus on energy
+  elements.
+social_caption: "Cansancio, molestias... ¿y si la clave está en tu pH? \U0001F9D0
+  Como Cristina Murciano, tu terapeuta experta en Monzón, te guío para equilibrar
+  tu organismo con el Par Biomagnético. ¡Dale a tu cuerpo el apoyo que necesita! \U0001F33F✨
+  #ParBiomagnetico #SaludMonzon #Bienestar #TerapiaNatural"
+title: 'Descubre el Equilibrio: Tu Guía de Par Biomagnético y Salud Bioenergética
+  en Monzón'
 ---
 
 # ¿Malestar persistente? Descubre cómo el Par Biomagnético en Monzón equilibra tu salud y bienestar

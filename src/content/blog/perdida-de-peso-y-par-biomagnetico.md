@@ -5,7 +5,7 @@ author: "Cristina Murciano"
 image: "/images/posts/perdida-de-peso-y-par-biomagnetico.webp"
 excerpt: "¿A veces la dieta no es suficiente porque tus glándulas están 'dormidas' o saturadas de toxinas. Descubre cómo el biomagnetismo resetea tu metabolismo natural."
 category: "SALUD"
-active: false
+active: true
 ---
 
 ¿Has probado todas las dietas y el deporte intenso sin ver resultados en la báscula? Esta frustración es muy común y suele tener una explicación que ignora la medicina convencional: el **estancamiento bionergético**. Cuando tus sistemas de eliminación están saturados o tus glándulas de control no funcionan al ritmo adecuado, el cuerpo entra en 'modo ahorro' y utiliza la grasa como un almacén seguro para aislar toxinas que no puede procesar.

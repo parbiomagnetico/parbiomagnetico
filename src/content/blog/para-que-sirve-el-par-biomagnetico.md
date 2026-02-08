@@ -5,7 +5,7 @@ author: "Cristina Murciano"
 image: "/images/posts/para-que-sirve-el-par-biomagnetico.webp"
 excerpt: "¿Realmente puede ayudar con mi problema? Conoce el amplio espectro de aplicaciones del biomagnetismo, desde problemas digestivos hasta la regeneración glandular."
 category: "GENERAL"
-active: false
+active: true
 ---
 
 Una de las preguntas más recurrentes en mi consulta es: *“¿Realmente el biomagnetismo sirve para mi caso particular?”*. La versatilidad de la **inducción magnética** radica en que no trata síntomas asilados, sino que trabaja sobre el equilibrio del pH, que es el fundamento de toda función biológica. Aquí te explico las áreas donde esta terapia ofrece sus mejores resultados.

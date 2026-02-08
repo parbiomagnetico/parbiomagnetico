@@ -1,10 +1,25 @@
 ---
-title: "Adiós a la Rinitis y al Estrés Crónico: Descubre el Poder del Par Biomagnético en Monzón, Huesca"
-date: "2024-07-29"
-active: false
-excerpt: "Alivia rinitis, estrés y otros malestares con Par Biomagnético en Monzón. Recupera tu equilibrio bioenergético y bienestar integral. ¡Pide tu cita hoy!"
-image: "/images/blog/par-biomagnetico-rinitis-estres-monzon.jpg"
-social_caption: "¡Transforma tu bienestar! 🌟 Santiago dejó atrás años de rinitis y estrés con Par Biomagnético en Monzón. Recupera tu equilibrio, neutraliza patógenos y libera bloqueos emocionales. ¿Listo para sentirte mejor? ¡Contáctame! 🧲✨ #ParBiomagnetico #SaludMonzon #Bienestar"
+active: true
+ai_image_style: STYLE_A
+date: '2024-07-29'
+excerpt: Alivia rinitis, estrés y otros malestares con Par Biomagnético en Monzón.
+  Recupera tu equilibrio bioenergético y bienestar integral. ¡Pide tu cita hoy!
+image: /images/blog/par-biomagnetico-rinitis-estres-monzon.jpg
+midjourney_prompt: Dark mode, bio-energy aesthetic. A serene person, fully clothed,
+  lies peacefully on a pristine clinical treatment bed, receiving biomagnetic therapy.
+  Therapeutic vinyl magnets (one red, one black) are subtly placed on the upper body,
+  hinting at relief from rhinitis and chronic stress. A deep green background frames
+  the scene, with glowing golden-green energy lines and particles gracefully emanating
+  from the magnets and around the patient, illustrating a flow of restorative bio-energy.
+  Subtle, warm light casts a gentle glow. The overall image exudes a professional,
+  clinical yet profoundly mystical atmosphere, conveying holistic healing, balance,
+  and profound relief from chronic ailments. High detail, sharp focus.
+social_caption: "¡Transforma tu bienestar! \U0001F31F Santiago dejó atrás años de
+  rinitis y estrés con Par Biomagnético en Monzón. Recupera tu equilibrio, neutraliza
+  patógenos y libera bloqueos emocionales. ¿Listo para sentirte mejor? ¡Contáctame!
+  \U0001F9F2✨ #ParBiomagnetico #SaludMonzon #Bienestar"
+title: 'Adiós a la Rinitis y al Estrés Crónico: Descubre el Poder del Par Biomagnético
+  en Monzón, Huesca'
 ---
 
 ¿Te sientes agotado por síntomas persistentes que los tratamientos convencionales no logran resolver de raíz? Quizás la **rinitis crónica** te roba el sueño y la concentración, o el **estrés** te mantiene en un estado de alerta constante, afectando tu calidad de vida. Como Cristina Murciano, terapeuta experta en **Par Biomagnético en Monzón**, entiendo la frustración de vivir con malestares que limitan tu día a día.

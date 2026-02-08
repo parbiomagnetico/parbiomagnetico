@@ -1,10 +1,22 @@
 ---
-title: "Adiós al Malestar: Equilibra tu pH con Par Biomagnético en Monzón (Huesca)"
-date: "2023-11-08"
-active: false
-excerpt: "Descubre cómo el Par Biomagnético equilibra tu pH, elimina patógenos y te devuelve la vitalidad en Monzón. Sesiones con Cristina Murciano."
-image: "/images/blog/par-biomagnetico-equilibrio-ph-monzon.jpg"
-social_caption: "¿Cansado de sentirte sin energía o con dolores? 🔋 El Par Biomagnético te ayuda a equilibrar tu pH, eliminar patógenos y recuperar tu bienestar. ¡Agenda tu sesión en Monzón y siéntete renovado! 🧲✨ #ParBiomagnetico #SaludMonzon #Bienestar #CristinaMurciano"
+active: true
+ai_image_style: STYLE_A
+date: '2023-11-08'
+excerpt: Descubre cómo el Par Biomagnético equilibra tu pH, elimina patógenos y te
+  devuelve la vitalidad en Monzón. Sesiones con Cristina Murciano.
+image: /images/blog/par-biomagnetico-equilibrio-ph-monzon.jpg
+midjourney_prompt: Dark mode, bio-energy aesthetic. A fully dressed person lies calmly
+  on a sleek clinical treatment couch. One red therapeutic vinyl magnet and one black
+  therapeutic vinyl magnet are strategically placed on their body. The scene features
+  a deep green background, with subtle, warm ambient lighting. Glowing golden-green
+  energy lines and particles flow gently around the magnets and the person, illustrating
+  bio-energetic balance and healing. The overall mood is professional, clinical, and
+  imbued with a subtle mystical quality.
+social_caption: "¿Cansado de sentirte sin energía o con dolores? \U0001F50B El Par
+  Biomagnético te ayuda a equilibrar tu pH, eliminar patógenos y recuperar tu bienestar.
+  ¡Agenda tu sesión en Monzón y siéntete renovado! \U0001F9F2✨ #ParBiomagnetico #SaludMonzon
+  #Bienestar #CristinaMurciano"
+title: 'Adiós al Malestar: Equilibra tu pH con Par Biomagnético en Monzón (Huesca)'
 ---
 
 # Adiós al Malestar Crónico: Equilibra tu pH con Par Biomagnético en Monzón

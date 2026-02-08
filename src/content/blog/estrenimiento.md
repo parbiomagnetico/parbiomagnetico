@@ -5,7 +5,7 @@ author: "Cristina Murciano"
 image: "/images/posts/estrenimiento.webp"
 excerpt: "¿Vives pendiente de tu regularidad? Descubre cómo el biomagnetismo activa tu sistema digestivo perezoso equilibrando el sistema nervioso y el pH."
 category: "GENERAL"
-active: false
+active: true
 ---
 
 El estreñimiento no es solo una incomodidad; es una señal de que los procesos de eliminación profunda de tu cuerpo están estancados. Cuando los residuos se acumulan en el intestino grueso, el pH se acidifica y las toxinas vuelven a absorberse al torrente sanguíneo, causando fatiga, pesadez y piel irritada. Tratar el problema solo con laxantes es agredir a un intestino que ya está sufriendo; la solución real pasa por devolverle su **movilidad natural**.

@@ -1,10 +1,25 @@
 ---
-title: "Recupera Tu Equilibrio y Bienestar en Monzón con el Par Biomagnético Experto"
-date: "2026-02-02"
-active: false
-excerpt: "Descubre en Monzón cómo el Par Biomagnético, con Cristina Murciano, restablece tu equilibrio y vitalidad. Identifica y corrige desajustes de pH de forma natural."
-image: "/images/blog/par-biomagnetico-equilibrio-monzon.jpg"
-social_caption: "✨ ¿Cansado de sentirte regular? En Monzón, el Par Biomagnético de la mano de Cristina Murciano te ofrece una vía para recuperar tu equilibrio y energía. Actúa sobre el origen de tus desequilibrios de pH. ¡Infórmate y da el primer paso hacia tu bienestar! 🧲 #ParBiomagnetico #SaludMonzon #Bienestar #Monzon #CristinaMurciano"
+active: true
+ai_image_style: STYLE_A
+date: '2026-02-02'
+excerpt: Descubre en Monzón cómo el Par Biomagnético, con Cristina Murciano, restablece
+  tu equilibrio y vitalidad. Identifica y corrige desajustes de pH de forma natural.
+image: /images/blog/par-biomagnetico-equilibrio-monzon.jpg
+midjourney_prompt: Dark mode, bio-energy aesthetic. A person (fully clothed) is lying
+  peacefully on a clinical treatment table, receiving therapy. Therapeutic vinyl magnets,
+  one vibrant red and one deep black, are strategically placed on their body. The
+  background is a deep green, with glowing golden-green energy lines and subtle particles
+  emanating from the magnets and subtly surrounding the person, suggesting a flow
+  of bio-energy and healing. Subtle, warm light illuminates the scene, highlighting
+  the calm expression of the person. The overall atmosphere is professional, clinical,
+  yet distinctly mystical, conveying balance, well-being, and preventive health. High
+  detail, photorealistic.
+social_caption: "✨ ¿Cansado de sentirte regular? En Monzón, el Par Biomagnético de
+  la mano de Cristina Murciano te ofrece una vía para recuperar tu equilibrio y energía.
+  Actúa sobre el origen de tus desequilibrios de pH. ¡Infórmate y da el primer paso
+  hacia tu bienestar! \U0001F9F2 #ParBiomagnetico #SaludMonzon #Bienestar #Monzon
+  #CristinaMurciano"
+title: Recupera Tu Equilibrio y Bienestar en Monzón con el Par Biomagnético Experto
 ---
 
 ## ¿Cansado de Molestias Inexplicables? Descubre el Par Biomagnético en Monzón

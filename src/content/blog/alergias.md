@@ -1,10 +1,27 @@
 ---
-title: "Adiós a las Alergias y Asma: Tu Guía Definitiva de Par Biomagnético en Monzón para Respirar Libremente"
-date: "2024-04-23"
-active: false
-excerpt: "Descubre cómo el Par Biomagnético en Monzón puede ayudarte a aliviar las alergias respiratorias y el asma, restableciendo el equilibrio de tu organismo."
-image: "/images/blog/par-biomagnetico-alergias-asma-monzon.jpg"
-social_caption: "¡Respira hondo sin estornudos ni pitos! Si las alergias o el asma te limitan, el Par Biomagnético puede ser tu solución. 🧲 Descubre cómo en Monzón apoyamos tu cuerpo para que recupere su equilibrio y puedas disfrutar cada estación. ¡Tu bienestar respiratorio te espera! ✨ #ParBiomagnetico #SaludMonzon #BienestarRespiratorio #Alergias #Asma #MonzonHuesca"
+active: true
+ai_image_style: STYLE_A
+date: '2024-04-23'
+excerpt: Descubre cómo el Par Biomagnético en Monzón puede ayudarte a aliviar las
+  alergias respiratorias y el asma, restableciendo el equilibrio de tu organismo.
+image: /images/blog/par-biomagnetico-alergias-asma-monzon.jpg
+midjourney_prompt: Full shot of a person lying peacefully and comfortably on a professional
+  examination gurney. They are dressed in simple, light-colored clothing. Therapeutic
+  vinyl magnets, one vibrant red and one deep black, are strategically placed on their
+  upper chest and sinus areas, subtly indicating treatment for respiratory issues
+  like allergies and asthma. The entire scene is set in a dark mode aesthetic with
+  a deep green background. Glowing golden-green bio-energy lines and ethereal particles
+  subtly emanate from and around the magnets and the treated areas, symbolizing therapeutic
+  flow and the alleviation of symptoms. Subtle, warm lighting enhances the professional
+  yet mystical ambiance, creating a sense of calm, healing, and the promise of breathing
+  freely.
+social_caption: "¡Respira hondo sin estornudos ni pitos! Si las alergias o el asma
+  te limitan, el Par Biomagnético puede ser tu solución. \U0001F9F2 Descubre cómo
+  en Monzón apoyamos tu cuerpo para que recupere su equilibrio y puedas disfrutar
+  cada estación. ¡Tu bienestar respiratorio te espera! ✨ #ParBiomagnetico #SaludMonzon
+  #BienestarRespiratorio #Alergias #Asma #MonzonHuesca"
+title: 'Adiós a las Alergias y Asma: Tu Guía Definitiva de Par Biomagnético en Monzón
+  para Respirar Libremente'
 ---
 
 ## Si Las Alergias y el Asma Limitan Tu Vida, Es Hora de Respirar Libremente en Monzón

@@ -5,7 +5,7 @@ author: "Cristina Murciano"
 image: "/images/posts/la-importancia-de-un-ph-equilibrado.png"
 excerpt: "Estrés, contaminación y mala dieta: los tres jinetes de la acidosis. Aprende a proteger tu neutralidad biológica para vivir con máxima energía."
 category: "SALUD"
-active: false
+active: true
 ---
 
 Vivimos en un mundo ácido. No nos referimos al clima, sino a nuestra química interna. Nuestra sociedad moderna es una fábrica de **acidosis metabólica de bajo grado**. El estrés crónico, la falta de sueño, el aire contaminado de nuestras ciudades y, sobre todo, la dieta ultraprocesada, conspiran cada segundo para alterar nuestro parámetro de salud más crítico: el **pH (Potencial de Hidrógeno)**.

@@ -1,8 +1,19 @@
+---
+ai_image_style: STYLE_A
+midjourney_prompt: A person lying clothed on a professional therapeutic bed or stretcher,
+  receiving biomagnetic therapy. Therapeutic vinyl magnets, one red and one black,
+  are carefully placed on their body. The overall aesthetic is dark mode with a deep
+  green background. Glowing golden-green energy lines and particles emanate subtly
+  from the magnets and around the person, creating a bio-energy aesthetic. The scene
+  is illuminated by subtle, warm light, conveying a professional, clinical yet mystical
+  atmosphere focused on healing and balance for urinary health.
+---
+
 yaml
 ---
 title: "Cistitis Recurrente: Restablece tu Equilibrio con Par Biomagnético en Monzón"
 date: "2024-07-31"
-active: false
+active: true
 excerpt: "¿Cansada de la cistitis recurrente? Descubre cómo el Par Biomagnético en Monzón te ayuda a restaurar el equilibrio de tu organismo y apoyar tu salud urinaria."
 image: "/images/blog/cistitis-infecciones-urinarias-biomagnetismo.jpg"
 social_caption: "¡Di adiós a la cistitis recurrente! Si vives en Monzón y estás agotada de este ciclo, el Par Biomagnético puede ser la clave para restablecer tu equilibrio. Apoya a tu organismo de forma natural y recupera tu bienestar. ✨🧲 #ParBiomagnetico #SaludMonzon #Bienestar #Cistitis #InfeccionUrinaria"

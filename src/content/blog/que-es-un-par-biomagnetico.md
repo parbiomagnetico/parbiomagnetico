@@ -5,7 +5,7 @@ author: "Cristina Murciano"
 image: "/images/posts/que-es-un-par-biomagnetico.webp"
 excerpt: "Aprende qué es el par biomagnético y cómo la simbiosis entre virus y bacterias afecta a tu salud. Descubre el poder de la resonancia magnética para sanar."
 category: "CIENCIA"
-active: false
+active: true
 ---
 
 El concepto de **Par Biomagnético** es la piedra angular que sostiene toda esta terapia revolucionaria. Desarrollado por el Dr. Isaac Goiz, este término no se refiere simplemente a colocar dos imanes en el cuerpo, sino a una compleja estructura de equilibrio biológico y energético. Entender qué es un par te permitirá comprender por qué el biomagnetismo es tan eficaz incluso cuando otros tratamientos han fallado.

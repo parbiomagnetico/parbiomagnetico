@@ -1,10 +1,24 @@
 ---
-title: "Par Biomagnético en Monzón: Tu Guía Experta para Restaurar el Equilibrio y la Vitalidad"
-date: "2024-05-15"
-active: false
-excerpt: "Descubre cómo el Par Biomagnético en Monzón, guiado por Cristina Murciano, puede apoyar tu salud. Entiende el equilibrio del pH y el bienestar bioenergético."
-image: "/images/blog/sesion-par-biomagnetico-monzon.jpg"
-social_caption: "Sientes desequilibrio? 🤔 Descubre cómo una sesión de Par Biomagnético en Monzón puede transformar tu bienestar. Te guío para restaurar tu pH y apoyar tu organismo. ¡Da el primer paso hacia una salud plena! 🧲✨ #ParBiomagnetico #SaludMonzon #Bienestar #CristinaMurciano"
+active: true
+ai_image_style: STYLE_A
+date: '2024-05-15'
+excerpt: Descubre cómo el Par Biomagnético en Monzón, guiado por Cristina Murciano,
+  puede apoyar tu salud. Entiende el equilibrio del pH y el bienestar bioenergético.
+image: /images/blog/sesion-par-biomagnetico-monzon.jpg
+midjourney_prompt: A person (patient) dressed in comfortable attire, lying peacefully
+  on a treatment bed. Therapeutic vinyl magnets, one red and one black, are gently
+  placed on specific points of their body. The scene is bathed in a dark mode, deep
+  green background, with glowing golden-green bio-energy lines and ethereal particles
+  subtly emanating from the magnets and enveloping the person, symbolizing energy
+  flow and holistic healing. Subtle, warm light highlights the professional and clinical
+  setting, imbued with a mystical and therapeutic ambiance. The image conveys a profound
+  sense of restoration, balance, and renewed vitality.
+social_caption: "Sientes desequilibrio? \U0001F914 Descubre cómo una sesión de Par
+  Biomagnético en Monzón puede transformar tu bienestar. Te guío para restaurar tu
+  pH y apoyar tu organismo. ¡Da el primer paso hacia una salud plena! \U0001F9F2✨
+  #ParBiomagnetico #SaludMonzon #Bienestar #CristinaMurciano"
+title: 'Par Biomagnético en Monzón: Tu Guía Experta para Restaurar el Equilibrio y
+  la Vitalidad'
 ---
 
 # Par Biomagnético en Monzón: Tu Guía Experta para Restaurar el Equilibrio y la Vitalidad

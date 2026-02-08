@@ -5,7 +5,7 @@ author: "Cristina Murciano"
 image: "/images/posts/ph-piel-bebe.webp"
 excerpt: "Dermatitis, piel atópica y sensibilidad. Descubre por qué el pH es la defensa número uno de los más pequeños y cómo cuidarlo de forma natural."
 category: "SALUD"
-active: false
+active: true
 ---
 
 La piel de un bebé es una obra maestra de la biología, pero es extremadamente frágil. Es un 20% más delgada que la de un adulto y sus mecanismos de autoprotección aún están en desarrollo. El factor más importante para su salud es el llamado **'manto ácido'**: una fina capa con un pH de entre 4.5 y 5.5 que actúa como el primer sistema inmunitario del niño ante el mundo exterior.

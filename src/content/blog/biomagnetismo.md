@@ -1,10 +1,22 @@
 ---
-title: "Recupera tu Equilibrio y Vitalidad en Monzón con el Par Biomagnético"
-date: "2024-03-08"
-active: false
-excerpt: "Encuentra alivio y bienestar en Monzón. El Par Biomagnético te ayuda a restablecer tu pH, eliminar patógenos y recuperar tu salud de forma natural."
-image: "/images/blog/par-biomagnetico-equilibrio-monzon.jpg"
-social_caption: "¿Cansado de sentirte sin energía? 😔 Descubre cómo el #ParBiomagnetico puede ayudarte a restablecer tu equilibrio natural y mejorar tu bienestar en #Monzon. Apoya a tu cuerpo para que funcione a su máximo potencial. ¡Tu vitalidad te espera! 🧲✨ #SaludBioenergetica #BienestarMonzon #CristinaMurciano"
+active: true
+ai_image_style: STYLE_A
+date: '2024-03-08'
+excerpt: Encuentra alivio y bienestar en Monzón. El Par Biomagnético te ayuda a restablecer
+  tu pH, eliminar patógenos y recuperar tu salud de forma natural.
+image: /images/blog/par-biomagnetico-equilibrio-monzon.jpg
+midjourney_prompt: A person, fully clothed, lying serenely on a treatment bed in a
+  dimly lit, professional clinical setting. Therapeutic vinyl magnets, one red and
+  one black, are carefully placed on specific points on their body. The background
+  is a deep green, emanating a bio-energy aesthetic with glowing golden-green energy
+  lines and subtle particles subtly flowing around the person and magnets. Subtle,
+  warm light gently illuminates the scene, creating a professional, clinical yet mystical
+  atmosphere. Dark mode.
+social_caption: "¿Cansado de sentirte sin energía? \U0001F614 Descubre cómo el #ParBiomagnetico
+  puede ayudarte a restablecer tu equilibrio natural y mejorar tu bienestar en #Monzon.
+  Apoya a tu cuerpo para que funcione a su máximo potencial. ¡Tu vitalidad te espera!
+  \U0001F9F2✨ #SaludBioenergetica #BienestarMonzon #CristinaMurciano"
+title: Recupera tu Equilibrio y Vitalidad en Monzón con el Par Biomagnético
 ---
 
 # ¿Cansancio persistente, malestar o falta de energía en Monzón? El Par Biomagnético puede ser tu respuesta.

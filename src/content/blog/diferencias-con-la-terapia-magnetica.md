@@ -1,10 +1,23 @@
 ---
-title: "Descodificando el Dolor Crónico: El Par Biomagnético, Tu Aliado en Monzón para un Bienestar Profundo"
-date: "2023-10-27"
-active: false
-excerpt: "Descubre el Par Biomagnético en Monzón con Cristina Murciano. Terapia bioenergética que busca el origen de tu malestar, restaurando el equilibrio y bienestar de tu organismo."
-image: "/images/blog/par-biomagnetico-monzon-cristina-murciano.jpg"
-social_caption: "Cansado de solo tratar síntomas? 🤔 Descubre cómo el #ParBiomagnetico va más allá, buscando el origen de tu malestar para un bienestar profundo. Con Cristina Murciano en #Monzon, te guío hacia el equilibrio. ¡Tu salud te espera! 🧲✨ #SaludMonzon #Bienestar #TerapiaBioenergetica"
+active: true
+ai_image_style: STYLE_A
+date: '2023-10-27'
+excerpt: Descubre el Par Biomagnético en Monzón con Cristina Murciano. Terapia bioenergética
+  que busca el origen de tu malestar, restaurando el equilibrio y bienestar de tu
+  organismo.
+image: /images/blog/par-biomagnetico-monzon-cristina-murciano.jpg
+midjourney_prompt: Dark mode, bio-energy aesthetic. A person, fully clothed, lying
+  serenely on a modern therapeutic bed. Deep green background, with glowing golden-green
+  energy lines and particles subtly emanating around the person and the magnets. Strategic
+  placement of one red and one black therapeutic vinyl magnet on the person's body.
+  Subtle, warm light illuminating the scene, creating a professional, clinical yet
+  deeply mystical and healing atmosphere. High detail, photorealistic.
+social_caption: "Cansado de solo tratar síntomas? \U0001F914 Descubre cómo el #ParBiomagnetico
+  va más allá, buscando el origen de tu malestar para un bienestar profundo. Con Cristina
+  Murciano en #Monzon, te guío hacia el equilibrio. ¡Tu salud te espera! \U0001F9F2✨
+  #SaludMonzon #Bienestar #TerapiaBioenergetica"
+title: 'Descodificando el Dolor Crónico: El Par Biomagnético, Tu Aliado en Monzón
+  para un Bienestar Profundo'
 ---
 
 ## Descodificando el Dolor Crónico: El Par Biomagnético, Tu Aliado en Monzón para un Bienestar Profundo

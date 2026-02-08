@@ -5,7 +5,7 @@ author: "Cristina Murciano"
 image: "/images/posts/tratamiento-de-animales.webp"
 excerpt: "¿Tu perro o gato no es el mismo? Descubre cómo el biomagnetismo ayuda a equilibrar el sistema nervioso y el pH de tus animales sin estrés."
 category: "ANIMALES"
-active: false
+active: true
 ---
 
 Nuestras mascotas son mucho más que simples animales de compañía; son miembros integrales de nuestra familia con un mundo emocional y energético sumamente sensible. Al igual que nosotros, los animales pueden verse afectados por el **estrés, la ansiedad, la contaminación** y los desequilibrios bacterianos. Como experta en biomagnetismo veterinario, he comprobado cómo la aplicación de campos magnéticos puede transformar el bienestar de nuestros amigos peludos de forma suave y respetuosa.

@@ -1,8 +1,20 @@
+---
+ai_image_style: STYLE_A
+midjourney_prompt: A person, dressed in comfortable, light-colored clothing, lies
+  serenely on a minimalist therapy bed. Therapeutic vinyl magnets, one vibrant red
+  and one deep black, are precisely placed on specific points of their body. The overall
+  setting is dark mode with a deep green background, imbued with a palpable bio-energy
+  aesthetic. Glowing golden-green energy lines and delicate particles emanate subtly
+  from around the magnets and the person, illustrating a flow of balancing energy.
+  The scene is illuminated by a subtle, warm light, creating a professional, clinical
+  yet profoundly mystical atmosphere. High detail, photorealistic.
+---
+
 yaml
 ---
 title: "Desvela el Secreto: Cómo el Par Biomagnético Neutraliza Patógenos y Restaura tu Equilibrio en Monzón"
 date: "2023-10-27"
-active: false
+active: true
 excerpt: "Descubre cómo el Par Biomagnético en Monzón equilibra tu pH, neutraliza patógenos y apoya tu sistema inmune para una salud duradera. ¡Tu bienestar empieza aquí!"
 image: "/images/blog/par-biomagnetico-patogenos-monzon.jpg"
 social_caption: "🤔 ¿Te preguntas cómo el Par Biomagnético apoya tu salud? Como Cristina Murciano, experta en Monzón, te explico la biofísica detrás de la neutralización de patógenos y cómo restaurar tu equilibrio interior. ¡Es ciencia, no magia! 🧲✨ #ParBiomagnetico #SaludMonzon #Bienestar #TerapiaNatural"

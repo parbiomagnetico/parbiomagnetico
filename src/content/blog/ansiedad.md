@@ -1,10 +1,26 @@
 ---
-title: "Transforma la Ansiedad en Calma: Guía Esencial de Biomagnetismo en Monzón (Huesca)"
-date: "2026-02-02"
-active: false
-excerpt: "Cristina Murciano te explica cómo el Par Biomagnético en Monzón te ayuda a restablecer el equilibrio bioenergético y gestionar la ansiedad."
-image: "/images/blog/biomagnetismo-ansiedad-monzon.jpg"
-social_caption: "¿Sientes que la ansiedad te tiene atrapada? 😥 Descubre cómo el Par Biomagnético puede ayudarte a restablecer tu equilibrio interno y recuperar la calma. 🧲✨ Te espero en Monzón para iniciar tu camino hacia el bienestar. #ParBiomagnetico #SaludMonzon #Bienestar #Ansiedad #CristinaMurciano"
+active: true
+ai_image_style: STYLE_A
+date: '2026-02-02'
+excerpt: Cristina Murciano te explica cómo el Par Biomagnético en Monzón te ayuda
+  a restablecer el equilibrio bioenergético y gestionar la ansiedad.
+image: /images/blog/biomagnetismo-ansiedad-monzon.jpg
+midjourney_prompt: A serene person, fully clothed, lying peacefully on a minimalistic
+  clinical treatment bed or stretcher. Therapeutic vinyl magnets, one vibrant red
+  and one deep black, are subtly placed on specific points of their body, suggesting
+  a bioenergetic treatment for anxiety. The scene is rendered in a dark mode with
+  a deep green background. Glowing golden-green energy lines and subtle particles
+  emanate from the magnets and gently envelop the person, symbolizing the flow of
+  bio-energy and the restoration of calm and balance. Subtle, warm light bathes the
+  scene, creating a professional, clinical yet deeply mystical atmosphere. The person's
+  expression reflects profound relaxation and tranquility, embodying the transformation
+  from anxiety to serenity. High detail, ethereal, photorealistic.
+social_caption: "¿Sientes que la ansiedad te tiene atrapada? \U0001F625 Descubre cómo
+  el Par Biomagnético puede ayudarte a restablecer tu equilibrio interno y recuperar
+  la calma. \U0001F9F2✨ Te espero en Monzón para iniciar tu camino hacia el bienestar.
+  #ParBiomagnetico #SaludMonzon #Bienestar #Ansiedad #CristinaMurciano"
+title: 'Transforma la Ansiedad en Calma: Guía Esencial de Biomagnetismo en Monzón
+  (Huesca)'
 ---
 
 # Transforma la Ansiedad en Calma: Guía Esencial de Biomagnetismo en Monzón (Huesca)

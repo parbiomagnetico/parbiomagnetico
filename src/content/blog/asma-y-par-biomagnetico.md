@@ -1,10 +1,24 @@
 ---
-title: "Asma y Dificultad Respiratoria: Recupera tu Aliento con Par Biomagnético en Monzón"
-date: "2023-10-27"
-active: false
-excerpt: "Descubre cómo el Par Biomagnético en Monzón te ayuda a aliviar el asma y mejorar tu capacidad pulmonar. Restablece el equilibrio de tu sistema respiratorio."
-image: "/images/blog/asma-biomagnetismo-monzon.jpg"
-social_caption: "¡Respira libremente de nuevo! 🌬️ Si el asma limita tu día a día, el Par Biomagnético puede ser tu aliado. Ayudamos a tu cuerpo a restablecer el equilibrio y mejorar tu capacidad pulmonar. ¡Agenda tu consulta en Monzón! 🧲✨ #ParBiomagnetico #SaludMonzon #Bienestar #Asma"
+active: true
+ai_image_style: STYLE_A
+date: '2023-10-27'
+excerpt: Descubre cómo el Par Biomagnético en Monzón te ayuda a aliviar el asma y
+  mejorar tu capacidad pulmonar. Restablece el equilibrio de tu sistema respiratorio.
+image: /images/blog/asma-biomagnetismo-monzon.jpg
+midjourney_prompt: Dark mode, bio-energy aesthetic. Deep green background, glowing
+  golden-green energy lines/particles emanate gently. A person, dressed in light,
+  comfortable attire, lies serenely on a clean, professional treatment gurney. Therapeutic
+  vinyl magnets, one red and one black, are carefully placed on the upper torso or
+  back, suggesting treatment for respiratory issues. The person's expression is peaceful,
+  eyes gently closed, conveying a sense of calm and deep, effortless breathing. Subtle,
+  warm light highlights the subject and the energetic aura. The overall mood is professional,
+  clinical, yet imbued with a mystical and healing presence.
+social_caption: "¡Respira libremente de nuevo! \U0001F32C️ Si el asma limita tu día
+  a día, el Par Biomagnético puede ser tu aliado. Ayudamos a tu cuerpo a restablecer
+  el equilibrio y mejorar tu capacidad pulmonar. ¡Agenda tu consulta en Monzón! \U0001F9F2✨
+  #ParBiomagnetico #SaludMonzon #Bienestar #Asma"
+title: 'Asma y Dificultad Respiratoria: Recupera tu Aliento con Par Biomagnético en
+  Monzón'
 ---
 
 # Asma y Dificultad Respiratoria: Recupera el Aliento con Par Biomagnético en Monzón
